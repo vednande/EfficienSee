@@ -1,9 +1,10 @@
+<link rel="stylesheet" href="assets/css/accountLogo.css">
 <?php
 	session_start();
 	error_reporting(0);
 	include_once("includes/config.php");
 	if($_SESSION['userlogin']>0){
-		header('location:index.php');
+		header('location:index.php'); 
 	}elseif(isset($_POST['login'])){
 		$_SESSION['userlogin'] = $_POST['username'];
 		$username = htmlspecialchars($_POST['username']);
@@ -55,7 +56,7 @@
 		<title>Login - HRMS admin</title>
 		
 		<!-- Favicon -->
-		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+		<!-- <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png"> -->
 		
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -65,12 +66,10 @@
 		
 		<!-- Main CSS -->
 		<link rel="stylesheet" href="assets/css/style.css">
-		
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-			<script src="assets/js/html5shiv.min.js"></script>
-			<script src="assets/js/respond.min.js"></script>
-		<![endif]-->
+		<link rel="stylesheet" href="assets/css/accountLogo.css">
+		<link rel="stylesheet" href="assets/css/accountBtn.css">
+		<link rel="stylesheet" href="assets/css/accountFooter.css">
+
 	</head>
 	<body class="account-page">
 	
@@ -80,7 +79,7 @@
 				<div class="container">
 					<!-- Account Logo -->
 					<div class="account-logo">
-						<a href="index.php"><img src="assets/img/logo2.png" alt="Company Logo"></a>
+						<a href="index.php"><img src="assets/img/logo-bgremoved.png" alt="Company Logo"></a>
 					</div>
 					<!-- /Account Logo -->
 					

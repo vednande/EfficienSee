@@ -19,6 +19,9 @@
 		
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/accountLogo.css">
+		<link rel="stylesheet" href="assets/css/accountBtn.css">
+		<link rel="stylesheet" href="assets/css/accountFooter.css">
 		
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -37,7 +40,7 @@
 				
 					<!-- Account Logo -->
 					<div class="account-logo">
-						<a href="index.php"><img src="assets/img/logo2.png" alt="Dreamguy's Technologies"></a>
+						<a href="index.php"><img src="assets/img/logo-bgremoved.png" alt="Dreamguy's Technologies"></a>
 					</div>
 					<!-- /Account Logo -->
 					

@@ -1,0 +1,9 @@
+.account-logo {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.account-logo img {
+    width: 100px;
+    transform: scale(4);
+}
+ 

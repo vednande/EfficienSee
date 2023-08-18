@@ -1654,14 +1654,11 @@ table.dataTable thead > tr > td.sorting {
 .account-wrapper {
 	padding: 30px;
 }
-.account-logo {
-	margin-bottom: 30px;
-	text-align: center;
-}
+
 .account-box .form-group {
 	margin-bottom: 25px;
 }
-.account-box .account-btn {
+/* .account-box .account-btn {
 	background: #ff9b44;
 	background: -moz-linear-gradient(left, #ff9b44 0%, #fc6075 100%);
 	background: -webkit-linear-gradient(left, #ff9b44 0%, #fc6075 100%);
@@ -1678,7 +1675,7 @@ table.dataTable thead > tr > td.sorting {
 .account-box .account-btn:focus {
 	border: 0;
 	opacity: 0.8;
-}
+} */
 .account-box .form-control {
     background-color: #fbfbfb;
     border: 1px solid #e3e3e3;
@@ -1691,21 +1688,19 @@ table.dataTable thead > tr > td.sorting {
 	font-weight: normal;
     margin-bottom: 5px;
 }
-.account-logo img {
-	width: 100px;
-}
-.account-footer {
+
+/* .account-footer {
     text-align: center;
 }
 .account-footer p {
     margin-bottom: 0;
 }
 .account-footer a {
-	color: #ff9b44;
+	color: #ff9b44; 
 }
 .account-footer a:hover {
 	color: #ff9b44;
-}
+} */
 
 /*-----------------
 	12. Dashboard
