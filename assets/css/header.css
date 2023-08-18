@@ -1,0 +1,111 @@
+.header {
+    /* background: -moz-linear-gradient(right, #0068C7 0%, #000 100%);
+	background: -webkit-linear-gradient(right, #0068C7 0%, #000 100%);
+	background: -ms-linear-gradient(right, #0068C7 0%, #000 100%);
+	background: linear-gradient(right, #0068C7 0%, #000 100%); */
+    background-image: linear-gradient(to right, #0068c7, #000);
+    border-bottom: 1px solid transparent;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+    height: 60px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1002;
+}
+
+.gradient {
+    background: repeating-linear-gradient(to bottom right, #3f95ea 0%, #52d3aa 100%);
+    background: -moz-linear-gradient(left, #3f95ea 0%, #52d3aa 100%);
+    background: -webkit-linear-gradient(left, #3f95ea 0%, #52d3aa 100%);
+    background: -ms-linear-gradient(left, #3f95ea 0%, #52d3aa 100%);
+    background: linear-gradient(to right, #3f95ea 0%, #52d3aa 100%);
+    background: linear-gradient(to right, #3f95ea 0%, #52d3aa 100%);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+    height: 60px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1002;
+}
+
+.header .header-left {
+    float: left;
+    height: 60px;
+    padding: 0 20px;
+    position: relative;
+    text-align: center;
+    width: 230px;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.header .header-left .logo {
+    display: inline-block;
+    line-height: 60px;
+}
+
+.bar-icon {
+    display: inline-block;
+    width: 21px;
+}
+
+.bar-icon span {
+    background-color: #fff;
+    border-radius: 500px;
+    display: block;
+    float: left;
+    height: 2px;
+    margin-bottom: 5px;
+    width: 21px;
+}
+
+.bar-icon span:nth-child(2) {
+    width: 15px;
+}
+
+.bar-icon span:nth-child(3) {
+    margin-bottom: 0;
+}
+
+.header .navbar-nav .badge {
+    position: absolute;
+    right: 7px;
+    top: 4px;
+}
+
+.header .dropdown-menu>li>a {
+    position: relative;
+}
+
+.header .dropdown-toggle::after {
+    display: none;
+}
+
+.header .has-arrow .dropdown-toggle:after {
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    content: '';
+    height: 8px;
+    display: inline-block;
+    pointer-events: none;
+    -webkit-transform-origin: 66% 66%;
+    -ms-transform-origin: 66% 66%;
+    transform-origin: 66% 66%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    width: 8px;
+    vertical-align: 2px;
+}
+
+.header .has-arrow .dropdown-toggle[aria-expanded="true"]:after {
+    -webkit-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
