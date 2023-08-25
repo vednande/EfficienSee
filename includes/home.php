@@ -85,5 +85,5 @@
       </div>
       <!-- ******** HERO SECTION ENDS HERE ******** -->
     </div>
-    <script src="/efficiensee/script.js"></script>
+    <script src="./script.js"></script>
 
