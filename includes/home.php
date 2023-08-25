@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EfficienSee</title>
-    <link rel="stylesheet" href="assets/css/index.css" />
-  </head>
-  <body>
+<link rel="stylesheet" href="assets/css/home.css">
     <div class="container">
       <!-- ******** NAVBAR STARTS HERE ******** -->
       <nav>
@@ -78,14 +69,14 @@
             <p>
               EfficienSee is a comprehensive employee dashboard, streamlining
               the work process and empowering employees to
-            </p>
+            </p> 
             <p>
               manage personal data, leave, and more. Offers the HR department
               valuable insights and employee monitoring.
             </p>
-          </div>
+          </div> 
           <div class="get-started">
-            <button>get started <span>&#8594;</span></button>
+            <a href="/login.php">get started <span>&#8594;</span></a>
           </div>
         </div>
         <div class="right">
@@ -94,6 +85,5 @@
       </div>
       <!-- ******** HERO SECTION ENDS HERE ******** -->
     </div>
-    <script src="/script.js"></script>
-  </body>
-</html>
+    <script src="/efficiensee/script.js"></script>
+

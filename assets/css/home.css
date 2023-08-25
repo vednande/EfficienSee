@@ -169,12 +169,12 @@ nav .mob-menu .btns button:hover {
 .hero .left::after {
     content: "";
     position: absolute;
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 50%;
     background: rgb(60, 132, 199, 0.2);
     border-radius: 50%;
-    left: -20%;
-    bottom: -15%;
+    left: -30%;
+    bottom: -25%;
 }
 .hero .left .headings h1{
     text-transform: capitalize;
@@ -194,26 +194,26 @@ nav .mob-menu .btns button:hover {
     font-family: 'Tajawal', sans-serif;
 }
 .hero .left .get-started{
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
-.hero .left .get-started button {
-    display: flex;
-    gap: 1rem;
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-    text-transform: capitalize;
-    font-weight: bolder;
-    color: #EBF5FF;
-    border: 2px solid #0068C7;
-    background: #0068C7;
+.hero .left .get-started a{
     cursor: pointer;
+    text-decoration: none;
+    color: #EBF5FF;
+    background: #0068C7;
+    padding: 15px 24px;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    border: 2px solid #0068C7;
     border-radius: 20px;
-    transition: all 250ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
-.hero .left .get-started button:hover {
-    box-shadow: 0 2px 15px 00px #0068C7;
+.hero .left .get-started a:hover {
+    background: #EBF5FF;
+    color: #00203D;
+    border: 2px solid #00203D;
+}
 
-}
 .hero .right{
     width: 40%;
 }
