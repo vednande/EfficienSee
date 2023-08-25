@@ -3,8 +3,8 @@
 	<!-- Logo -->
 	<div class="header-left">
 		<a href="index.php" class="logo">
-			<img src="assets/img/logo.png" width="40" height="40" alt="">
-		</a>
+			<img src="assets/img/logo-bgremoved.png" alt="">
+		</a> 
 	</div>
 	<!-- /Logo -->
 	
