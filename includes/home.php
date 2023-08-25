@@ -74,9 +74,9 @@
               manage personal data, leave, and more. Offers the HR department
               valuable insights and employee monitoring.
             </p>
-          </div> 
+          </div>
           <div class="get-started">
-            <a href="/login.php">get started <span>&#8594;</span></a>
+            <a href="/project/efficiensee/login.php">get started</a>
           </div>
         </div>
         <div class="right">

@@ -4,7 +4,7 @@
 	error_reporting(0);
 	include_once("includes/config.php");
 	if($_SESSION['userlogin']>0){
-		header('location:index.php'); 
+		header('location:user-landing.php'); 
 	}elseif(isset($_POST['login'])){
 		$_SESSION['userlogin'] = $_POST['username'];
 		$username = htmlspecialchars($_POST['username']);

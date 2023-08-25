@@ -199,11 +199,13 @@ nav .mob-menu .btns button:hover {
 .hero .left .get-started a{
     cursor: pointer;
     text-decoration: none;
-    color: #EBF5FF;
+    color: #EBF5FF; 
     background: #0068C7;
     padding: 15px 24px;
-    font-size: 1.4rem;
-    text-transform: capitalize;
+    font-size: 1.6rem;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Tajawal', sans-serif;
+    text-transform: uppercase;
     border: 2px solid #0068C7;
     border-radius: 20px;
     transition: all 200ms ease-in-out;
