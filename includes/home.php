@@ -7,12 +7,12 @@
           <!-- <img src="/efficiensee/assets/img/logo-bgremoved.png" alt="" /> -->
 
           <!-- LOGO GOES HERE -->
-          <div class="logo">EfficienSee</div>
+          <div class="logo"><a href="#">EfficienSee</a></div>
 
           <!-- OPTIONS GOES HERE -->
           <div class="options">
             <ul>
-              <a href=""><li>services</li></a>
+              <a href="/project/efficiensee/services.php"><li>services</li></a>
               <a href=""><li>security</li></a>
               <a href=""><li>contact us</li></a>
             </ul>
@@ -40,7 +40,7 @@
           <div class="mob-options">
             <ul>
               <a href="" id="mob-home"><li>Home</li></a>
-              <a href="" id="mob-services"><li>services</li></a>
+              <a href="/project/efficiensee/includes/service.html" id="mob-services"><li>services</li></a>
               <a href="" id="mob-security"><li>security</li></a>
               <a href="" id="mob-contact"><li>contact us</li></a>
             </ul>
@@ -68,7 +68,7 @@
           <div class="para">
             <p>
               EfficienSee is a comprehensive employee dashboard, streamlining
-              the work process and empowering employees to
+              the work process and empowering employees to 
             </p> 
             <p>
               manage personal data, leave, and more. Offers the HR department

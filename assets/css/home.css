@@ -23,12 +23,15 @@
     width: 10%;
 }
 .navbar .logo{
-    font-size: 3rem;
-    color: #EBF5FF;
     padding: 2rem 1.5rem;
     font-family: 'Roboto Slab', serif;
     font-family: 'Tajawal', sans-serif;
     font-weight: bolder;
+}
+.navbar .logo a{
+    font-size: 3rem;
+    text-decoration: none;
+    color: #EBF5FF;
 }
 .navbar .options{
     display: flex;
@@ -60,6 +63,7 @@
     background-color: #EBF5FF;
     bottom: 0;
     transition: all 200ms ease-in-out;
+    z-index: -9;
 }
 .navbar .options ul a:hover::after {
     width: 100%;
@@ -205,7 +209,7 @@ nav .mob-menu .btns button:hover {
     font-size: 1.6rem;
     font-family: 'Roboto Slab', serif;
     font-family: 'Tajawal', sans-serif;
-    text-transform: uppercase;
+    text-transform: capitalize;
     border: 2px solid #0068C7;
     border-radius: 20px;
     transition: all 200ms ease-in-out;

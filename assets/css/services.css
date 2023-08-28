@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Tajawal:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+::selection {
+  background: #00203d;
+  color: #ebf5ff;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.container .heading {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background: #00203d;
+  color: #ebf5ff;
+}
+.container .heading h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tajawal", sans-serif;
+  letter-spacing: 1.2px;
+}
+.container .services-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+.container .services-cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border: 2px solid #00203d;
+  border-radius: 20px;
+  background: #ebf5ff;
+  width: 375px;
+  height: 350px;
+  padding: 1rem;
+  transition: all 150ms ease;
+}
+.container .services-cards .card:hover {
+  transform: scale(1.1);
+}
+.container .services-cards .card .head-icon h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tajawal", sans-serif;
+  color: #00203d;
+}
+.container .services-cards .card p {
+  font-size: 1.2rem;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tajawal", sans-serif;
+  color: #00203d;
+}
