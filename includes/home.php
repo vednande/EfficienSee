@@ -77,8 +77,8 @@
             </p>
           </div>
           <div class="get-started">
-            <a href="/login.php">get started</a>
-          </div> 
+            <a href="/project/efficiensee/login.php">get started</a>
+          </div>  
         </div>
         <div class="right">
           <img src="assets/img/hero_img.png" alt="" />
