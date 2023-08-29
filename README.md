@@ -1,4 +1,4 @@
-# Smarthr---hr-payroll-project-employee-management-System
+# EfficienSee
 
 # Installation
  1. clone the repository into your desired web server.
