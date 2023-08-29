@@ -12,7 +12,8 @@
           <!-- OPTIONS GOES HERE -->
           <div class="options">
             <ul>
-              <a href="/project/efficiensee/services.php"><li>services</li></a>
+              <!-- <a href="/project/efficiensee/services.php"><li>services</li></a> -->
+              <a href=""><li>services</li></a>
               <a href=""><li>security</li></a>
               <a href=""><li>contact us</li></a>
             </ul>
