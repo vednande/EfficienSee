@@ -3,7 +3,7 @@
 define('DB_HOST','localhost');
 define('DB_USER','root');
 define('DB_PASS','');
-define('DB_NAME','smarthr');
+define('DB_NAME','efficiensee');
 // Establish database connection.
 try
 {
