@@ -78,7 +78,7 @@
           </div>
           <div class="get-started">
             <a href="">get started</a>
-          </div>
+          </div> 
         </div>
         <div class="right">
           <img src="assets/img/hero_img.png" alt="" />
