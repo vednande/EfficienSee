@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="assets/css/accountLogo.css">
-<?php
+<?php 
 	session_start();
 	error_reporting(0);
 	include_once("includes/config.php");
@@ -53,6 +53,7 @@
 		<meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects">
 		<meta name="author" content="Dreamguys - Bootstrap Admin Template">
 		<meta name="robots" content="noindex, nofollow">
+		<link rel = "icon" href = "assets/img/logo.png" type = "image/x-icon">
 		<title>Login - HRMS admin</title>
 		
 		<!-- Favicon -->
@@ -69,9 +70,14 @@
 		<link rel="stylesheet" href="assets/css/accountLogo.css">
 		<link rel="stylesheet" href="assets/css/accountBtn.css">
 		<link rel="stylesheet" href="assets/css/accountFooter.css">
+		<link rel="stylesheet" href="assets/css/accountImg.css">
 
 	</head>
 	<body class="account-page">
+
+	<div class="img">
+		<a href="/project/efficiensee/"><img src="https://etimg.etb2bimg.com/photo/96234639.cms" alt="image"></a>
+	</div>
 	
 		<!-- Main Wrapper -->
 		<div class="main-wrapper">

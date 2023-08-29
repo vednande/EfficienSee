@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="assets/css/home.css">
-    <div class="container">
+    <div class="container home-php">
       <!-- ******** NAVBAR STARTS HERE ******** -->
       <nav>
         <div class="navbar">
