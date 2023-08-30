@@ -10,22 +10,22 @@
           <div class="logo"><a href="/project/efficiensee/login.php">EfficienSee</a></div>
 
           <!-- OPTIONS GOES HERE -->
-          <div class="options">
+          <div class="options"> 
             <ul>
               <!-- <a href="/project/efficiensee/services.php"><li>services</li></a> -->
-              <a href=""><li>services</li></a>
-              <a href=""><li>security</li></a>
+              <a href="/project/efficiensee/services.php"><li>services</li></a>
+              <a href=""><li>security</li></a> 
               <a href=""><li>contact us</li></a>
             </ul>
           </div>
 
-          <!-- LOGIN SIGNUP BUTTONS -->
+          <!-- LOGIN SIGNUP BUTTONS --> 
           <div class="btns">
             <div class="login">
-              <button>login</button>
+              <a href="/project/efficiensee/login.php"><button>login</button></a>
             </div>
             <div class="signup">
-              <button>signup</button>
+              <a href="/project/efficiensee/signup.php"><button>signup</button></a>
             </div>
           </div>
 

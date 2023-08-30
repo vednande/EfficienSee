@@ -7,4 +7,4 @@ for background color dark => #00203D
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Tajawal:wght@700&display=swap');
 
 font-family: 'Roboto Slab', serif;
-font-family: 'Tajawal', sans-serif;
+font-family: 'Tajawal', sans-serif; 

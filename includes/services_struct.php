@@ -129,4 +129,4 @@ Provide tools for 360-degree feedback and self-assessment.</p>
         </div>
     </div>
 </div>
-<script src="includes/services.js"></script>
+<script src="./script.js"></script>

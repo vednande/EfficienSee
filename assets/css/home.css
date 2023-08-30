@@ -74,7 +74,6 @@
   content: "";
   position: absolute;
   width: 0%;
-  height: 100%;
   height: 2px;
   background-color: #ebf5ff;
   bottom: 0;
@@ -82,7 +81,7 @@
   z-index: -9;
 }
 .navbar .options ul a:hover::after {
-  width: 100%;
+  width: 100px;
 }
 .navbar .options ul li {
   letter-spacing: 1.2px;
@@ -195,6 +194,7 @@ nav .mob-menu .btns button:hover {
   border-radius: 50%;
   left: -30%;
   bottom: -25%;
+  z-index: -99;
 }
 .hero .left .headings h1 {
   text-transform: capitalize;
@@ -229,6 +229,7 @@ nav .mob-menu .btns button:hover {
   border: 2px solid #0068c7;
   border-radius: 20px;
   transition: all 200ms ease-in-out;
+  z-index: 99;
 }
 .hero .left .get-started a:hover {
   background: #ebf5ff;
