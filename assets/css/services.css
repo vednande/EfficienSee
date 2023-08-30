@@ -18,8 +18,7 @@
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  background: #00203d;
-  color: #ebf5ff;
+  color: #00203d;
 }
 .container .heading h1 {
   text-align: center;
@@ -34,7 +33,7 @@
   align-items: center;
   justify-content: space-evenly;
   gap: 1.5rem;
-  margin-top: 2.5rem;
+  margin: 2.5rem 0;
 }
 .container .services-cards .card {
   display: flex;
@@ -66,3 +65,153 @@
   font-family: "Tajawal", sans-serif;
   color: #00203d;
 }
+
+/* ******** NAVBAR STARTS HERE ******** */
+
+.navbar {
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+  background-image: linear-gradient(to right, #0068c7, #00203d, #000 75%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+.navbar img {
+  width: 10%;
+}
+.navbar .logo {
+  padding: 2rem 1.5rem;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tajawal", sans-serif;
+  font-weight: bolder;
+}
+.navbar .logo a {
+  font-size: 3rem;
+  text-decoration: none;
+  color: #ebf5ff;
+}
+.navbar .options {
+  display: flex;
+}
+.navbar .mob-options {
+  display: flex;
+  flex-direction: column;
+}
+.navbar .options ul {
+  list-style-type: none;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tajawal", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.navbar .options ul a {
+  position: relative;
+  text-decoration: none;
+  color: #ebf5ff;
+}
+.navbar .options ul a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  height: 2px;
+  background-color: #ebf5ff;
+  bottom: 0;
+  transition: all 200ms ease-in-out;
+  z-index: -9;
+}
+.navbar .options ul a:hover::after {
+  width: 100%;
+}
+.navbar .options ul li {
+  letter-spacing: 1.2px;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.navbar .btns {
+  display: flex;
+  gap: 2rem;
+}
+.navbar .btns button {
+  padding: 15px 40px;
+  text-transform: capitalize;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tajawal", sans-serif;
+  font-size: 1.3rem;
+  border: none;
+  color: #ebf5ff;
+  /* background-image: linear-gradient(to bottom right, rgba(1,103,197,1), rgba(30, 30, 30, 1)); */
+  background-image: linear-gradient(to bottom right, #0068c7, #00203d);
+  border-radius: 10px;
+  letter-spacing: 1.2px;
+  transition: all 150ms;
+  cursor: pointer;
+}
+.navbar .btns button:hover {
+  border: none;
+  transform: scale(1.1);
+  box-shadow: 2px 2px 10px 8px #00203d, -2px -2px 10px 8px #00203d;
+}
+.navbar .lines {
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+}
+.navbar .lines .line {
+  width: 30px;
+  height: 4px;
+  background-color: #ebf5ff;
+  border-radius: 20px;
+}
+nav .mob-menu {
+  padding: 2rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  background: #00203d;
+}
+nav .mob-menu .mob-options ul {
+  list-style-type: none;
+}
+nav .mob-menu .mob-options ul a {
+  text-decoration: none;
+  color: #ebf5ff;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tajawal", sans-serif;
+}
+nav .mob-menu .btns {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+nav .mob-menu .btns button {
+  padding: 15px 40px;
+  width: 100%;
+  text-transform: capitalize;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tajawal", sans-serif;
+  font-size: 1.3rem;
+  border: none;
+  color: #ebf5ff;
+  /* background-image: linear-gradient(to bottom right, rgba(1,103,197,1), rgba(30, 30, 30, 1)); */
+  background-image: linear-gradient(to bottom right, #0068c7, #00203d);
+  border-radius: 10px;
+  letter-spacing: 1.2px;
+  transition: all 150ms;
+  cursor: pointer;
+}
+nav .mob-menu .btns button:hover {
+  border: none;
+  transform: scale(1.1);
+  box-shadow: 2px 2px 10px 8px #00203d, -2px -2px 10px 8px #00203d;
+}
+
+/* ******** NAVBAR ENDS HERE ******** */
