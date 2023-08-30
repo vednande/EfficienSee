@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="assets/css/services.css">
+<link rel = "icon" href = "assets/img/logo.png" type = "image/x-icon">
 <nav>
         <div class="navbar">
           <!-- BADME IMAGE REPLACE KAR DENA -->

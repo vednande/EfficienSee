@@ -7,7 +7,7 @@
           <!-- <img src="/efficiensee/assets/img/logo-bgremoved.png" alt="" /> -->
 
           <!-- LOGO GOES HERE -->
-          <div class="logo"><a href="#">EfficienSee</a></div>
+          <div class="logo"><a href="/project/efficiensee/login.php">EfficienSee</a></div>
 
           <!-- OPTIONS GOES HERE -->
           <div class="options">

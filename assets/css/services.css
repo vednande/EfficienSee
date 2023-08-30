@@ -215,3 +215,35 @@ nav .mob-menu .btns button:hover {
 }
 
 /* ******** NAVBAR ENDS HERE ******** */
+@media screen and (max-width: 1000px) {
+  .navbar .options,
+  .navbar .btns {
+    display: none;
+  }
+  .navbar .lines {
+    display: flex;
+  }
+}
+@media screen and (max-width: 786px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero .left {
+    width: 100%;
+  }
+  .hero .right {
+    display: none;
+  }
+}
+@media screen and (max-width: 512px) {
+  .navbar {
+    padding: 0 1rem 0 0.5rem;
+  }
+  .hero .left {
+    padding: 3rem 1rem;
+  }
+  .headings h1 {
+    font-size: 2.5rem;
+  }
+}
