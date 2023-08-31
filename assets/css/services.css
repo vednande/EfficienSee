@@ -122,10 +122,13 @@
   background-color: #ebf5ff;
   bottom: 0;
   transition: all 200ms ease-in-out;
-  z-index: -9;
 }
 .navbar .options ul a:hover::after {
   width: 100%;
+}
+.navbar .options ul .active-link {
+  text-decoration: underline;
+  text-underline-offset: 7px;
 }
 .navbar .options ul li {
   letter-spacing: 1.2px;
