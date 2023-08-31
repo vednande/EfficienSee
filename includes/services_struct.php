@@ -1,6 +1,5 @@
 <link rel="stylesheet" href="assets/css/services.css">
-<link rel = "icon" href = "assets/img/logo.png" type = "image/x-icon">
-<nav>
+<nav> 
         <div class="navbar">
           <!-- BADME IMAGE REPLACE KAR DENA -->
           <!-- <img src="/efficiensee/assets/img/logo-bgremoved.png" alt="" /> -->
@@ -129,4 +128,4 @@ Provide tools for 360-degree feedback and self-assessment.</p>
         </div>
     </div>
 </div>
-<script src="./script.js"></script>
+<script src="/project/efficiensee/includes/services.js"></script>
