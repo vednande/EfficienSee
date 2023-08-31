@@ -215,6 +215,8 @@ input[type=password] {
 	-moz-appearance: none;
 	appearance: none;
 }
+
+
 textarea.form-control {
 	resize: vertical;
 }
@@ -2869,6 +2871,7 @@ table.dataTable thead > tr > td.sorting {
 	padding: 21px 12px 6px;
 	background-color: aliceblue;
 }
+
 .form-focus .form-control::-webkit-input-placeholder {
 	color: transparent;
 	transition: 240ms;
