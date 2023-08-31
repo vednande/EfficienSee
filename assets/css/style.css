@@ -1,8 +1,4 @@
-/*
-Author       : Dreamguys
-Template Name: SmartHR - Bootstrap Admin Template
-Version      : 3.4
-*/
+
 
 /*============================
  [Table of CSS]
@@ -1587,8 +1583,8 @@ table.dataTable thead > tr > td.sorting {
 .add-btn:hover,
 .add-btn:focus,
 .add-btn:active {
-	background-color: #ff851a;
-	border: 1px solid #ff851a;
+	background-color: #00203D;
+	border: 1px solid #00203D;
     color: #fff;
 }
 .add-btn i {
