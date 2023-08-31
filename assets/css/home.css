@@ -221,6 +221,7 @@ nav .mob-menu .btns button:hover {
   text-decoration: none;
   color: #ebf5ff;
   background: #0068c7;
+  background: red;
   padding: 15px 24px;
   font-size: 1.6rem;
   font-family: "Roboto Slab", serif;

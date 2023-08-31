@@ -2,7 +2,7 @@
 <div class="signup">
     <div class="container">
         <div class="left">
-            <a href="/project/efficiensee/index.php"><img src="https://img.freepik.com/free-vector/abstract-security-background-blue-tones_23-2147627289.jpg" alt="image"></a>
+            <a href="/project/efficiensee/index.php"><img src="https://alliancex.org/shield/wp-content/uploads/2021/01/register-scaled.jpg" alt="image"></a>
         </div> 
         <div class="right"> 
             <div class="signup">
@@ -17,7 +17,7 @@
 								<div class="form-group">
 									<div class="row">
 										<div class="col">
-											<label>Password</label>
+											<label style="margin-bottom: 5px; ">Password</label>
 										</div>
 									</div>
 									<input class="form-control" name="password" required type="password">
@@ -25,7 +25,7 @@
 								<!-- <?php if($wrongpassword){echo $wrongpassword;}?> --> 
 								
 								<div class="form-group text-center">
-									<button class="btn btn-primary account-btn" name="login" type="submit">Login</button>
+									<button class="btn btn-primary account-btn" name="login" type="submit">sign up</button>
 										<div class="col-auto pt-2">
 											<a class="text-muted float-right" href="forgot-password.php">
 												Forgot password?
