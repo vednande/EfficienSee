@@ -4,9 +4,9 @@
         <div class="left">
             <a href="/project/efficiensee/index.php"><img src="https://img.freepik.com/free-vector/abstract-security-background-blue-tones_23-2147627289.jpg" alt="image"></a>
         </div> 
-        <div class="right">
+        <div class="right"> 
             <div class="signup">
-                <div class="heading"> 
+                <div class="heading">  
                     <h1>sign up</h1>
                     <form method="POST" enctype="multipart/form-data">
 								<div class="form-group">

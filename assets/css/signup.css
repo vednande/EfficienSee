@@ -23,6 +23,9 @@ font-family: 'Tajawal', sans-serif; */
   object-fit: cover;
   filter: contrast(1.1);
 }
+.container .right {
+  width: 50%;
+}
 .container .right .signup {
   /* padding: 1rem 0.5rem;
   border: 2px solid #00203d;
