@@ -1559,13 +1559,8 @@ table.dataTable thead > tr > td.sorting {
 .add-btn:hover,
 .add-btn:focus,
 .add-btn:active {
-<<<<<<< HEAD
-	background-color: #00203d;
-	border: 1px solid #00203d;
-=======
 	background-color: #00203D;
 	border: 1px solid #00203D;
->>>>>>> cbae78d40d4ff38180a01397c1b61d95ca042c88
     color: #fff;
 }
 .add-btn i {
