@@ -480,7 +480,7 @@ table.dataTable thead > tr > td.sorting {
 }
 .bg-danger,
 .badge-danger {
-	background-color: #f62d51 !important;
+	background-color: #00203D !important;
 }
 .bg-white {
 	background-color: #fff;
@@ -523,8 +523,8 @@ table.dataTable thead > tr > td.sorting {
 	border: 1px solid #482fe9;
 }
 .btn-primary {
-	background-color: #ff9b44;
-	border: 1px solid #ff9b44;
+	background-color: #00203D;
+	border: 1px solid #00203D;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -1576,9 +1576,9 @@ table.dataTable thead > tr > td.sorting {
 	margin-bottom: 20px;
 }
 .add-btn {
-    background-color: #ff9b44;
-    border: 1px solid #ff9b44;
-    border-radius: 50px;
+    background-color: #00203D;
+    border: 1px solid #00203D;
+    border-radius: 70px;
     color: #fff;
     float: right;
     font-weight: 500;
