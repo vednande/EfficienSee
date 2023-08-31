@@ -4250,6 +4250,18 @@ input[type="submit"].btn-block {
   padding: 1.25rem;
   background-color: aliceblue;
 }
+
+.pro-card{
+  color: #1A1110;
+  padding-bottom: 2rem;
+}
+
+.pro-card:hover{
+  border-top: 2px solid #192586;
+  border-bottom: 2px solid #192586;
+  /* transition: .4s ease; */
+}
+
 .card-title {
   margin-bottom: 0.75rem;
 }

@@ -121,7 +121,7 @@
 					<div class="row">
 						<div class="col-lg-4 col-sm-6 col-md-4 col-xl-3">
 							<div class="card">
-								<div class="card-body">
+								<div class="card-body pro-card">
 									<div class="dropdown dropdown-action profile-action">
 										<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
 										<div class="dropdown-menu dropdown-menu-right">
@@ -233,7 +233,7 @@
 						
 						<div class="col-lg-4 col-sm-6 col-md-4 col-xl-3">
 							<div class="card">
-								<div class="card-body">
+								<div class="card-body pro-card">
 									<div class="dropdown dropdown-action profile-action">
 										<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
 										<div class="dropdown-menu dropdown-menu-right">
@@ -345,7 +345,7 @@
 						
 						<div class="col-lg-4 col-sm-6 col-md-4 col-xl-3">
 							<div class="card">
-								<div class="card-body">
+								<div class="card-body pro-card">
 									<div class="dropdown dropdown-action profile-action">
 										<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
 										<div class="dropdown-menu dropdown-menu-right">
@@ -457,7 +457,7 @@
 						
 						<div class="col-lg-4 col-sm-6 col-md-4 col-xl-3">
 							<div class="card">
-								<div class="card-body">
+								<div class="card-body pro-card">
 									<div class="dropdown dropdown-action profile-action">
 										<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
 										<div class="dropdown-menu dropdown-menu-right">

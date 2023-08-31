@@ -215,6 +215,8 @@ input[type=password] {
 	-moz-appearance: none;
 	appearance: none;
 }
+
+
 textarea.form-control {
 	resize: vertical;
 }
@@ -519,16 +521,19 @@ table.dataTable thead > tr > td.sorting {
 	border: 1px solid #482fe9;
 }
 .btn-primary {
-	background-color: #00203D;
-	border: 1px solid #00203D;
+	margin-top: -4px;
+	padding: 5px 13px;
+	background-color: red;
+	border: 1px solid orangered;
+	border-radius: 10px;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.active,
 .btn-primary:active,
 .open > .dropdown-toggle.btn-primary {
-	background-color: #ff851a;
-	border: 1px solid #ff851a;
+	background-color: orangered;
+	border: 1px solid orangered;
 }
 .btn-primary.active.focus,
 .btn-primary.active:focus,
@@ -2869,6 +2874,7 @@ table.dataTable thead > tr > td.sorting {
 	padding: 21px 12px 6px;
 	background-color: aliceblue;
 }
+
 .form-focus .form-control::-webkit-input-placeholder {
 	color: transparent;
 	transition: 240ms;
