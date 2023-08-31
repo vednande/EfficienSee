@@ -142,9 +142,9 @@ html {
 	height: 100%;
 }
 body {
-	font-family: 'CircularStd', sans-serif;
+	font-family: 'Tajawal', sans-serif;
 	font-size: .9375rem;
-	color: #1f1f1f;
+	color: #000;
 	background-color: #f7f7f7;
 	min-height: 100%;
 	overflow-x: hidden;
@@ -468,7 +468,7 @@ table.dataTable thead > tr > td.sorting {
 }
 .bg-success,
 .badge-success {
-	background-color: #55ce63 !important;
+	background-color: #00203D !important;
 }
 .bg-info,
 .badge-info {
@@ -491,7 +491,7 @@ table.dataTable thead > tr > td.sorting {
 }
 .text-success,
 .dropdown-menu > li > a.text-success {
-	color: #55ce63 !important;
+	color: #00203D !important;
 }
 .text-danger,
 .dropdown-menu > li > a.text-danger {
