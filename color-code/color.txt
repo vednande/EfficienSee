@@ -1,0 +1,10 @@
+for text color light => #EBF5FF
+**** if you wish => #3C84C7 ****
+to be used => #0068C7
+**** if you wish => #004280 ****
+for background color dark => #00203D
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Tajawal:wght@700&display=swap');
+
+font-family: 'Roboto Slab', serif;
+font-family: 'Tajawal', sans-serif; 

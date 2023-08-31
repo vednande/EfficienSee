@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="assets/css/home.css">
-    <div class="container">
+    <div class="container home-php">
       <!-- ******** NAVBAR STARTS HERE ******** -->
       <nav>
         <div class="navbar">
@@ -7,24 +7,25 @@
           <!-- <img src="/efficiensee/assets/img/logo-bgremoved.png" alt="" /> -->
 
           <!-- LOGO GOES HERE -->
-          <div class="logo"><a href="#">EfficienSee</a></div>
+          <div class="logo"><a href="/project/efficiensee/login.php">EfficienSee</a></div>
 
           <!-- OPTIONS GOES HERE -->
-          <div class="options">
+          <div class="options"> 
             <ul>
+              <!-- <a href="/project/efficiensee/services.php"><li>services</li></a> -->
               <a href="/project/efficiensee/services.php"><li>services</li></a>
-              <a href=""><li>security</li></a>
+              <a href=""><li>security</li></a> 
               <a href=""><li>contact us</li></a>
             </ul>
           </div>
 
-          <!-- LOGIN SIGNUP BUTTONS -->
+          <!-- LOGIN SIGNUP BUTTONS --> 
           <div class="btns">
             <div class="login">
-              <button>login</button>
+              <a href="/project/efficiensee/login.php"><button>login</button></a>
             </div>
             <div class="signup">
-              <button>signup</button>
+              <a href="/project/efficiensee/signup.php"><button>signup</button></a>
             </div>
           </div>
 
@@ -40,7 +41,7 @@
           <div class="mob-options">
             <ul>
               <a href="" id="mob-home"><li>Home</li></a>
-              <a href="/project/efficiensee/includes/service.html" id="mob-services"><li>services</li></a>
+              <a href="/efficiensee/efficiensee/includes/service.html" id="mob-services"><li>services</li></a>
               <a href="" id="mob-security"><li>security</li></a>
               <a href="" id="mob-contact"><li>contact us</li></a>
             </ul>
@@ -77,7 +78,7 @@
           </div>
           <div class="get-started">
             <a href="/project/efficiensee/login.php">get started</a>
-          </div>
+          </div>  
         </div>
         <div class="right">
           <img src="assets/img/hero_img.png" alt="" />
