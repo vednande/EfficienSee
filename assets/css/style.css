@@ -561,11 +561,11 @@ table.dataTable thead > tr > td.sorting {
 }
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&display=swap');
 .btn-success {
-	background-color: #bbdffd;
-	box-shadow: rgba(6, 147, 242, 0.15) 0 -25px 18px -14px inset,
-	  rgba(6, 147, 242, 0.15) 0 1px 2px, rgba(6, 147, 242, 0.15) 0 2px 4px,
-	  rgba(6, 147, 242, 0.15) 0 4px 8px, rgba(6, 147, 242, 0.15) 0 8px 16px,
-	  rgba(6, 147, 242, 0.15) 0 16px 32px;
+	background-color: cornflowerblue;
+	box-shadow: rgba(6, 147, 255, 0.15) 0 -25px 18px -14px inset,
+	  rgba(6, 147, 255, 0.15) 0 1px 2px, rgba(6, 147, 255, 0.15) 0 2px 4px,
+	  rgba(6, 147, 255, 0.15) 0 4px 8px, rgba(6, 147, 255, 0.15) 0 8px 16px,
+	  rgba(6, 147, 255, 0.15) 0 16px 32px;
 	color: blue;
 	cursor: pointer;
 	font-family: 'Josefin Sans', sans-serif;
@@ -590,7 +590,8 @@ table.dataTable thead > tr > td.sorting {
 .open > .dropdown-toggle.btn-success:focus,
 .open > .dropdown-toggle.btn-success:hover {
 	background: #4ab657;
-	border: 1px solid #4ab657
+	border: 1px solid #192586;
+
 }
 .btn-success.active:focus:not(:disabled):not(.disabled), 
 .btn-success:active:focus:not(:disabled):not(.disabled), 
@@ -599,7 +600,8 @@ table.dataTable thead > tr > td.sorting {
 }
 .btn-success.disabled, .btn-success:disabled {
     background-color: #55ce63;
-    border-color: #55ce63;
+	border: 1px solid #192586;
+
     color: #fff;
 }
 .btn-info {
@@ -2899,6 +2901,7 @@ table.dataTable thead > tr > td.sorting {
 .form-focus .form-control {
 	height: 50px;
 	padding: 21px 12px 6px;
+	background-color: aliceblue;
 }
 .form-focus .form-control::-webkit-input-placeholder {
 	color: transparent;
@@ -2951,6 +2954,7 @@ table.dataTable thead > tr > td.sorting {
 	font-size: 14px;
 	font-weight: normal;
 	line-height: 38px;
+	background-color: aliceblue;
 }
 .form-focus .select2-container--default .select2-results__option--highlighted[aria-selected] {
 	background-color: #fc6075;
