@@ -26,8 +26,8 @@
 								
 								<div class="form-group text-center">
 									<button class="btn btn-primary account-btn" name="login" type="submit">sign up</button>
-										<div class="col-auto pt-2">
-											<a class="text-muted float-right" href="forgot-password.php">
+										<div class="col-auto pt-2 forgot-password">
+											<a class="text-muted float-right"  href="forgot-password.php">
 												Forgot password?
 											</a>
 										</div>

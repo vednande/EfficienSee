@@ -11,7 +11,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
+  box-shadow: inset 0 0 5px #3c84c7;
   border-radius: 10px;
 }
 
@@ -19,6 +19,9 @@
 ::-webkit-scrollbar-thumb {
   background: #0068c7;
   border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #004280;
 }
 ::selection {
   background: #00203d;
@@ -221,7 +224,6 @@ nav .mob-menu .btns button:hover {
   text-decoration: none;
   color: #ebf5ff;
   background: #0068c7;
-  background: red;
   padding: 15px 24px;
   font-size: 1.6rem;
   font-family: "Roboto Slab", serif;
