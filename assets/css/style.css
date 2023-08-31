@@ -464,7 +464,7 @@ table.dataTable thead > tr > td.sorting {
 }
 .bg-success,
 .badge-success {
-	background-color: #55ce63 !important;
+	background-color: blue !important;
 }
 .bg-info,
 .badge-info {
@@ -487,7 +487,7 @@ table.dataTable thead > tr > td.sorting {
 }
 .text-success,
 .dropdown-menu > li > a.text-success {
-	color: #55ce63 !important;
+	color: blue !important;
 }
 .text-danger,
 .dropdown-menu > li > a.text-danger {
@@ -561,12 +561,12 @@ table.dataTable thead > tr > td.sorting {
 }
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&display=swap');
 .btn-success {
-	background-color: #c2fbd7;
-	box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
-	  rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
-	  rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
-	  rgba(44, 187, 99, 0.15) 0 16px 32px;
-	color: green;
+	background-color: #bbdffd;
+	box-shadow: rgba(6, 147, 242, 0.15) 0 -25px 18px -14px inset,
+	  rgba(6, 147, 242, 0.15) 0 1px 2px, rgba(6, 147, 242, 0.15) 0 2px 4px,
+	  rgba(6, 147, 242, 0.15) 0 4px 8px, rgba(6, 147, 242, 0.15) 0 8px 16px,
+	  rgba(6, 147, 242, 0.15) 0 16px 32px;
+	color: blue;
 	cursor: pointer;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: bolder;
@@ -576,8 +576,8 @@ table.dataTable thead > tr > td.sorting {
 .btn-success.active,
 .btn-success:active,
 .open > .dropdown-toggle.btn-success {
-	background: #4ab657;
-	border: 1px solid #4ab657;
+	background: #192586;
+	border: 1px solid #192586;
 	color: #fff;
 }
 .btn-success.active.focus,
