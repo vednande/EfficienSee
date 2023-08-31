@@ -32,7 +32,7 @@
 											</a>
 										</div>
 								</div>
-									
+									 
 								<div class="account-footer">
 									<p>Having Trouble? report an issue on github <a target="https://github.com/MusheAbdulHakim/Smarthr---hr-payroll-project-employee-management-System/issues" href="https://github.com/MusheAbdulHakim/Smarthr---hr-payroll-project-employee-management-System/issues">Github issues</a></p>
 								</div>
