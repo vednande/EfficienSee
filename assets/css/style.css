@@ -4418,6 +4418,7 @@ html.menu-opened body {
 }
 .project-task .tab-content {
 	min-height: 200px;
+	border: 1px solid black;
 }
 .uploaded-box {
 	background-color: #fff;
