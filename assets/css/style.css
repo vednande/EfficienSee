@@ -3323,6 +3323,7 @@ table.dataTable thead > tr > td.sorting {
 	position: relative;
 }
 .experience-list > li .experience-content .timeline-content {
+	color: aliceblue;
 	color: #9e9e9e;
 }
 .experience-list > li .experience-content .timeline-content a.name {
