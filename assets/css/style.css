@@ -560,13 +560,15 @@ table.dataTable thead > tr > td.sorting {
     color: #fff;
 }
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&display=swap');
+
+
 .btn-success {
-	background-color: cornflowerblue;
-	box-shadow: rgba(6, 147, 255, 0.15) 0 -25px 18px -14px inset,
-	  rgba(6, 147, 255, 0.15) 0 1px 2px, rgba(6, 147, 255, 0.15) 0 2px 4px,
-	  rgba(6, 147, 255, 0.15) 0 4px 8px, rgba(6, 147, 255, 0.15) 0 8px 16px,
-	  rgba(6, 147, 255, 0.15) 0 16px 32px;
-	color: blue;
+	background-color: #192586;
+	box-shadow: rgba(6, 107, 242, 0.15) 0 -25px 18px -14px inset,
+	  rgba(6, 107, 255, 0.15) 0 1px 2px, rgba(6, 107, 255, 0.15) 0 2px 4px,
+	  rgba(6, 107, 255, 0.15) 0 4px 8px, rgba(6, 107, 255, 0.15) 0 8px 16px,
+	  rgba(6, 107, 255, 0.15) 0 16px 32px;
+	color: white;
 	cursor: pointer;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: bolder;
@@ -576,9 +578,9 @@ table.dataTable thead > tr > td.sorting {
 .btn-success.active,
 .btn-success:active,
 .open > .dropdown-toggle.btn-success {
-	background: #192586;
+	background-color: #bbdffd;
 	border: 1px solid #192586;
-	color: #fff;
+	color: blue;
 }
 .btn-success.active.focus,
 .btn-success.active:focus,
@@ -589,9 +591,8 @@ table.dataTable thead > tr > td.sorting {
 .open > .dropdown-toggle.btn-success.focus,
 .open > .dropdown-toggle.btn-success:focus,
 .open > .dropdown-toggle.btn-success:hover {
-	background: #4ab657;
+	background-color: #bbdffd;
 	border: 1px solid #192586;
-
 }
 .btn-success.active:focus:not(:disabled):not(.disabled), 
 .btn-success:active:focus:not(:disabled):not(.disabled), 
@@ -599,43 +600,8 @@ table.dataTable thead > tr > td.sorting {
 	box-shadow: unset;
 }
 .btn-success.disabled, .btn-success:disabled {
-    background-color: #55ce63;
+	background-color: #bbdffd;
 	border: 1px solid #192586;
-
-    color: #fff;
-}
-.btn-info {
-	background-color: #009efb;
-	border: 1px solid #009efb
-}
-.btn-info:hover,
-.btn-info:focus,
-.btn-info.active,
-.btn-info:active,
-.open > .dropdown-toggle.btn-info {
-	background-color: #028ee1;
-	border: 1px solid #028ee1
-}
-.btn-info.active.focus,
-.btn-info.active:focus,
-.btn-info.active:hover,
-.btn-info.focus:active,
-.btn-info:active:focus,
-.btn-info:active:hover,
-.open > .dropdown-toggle.btn-info.focus,
-.open > .dropdown-toggle.btn-info:focus,
-.open > .dropdown-toggle.btn-info:hover {
-	background-color: #028ee1;
-	border: 1px solid #028ee1
-}
-.btn-info.active:focus:not(:disabled):not(.disabled), 
-.btn-info:active:focus:not(:disabled):not(.disabled), 
-.show > .btn-info.dropdown-toggle:focus {
-	box-shadow: unset;
-}
-.btn-info.disabled, .btn-info:disabled {
-    background-color: #009efb;
-    border-color: #009efb;
     color: #fff;
 }
 .btn-warning {
