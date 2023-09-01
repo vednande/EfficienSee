@@ -3065,11 +3065,7 @@ table.dataTable thead > tr > td.sorting {
   font-size: 14px;
   font-weight: normal;
   line-height: 38px;
-
   background-color: #fff;
-  border: 2px solid #00203d;
-
-  background-color: rgb(255, 255, 255);
 }
 .form-focus
   .select2-container--default
