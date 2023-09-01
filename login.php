@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="assets/css/accountLogo.css">
-<?php 
+ <?php 
 	session_start();
 	error_reporting(0);
 	include_once("includes/config.php");
@@ -43,7 +43,10 @@
 			</div>';
 		}
 	}
-?>
+?> 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 		<head>
@@ -98,7 +101,7 @@
 									<label>User Name</label>
 									<input class="form-control" name="username" required type="text">
 								</div>
-								<?php if($wrongusername){echo $wrongusername;}?>
+								 <?php if($wrongusername){echo $wrongusername;}?>
 								<div class="form-group">
 									<div class="row">
 										<div class="col">
