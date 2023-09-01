@@ -77,7 +77,7 @@
             </p>
           </div>
           <div class="get-started">
-            <a href="/project/efficiensee/login.php">get started</a>
+            <a href="/project/efficiensee/login.php"></a>
           </div>  
         </div>
         <div class="right">
