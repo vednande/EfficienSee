@@ -1,14 +1,11 @@
 ﻿<?php
-// Initialize the session
-session_start();
- 
-// Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["userlogin"]) || $_SESSION["userlogin"] !== true){
-    header("location: login.php");
-    exit;
-}
+	session_start();
+	error_reporting(0);
+	include('includes/config.php');
+	if(strlen($_SESSION['userlogin'])==0){
+		header('location:login.php');
+	}
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>

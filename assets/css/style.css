@@ -1,4 +1,4 @@
-/*============================
+/*
  [Table of CSS]
 
 1. General
@@ -66,7 +66,7 @@
 63. Subscriptions
 64. Responsive
 
-========================================*/
+=====*/
 
 @font-face {
   font-family: "Material Icons";
@@ -2989,8 +2989,12 @@ table.dataTable thead > tr > td.sorting {
 .form-focus .form-control {
   height: 50px;
   padding: 21px 12px 6px;
+
   background-color: #fff;
   border: 2px solid #00203d;
+
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #0068c7;
 }
 
 .form-focus .form-control::-webkit-input-placeholder {
@@ -3011,7 +3015,7 @@ table.dataTable thead > tr > td.sorting {
   z-index: 1;
 }
 .form-focus .select2-container .select2-selection--single {
-  border: 1px solid #e3e3e3;
+  border: 1px solid #0068c7;
   height: 50px;
 }
 .form-focus
@@ -3061,8 +3065,11 @@ table.dataTable thead > tr > td.sorting {
   font-size: 14px;
   font-weight: normal;
   line-height: 38px;
+
   background-color: #fff;
   border: 2px solid #00203d;
+
+  background-color: rgb(255, 255, 255);
 }
 .form-focus
   .select2-container--default
@@ -3806,8 +3813,7 @@ table.dataTable thead > tr > td.sorting {
   line-height: 34px;
   text-align: center;
 }
-.all-users:hover,
-.all-users:active {
+.all-users:hover {
   color: #fff;
   background-color: #ffffff;
   color: #004280;
@@ -3815,8 +3821,19 @@ table.dataTable thead > tr > td.sorting {
   font-weight: 800;
   line-height: 34px;
   text-align: center;
-  border: 2px solid #000000;
+  border: 0.1 px solid #000000;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.all-users:active {
+  /* color: #fff;
+  background-color: #ffffff;
+  color: #004280;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 34px;
+  text-align: center;
+  border: 1px solid #000000;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); */
 }
 .all-users:hover {
   color: #009efb;

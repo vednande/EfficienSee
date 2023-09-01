@@ -127,13 +127,13 @@
 								<table class="table table-striped custom-table datatable">
 									<thead>
 										<tr>
-											<th>Project</th>
-											<th>Project Id</th>
-											<th>Leader</th>
-											<th>Team</th>
-											<th>Deadline</th>
-											<th>Priority</th>
-											<th>Status</th>
+											<th><b>Project</b></th>
+											<th><b>Project Id</b></th>
+											<th><b>Leader</b></th>
+											<th><b>Team</b></th>
+											<th><b>Deadline</b></th>
+											<th><b>Priority</b></th>
+											<th><b>Status</b></th>
 											<th class="text-right">Action</th>
 										</tr>
 									</thead>
