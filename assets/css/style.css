@@ -3,9 +3,9 @@
 
 1. General
 2. Table
-3. Helper Class
+3. Helper Class 
 4. Bootstrap Classes
-5. Animation
+5. Animation 
 6. Toggle Button
 7. Modal
 8. Header
@@ -636,8 +636,25 @@ table.dataTable thead > tr > td.sorting {
   cursor: pointer;
   font-family: "Josefin Sans", sans-serif;
   font-weight: bolder;
+  background-color: #00203d;
+  box-shadow: rgba(6, 107, 242, 0.15) 0 -25px 18px -14px inset,
+    rgba(6, 107, 255, 0.15) 0 1px 2px, rgba(6, 107, 255, 0.15) 0 2px 4px,
+    rgba(6, 107, 255, 0.15) 0 4px 8px, rgba(6, 107, 255, 0.15) 0 8px 16px,
+    rgba(6, 107, 255, 0.15) 0 16px 32px;
+  color: white;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bolder;
+  transform: scale(1);
+  transition: transform 0.2s ease;
 }
-.btn-success:hover,
+.btn-success:hover {
+  /* background-color: #004280; */
+  background-image: linear-gradient(to bottom, #00203d, #004280);
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
 .btn-success:focus,
 .btn-success.active,
 .btn-success:active,
@@ -1632,8 +1649,30 @@ table.dataTable thead > tr > td.sorting {
     rgba(6, 107, 255, 0.15) 0 1px 2px, rgba(6, 107, 255, 0.15) 0 2px 4px,
     rgba(6, 107, 255, 0.15) 0 4px 8px, rgba(6, 107, 255, 0.15) 0 8px 16px,
     rgba(6, 107, 255, 0.15) 0 16px 32px;
+  background-color: #00203d;
+  border: 1px solid #192586;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  float: right;
+  font-weight: 500;
+  min-width: 150px;
+  padding: 6px;
+  /* font-family: 'Josefin Sans', sans-serif; */
+  transform: scale(1);
+  transition: transform 0.2s ease;
+
+  box-shadow: rgba(43, 127, 237, 0.15) 0 -25px 18px -14px inset,
+    rgba(6, 107, 255, 0.15) 0 1px 2px, rgba(6, 107, 255, 0.15) 0 2px 4px,
+    rgba(6, 107, 255, 0.15) 0 4px 8px, rgba(6, 107, 255, 0.15) 0 8px 16px,
+    rgba(6, 107, 255, 0.15) 0 16px 32px;
 }
-.add-btn:hover,
+.add-btn:hover {
+  /* background-color: #004280; */
+  background-image: linear-gradient(to bottom, #00203d, #004280);
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
 .add-btn:focus,
 .add-btn:active {
   background-color: #192586;
@@ -3774,6 +3813,20 @@ table.dataTable thead > tr > td.sorting {
 .all-users:hover,
 .all-users:active {
   color: #fff;
+  background-color: #ffffff;
+  color: #004280;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 34px;
+  text-align: center;
+  border: 2px solid #000000;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.all-users:hover {
+  color: #009efb;
+}
+.all-users:active {
+  color: #757575;
 }
 .team-members img {
   width: 100%;
