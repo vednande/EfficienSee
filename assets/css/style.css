@@ -3723,6 +3723,8 @@ table.dataTable thead > tr > td.sorting {
 	font-weight: 800;
 	line-height: 34px;
 	text-align: center;
+	border: #000;
+	border-style: groove;
 }
 .all-users:hover{
 	color: #009efb;
