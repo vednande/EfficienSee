@@ -1,6 +1,5 @@
 <link rel="stylesheet" href="assets/css/services.css">
-<link rel = "icon" href = "assets/img/logo.png" type = "image/x-icon">
-<nav>
+<nav> 
         <div class="navbar">
           <!-- BADME IMAGE REPLACE KAR DENA -->
           <!-- <img src="/efficiensee/assets/img/logo-bgremoved.png" alt="" /> -->
@@ -11,7 +10,7 @@
           <!-- OPTIONS GOES HERE -->
           <div class="options">
             <ul>
-              <a href="/project/efficiensee/services.php"><li>services</li></a>
+              <a href="/project/efficiensee/services.php" class="active-link"><li>services</li></a>
               <a href=""><li>security</li></a> 
               <a href=""><li>contact us</li></a>
             </ul>
@@ -39,7 +38,7 @@
           <div class="mob-options">
             <ul>
               <a href="" id="mob-home"><li>Home</li></a>
-              <a href="/project/efficiensee/includes/service.html" id="mob-services"><li>services</li></a>
+              <a href="/project/efficiensee/includes/service.html" id="mob-services" class="active-link"><li>services</li></a>
               <a href="" id="mob-security"><li>security</li></a>
               <a href="" id="mob-contact"><li>contact us</li></a>
             </ul>
@@ -129,4 +128,4 @@ Provide tools for 360-degree feedback and self-assessment.</p>
         </div>
     </div>
 </div>
-<script src="./script.js"></script>
+<script src="/project/efficiensee/includes/services.js"></script>
