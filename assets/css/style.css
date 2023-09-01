@@ -1605,6 +1605,7 @@ table.dataTable thead > tr > td.sorting {
 }
 .add-btn:hover {
 	background-color: #003464;
+	color: white;
 },
 .add-btn:focus,
 .add-btn:active {
