@@ -517,11 +517,8 @@ table.dataTable thead > tr > td.sorting {
 }
 .bg-success,
 .badge-success {
-  /* <<<<<<< HEAD */
   background-color: #00203d !important;
-  /* ======= */
   background-color: blue !important;
-  /* >>>>>>> 267c10446f5b17ab97136c4362e16ef17af96874 */
 }
 .bg-info,
 .badge-info {
@@ -544,11 +541,8 @@ table.dataTable thead > tr > td.sorting {
 }
 .text-success,
 .dropdown-menu > li > a.text-success {
-  /* <<<<<<< HEAD */
   color: #00203d !important;
-  /* ======= */
   color: blue !important;
-  /* >>>>>>> 267c10446f5b17ab97136c4362e16ef17af96874 */
 }
 .text-danger,
 .dropdown-menu > li > a.text-danger {
