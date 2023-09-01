@@ -261,7 +261,6 @@ input[type="password"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  cursor: pointer;
 }
 
 textarea.form-control {
