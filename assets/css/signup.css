@@ -11,29 +11,6 @@ font-family: 'Tajawal', sans-serif; */
   font-family: "Roboto Slab", serif;
   font-family: "Tajawal", sans-serif;
 }
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #3c84c7;
-  border-radius: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #0068c7;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #004280;
-}
-::selection {
-  background: #00203d;
-  color: #ebf5ff;
-}
 
 .signup {
   width: 100%;

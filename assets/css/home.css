@@ -29,7 +29,6 @@
 }
 /* ******** NAVBAR STARTS HERE ********  */
 .navbar {
-  position: sticky;
   width: 100%;
   height: fit-content;
   overflow: hidden;
@@ -112,11 +111,7 @@
   cursor: pointer;
 }
 .navbar .btns button:hover {
-  background: #ebf5ff;
-  color: #0068c7;
-  font-weight: 800;
   border: none;
-  letter-spacing: 1.5px;
   transform: scale(1.1);
   box-shadow: 2px 2px 10px 8px #00203d, -2px -2px 10px 8px #00203d;
 }
@@ -222,7 +217,7 @@ nav .mob-menu .btns button:hover {
   font-family: "Tajawal", sans-serif;
 }
 .hero .left .get-started {
-  margin-top: 2.5rem;
+  margin-top: 3rem;
 }
 .hero .left .get-started a {
   position: relative;
@@ -245,19 +240,19 @@ nav .mob-menu .btns button:hover {
   z-index: 99;
 }
 .hero .left .get-started a::before {
-  content: "Let's Go";
+  content: "Let's Go ";
   position: absolute;
   left: -100%;
   transition: all 200ms linear;
 }
 .hero .left .get-started a:hover::before {
-  left: 26%;
+  left: 20%;
 }
 .hero .left .get-started a::after {
   content: "Get Started";
   position: absolute;
   top: 20%;
-  left: 15%;
+  left: 13%;
   transition: all 200ms linear;
 }
 .hero .left .get-started a:hover::after {
@@ -272,13 +267,9 @@ nav .mob-menu .btns button:hover {
 
 .hero .right {
   width: 40%;
-  height: 100vh;
-  overflow: hidden;
 }
 .hero .right img {
-  width: 100%;
-  height: 90%;
-  object-fit: cover;
+  width: 80vh;
 }
 /* ******** HERO SECTION ENDS HERE ******** */
 
@@ -298,20 +289,9 @@ nav .mob-menu .btns button:hover {
   }
   .hero .left {
     width: 100%;
-    padding: 5rem 3.5rem;
   }
   .hero .right {
     display: none;
-  }
-  .hero .left .get-started {
-    width: 100%;
-  }
-  .hero .left .get-started a {
-    width: 100%;
-    text-align: center;
-  }
-  .hero .left .get-started a::after {
-    left: 40%;
   }
   .hero .left .get-started a:hover {
     display: block;
@@ -328,11 +308,7 @@ nav .mob-menu .btns button:hover {
   .hero .left {
     padding: 3rem 1rem;
   }
-  .hero .left .headings h1 {
+  .headings h1 {
     font-size: 2.5rem;
-    line-height: 3rem;
-  }
-  .hero .left .get-started a::after {
-    left: 34%;
   }
 }
