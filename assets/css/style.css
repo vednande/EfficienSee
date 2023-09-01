@@ -1603,13 +1603,16 @@ table.dataTable thead > tr > td.sorting {
     min-width: 150px;
 	padding: 6px;
 	/* font-family: 'Josefin Sans', sans-serif; */
+	transform: scale(1);
+    transition: transform 0.3s ease;
 
 	box-shadow: rgba(43, 127, 237, 0.15) 0 -25px 18px -14px inset, rgba(6, 107, 255, 0.15) 0 1px 2px, rgba(6, 107, 255, 0.15) 0 2px 4px, rgba(6, 107, 255, 0.15) 0 4px 8px, rgba(6, 107, 255, 0.15) 0 8px 16px, rgba(6, 107, 255, 0.15) 0 16px 32px;
 }
 .add-btn:hover {
 	background-color: #003464;
 	color: white;
-	background-image: linear-gradient(to bottom, #2c3bb0, #2b347a);
+	transform: scale(1.1);
+
 },
 .add-btn:focus,
 .add-btn:active {
