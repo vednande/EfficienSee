@@ -1586,7 +1586,7 @@ table.dataTable thead > tr > td.sorting {
     background-color: #00203D;
 	border: 1px solid #192586;
     border-radius: 10px;
-    color: yellow;
+    color: #fff;
     float: right;
     font-weight: 500;
     min-width: 150px;
@@ -1600,7 +1600,7 @@ table.dataTable thead > tr > td.sorting {
 .add-btn:active {
 	background-color: #192586;
 	/* border: 2px solid #012c54; */
-    color: #fff;
+    color: yellow;
 }
 .add-btn i {
 	margin-right: 5px;
