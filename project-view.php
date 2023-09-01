@@ -84,7 +84,7 @@
 					<div class="row">
 						<div class="col-lg-8 col-xl-9">
 							<div class="card">
-								<div class="card-body">
+								<div class="card-body pro-card">
 									<div class="project-title">
 										<h5 class="card-title">Hospital Administration</h5>
 										<small class="block text-ellipsis m-b-15"><span class="text-xs">2</span> <span class="text-muted">open tasks, </span><span class="text-xs">5</span> <span class="text-muted">tasks completed</span></small>
@@ -94,7 +94,7 @@
 								</div>
 							</div>
 							<div class="card">
-								<div class="card-body">
+								<div class="card-body pro-card">
 				                    <h5 class="card-title m-b-20">Uploaded image files</h5>
 									<div class="row">
 										<div class="col-md-3 col-sm-4 col-lg-4 col-xl-3">
@@ -141,7 +141,7 @@
 								</div>
 							</div>
 							<div class="card">
-								<div class="card-body">
+								<div class="card-body pro-card">
 									<h5 class="card-title m-b-20">Uploaded files</h5>
 									<ul class="files-list">
 										<li>
@@ -331,7 +331,7 @@
 						</div>
 						<div class="col-lg-4 col-xl-3">
 							<div class="card">
-								<div class="card-body">
+								<div class="card-body pro-card">
 									<h6 class="card-title m-b-15">Project details</h6>
 									<table class="table table-striped table-border">
 										<tbody>
@@ -382,7 +382,7 @@
 								</div>
 							</div>
 							<div class="card project-user">
-								<div class="card-body">
+								<div class="card-body pro-card">
 									<h6 class="card-title m-b-20">Assigned Leader <button type="button" class="float-right btn btn-primary btn-sm" data-toggle="modal" data-target="#assign_leader"><i class="fa fa-plus"></i> Add</button></h6>
 									<ul class="list-box">
 										<li>
@@ -417,7 +417,7 @@
 								</div>
 							</div>
 							<div class="card project-user">
-								<div class="card-body">
+								<div class="card-body pro-card">
 									<h6 class="card-title m-b-20">
 										Assigned users 
 										<button type="button" class="float-right btn btn-primary btn-sm" data-toggle="modal" data-target="#assign_user"><i class="fa fa-plus"></i> Add</button>

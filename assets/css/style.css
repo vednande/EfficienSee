@@ -1554,18 +1554,19 @@ table.dataTable thead > tr > td.sorting {
 }
 .add-btn {
     background-color: #00203D;
-    border: 1px solid #012c54;
-    border-radius: 70px;
-    color: #fff;
+	border: 1px solid #192586;
+    border-radius: 25px;
+    color: yellow;
     float: right;
     font-weight: 500;
     min-width: 140px;
+	/* font-family: 'Josefin Sans', sans-serif; */
 }
 .add-btn:hover,
 .add-btn:focus,
 .add-btn:active {
-	background-color: #00203D;
-	border: 1px solid #00203D;
+	background-color: #192586;
+	/* border: 2px solid #012c54; */
     color: #fff;
 }
 .add-btn i {
