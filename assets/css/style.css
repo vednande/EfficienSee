@@ -619,7 +619,7 @@ table.dataTable thead > tr > td.sorting {
     transition: transform 0.2s ease;
 }
 .btn-success:hover{
-	background-color: #0068c7;
+	background-color: #004280;
 	color: white;
 	transform: scale(1.1);
 },
@@ -1612,7 +1612,7 @@ table.dataTable thead > tr > td.sorting {
 	box-shadow: rgba(43, 127, 237, 0.15) 0 -25px 18px -14px inset, rgba(6, 107, 255, 0.15) 0 1px 2px, rgba(6, 107, 255, 0.15) 0 2px 4px, rgba(6, 107, 255, 0.15) 0 4px 8px, rgba(6, 107, 255, 0.15) 0 8px 16px, rgba(6, 107, 255, 0.15) 0 16px 32px;
 }
 .add-btn:hover {
-	background-color: #0068c7;
+	background-color: #004280;
 	color: white;
 	transform: scale(1.1);
 
