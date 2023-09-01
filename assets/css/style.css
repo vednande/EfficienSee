@@ -615,10 +615,13 @@ table.dataTable thead > tr > td.sorting {
 	cursor: pointer;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: bolder;
+	transform: scale(1);
+    transition: transform 0.2s ease;
 }
 .btn-success:hover{
-	background-color: #003464;
+	background-color: #0068c7;
 	color: white;
+	transform: scale(1.1);
 },
 .btn-success:focus,
 .btn-success.active,
@@ -1604,7 +1607,7 @@ table.dataTable thead > tr > td.sorting {
 	padding: 6px;
 	/* font-family: 'Josefin Sans', sans-serif; */
 	transform: scale(1);
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
 
 	box-shadow: rgba(43, 127, 237, 0.15) 0 -25px 18px -14px inset, rgba(6, 107, 255, 0.15) 0 1px 2px, rgba(6, 107, 255, 0.15) 0 2px 4px, rgba(6, 107, 255, 0.15) 0 4px 8px, rgba(6, 107, 255, 0.15) 0 8px 16px, rgba(6, 107, 255, 0.15) 0 16px 32px;
 }
