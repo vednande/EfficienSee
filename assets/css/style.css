@@ -3718,13 +3718,15 @@ table.dataTable thead > tr > td.sorting {
 }
 .all-users {
 	background-color: #ffffff;
-	color: #000000;
+	color: #004280;
 	font-size: 10px;
 	font-weight: 800;
 	line-height: 34px;
 	text-align: center;
 }
-.all-users:hover, .all-users:active {
+.all-users:hover{
+	color: #009efb;
+}, .all-users:active {
 	color: #757575;
 }
 .team-members img {
