@@ -3717,15 +3717,15 @@ table.dataTable thead > tr > td.sorting {
 	opacity: 0.8;
 }
 .all-users {
-	background-color: #ff5e3a;
-	color: #fff;
+	background-color: #ffffff;
+	color: #000000;
 	font-size: 10px;
 	font-weight: 800;
 	line-height: 34px;
 	text-align: center;
 }
 .all-users:hover, .all-users:active {
-	color: #fff;
+	color: #757575;
 }
 .team-members img {
 	width: 100%;
