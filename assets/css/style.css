@@ -623,6 +623,7 @@ table.dataTable thead > tr > td.sorting {
 	background-image: linear-gradient(to bottom, #00203D, #004280);
 	color: white;
 	transform: scale(1.1);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 },
 .btn-success:focus,
 .btn-success.active,
@@ -1617,6 +1618,7 @@ table.dataTable thead > tr > td.sorting {
 	background-image: linear-gradient(to bottom, #00203D, #004280);
 	color: white;
 	transform: scale(1.1);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 
 },
 .add-btn:focus,
