@@ -1,6 +1,9 @@
 .account-logo {
+  position: absolute;
   margin-bottom: 30px;
   text-align: center;
+  top: -15%;
+  left: 40%;
 }
 .account-logo img {
   width: 100px;

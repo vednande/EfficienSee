@@ -103,7 +103,6 @@
   font-size: 1.3rem;
   border: none;
   color: #ebf5ff;
-  /* background-image: linear-gradient(to bottom right, rgba(1,103,197,1), rgba(30, 30, 30, 1)); */
   background-image: linear-gradient(to bottom right, #0068c7, #00203d);
   border-radius: 10px;
   letter-spacing: 1.2px;
@@ -114,6 +113,8 @@
   border: none;
   transform: scale(1.1);
   box-shadow: 2px 2px 10px 8px #00203d, -2px -2px 10px 8px #00203d;
+  background-image: linear-gradient(to bottom right, #ebf5ff, #fff);
+  color: #00203d;
 }
 .navbar .lines {
   display: none;
@@ -246,13 +247,13 @@ nav .mob-menu .btns button:hover {
   transition: all 200ms linear;
 }
 .hero .left .get-started a:hover::before {
-  left: 20%;
+  left: 25%;
 }
 .hero .left .get-started a::after {
   content: "Get Started";
   position: absolute;
   top: 20%;
-  left: 13%;
+  left: 15%;
   transition: all 200ms linear;
 }
 .hero .left .get-started a:hover::after {

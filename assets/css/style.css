@@ -1710,13 +1710,15 @@ table.dataTable thead > tr > td.sorting {
   width: 100%;
 }
 .account-content {
+  position: relative;
   padding: 20px 0;
 }
 .account-title {
   font-size: 26px;
-  font-weight: 500;
-  margin-bottom: 5px;
+  font-weight: bold;
+  margin-bottom: 20px;
   text-align: center;
+  letter-spacing: 1.2px;
 }
 .account-subtitle {
   color: #4c4c4c;
@@ -1767,8 +1769,9 @@ table.dataTable thead > tr > td.sorting {
 .account-box label {
   color: #1f1f1f;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: bold;
   margin-bottom: 5px;
+  letter-spacing: 1.1px;
 }
 
 /* .account-footer {
