@@ -35,6 +35,7 @@
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
 		<link rel="stylesheet" href="assets/css/header.css">
+		<link rel="stylesheet" href="assets/css/piyush.css">
 		
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -133,7 +134,7 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="card-group m-b-30">
-								<div class="card">
+								<div class="card kaus-card">
 									<div class="card-body">
 										<div class="d-flex justify-content-between mb-3">
 											<div>
@@ -151,7 +152,7 @@
 									</div>
 								</div>
 							
-								<div class="card">
+								<div class="card kaus-card">
 									<div class="card-body">
 										<div class="d-flex justify-content-between mb-3">
 											<div>
@@ -169,7 +170,7 @@
 									</div>
 								</div>
 							
-								<div class="card">
+								<div class="card kaus-card">
 									<div class="card-body">
 										<div class="d-flex justify-content-between mb-3">
 											<div>
@@ -187,7 +188,7 @@
 									</div>
 								</div>
 							
-								<div class="card">
+								<div class="card kaus-card">
 									<div class="card-body">
 										<div class="d-flex justify-content-between mb-3">
 											<div>
