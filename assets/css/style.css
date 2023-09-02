@@ -1761,6 +1761,7 @@ table.dataTable thead > tr > td.sorting {
 	opacity: 0.8;
 } */
 .account-box .form-control {
+  font-weight: bold;
   background-color: #fbfbfb;
   border: 1px solid #e3e3e3;
   border-radius: 4px;
