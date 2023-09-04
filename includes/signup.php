@@ -47,6 +47,18 @@
 									<label>Upload Photo</label> 
 									<input type="file" accept="image/*" class="form-control input-file" name="photo" id="photo" style="height: auto; width: fit-content; background-color: transparent; border: 1px solid transparent;">
 								</div>
+								<div class="form-group" id="select-role"> 
+									<p>Please select your role</p>
+									<div class="hr" id="hr">
+										<input type="radio" name="role" id="hr">
+										<label for="hr">HR</label>
+									</div>
+									<div class="employee" id="employee">
+										<input type="radio" name="role" id="employee">
+										<label for="employee" style="text-transform: uppercase;">Employee</label>
+									</div>
+  									
+								</div>
 								<!-- <?php if($wrongpassword){echo $wrongpassword;}?> --> 
 								
 								<div class="form-group text-center">
@@ -67,3 +79,4 @@
         </div>
     </div>
 </div>
+<script src="/project/efficiensee/includes/signup.js"></script>
