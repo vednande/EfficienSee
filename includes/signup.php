@@ -10,8 +10,20 @@
                     <h1>sign up</h1>
                     <form method="POST" enctype="multipart/form-data">
 								<div class="form-group">
+									<label>First Name</label> 
+									<input class="form-control" name="firstname" required type="text">
+								</div>
+								<div class="form-group">
+									<label>Last Name</label> 
+									<input class="form-control" name="lastname" required type="text">
+								</div>
+								<div class="form-group">
 									<label>User Name</label> 
 									<input class="form-control" name="username" required type="text">
+								</div>
+								<div class="form-group">
+									<label>Email</label> 
+									<input class="form-control" name="email" required type="text">
 								</div>
 								<!-- <?php if($wrongusername){echo $wrongusername;}?> -->
 								<div class="form-group">
@@ -21,6 +33,19 @@
 										</div>
 									</div>
 									<input class="form-control" name="password" required type="password">
+								</div>
+								<div class="form-group">
+									<label>Phone Number</label> 
+									<input class="form-control" type="number" name="phonenumber" id="phonenumber" pattern="[0-9]" required max="10" maxlength="10">
+									<!-- <input class="form-control" name="phonenumber" required type="ph"> -->
+								</div>
+								<div class="form-group">
+									<label>Address</label> 
+									<input class="form-control" type="text" name="address" id="address" required>
+								</div>
+								<div class="form-group">
+									<label>Upload Photo</label> 
+									<input type="file" accept="image/*" class="form-control input-file" name="photo" id="photo" style="height: auto; width: fit-content; background-color: transparent; border: 1px solid transparent;">
 								</div>
 								<!-- <?php if($wrongpassword){echo $wrongpassword;}?> --> 
 								
