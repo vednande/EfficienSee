@@ -175,14 +175,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 								<div class="form-group" id="select-role"> 
 									<p>Please select your role</p>
 									<div class="hr" id="hr">
-										<input type="radio" name="role" id="hr">
+										<input type="radio" name="role" id="hr" style="cursor: pointer;">
 										<label for="hr">HR</label>
 									</div>
 									<div class="employee" id="employee">
-										<input type="radio" name="role" id="employee">
+										<input type="radio" name="role" id="employee" style="cursor: pointer;">
 										<label for="employee" style="text-transform: uppercase;">Employee</label>
 									</div>
-  									
 								</div>
 								<!-- <?php if($wrongpassword){echo $wrongpassword;}?> --> 
 								
