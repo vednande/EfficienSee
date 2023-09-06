@@ -22,10 +22,10 @@
           <!-- LOGIN SIGNUP BUTTONS --> 
           <div class="btns">
             <div class="login">
-              <a href="/project/efficiensee/login.php"><button>login</button></a>
+              <a href="/efficiensee/login.php"><button>login</button></a>
             </div>
             <div class="signup">
-              <a href="/project/efficiensee/signup.php"><button>signup</button></a>
+              <a href="/efficiensee/signup.php"><button>signup</button></a>
             </div>
           </div>
 
@@ -76,8 +76,8 @@
               valuable insights and employee monitoring.
             </p>
           </div>
-          <div class="get-started">
-            <a href="/project/efficiensee/login.php"></a>
+          <div class="get-started"> 
+            <a href="/efficiensee/login.php"></a>
           </div>  
         </div>
         <div class="right">
