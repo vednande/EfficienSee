@@ -1,4 +1,4 @@
-/*============================
+/*
  [Table of CSS]
 
 1. General
@@ -66,7 +66,7 @@
 63. Subscriptions
 64. Responsive
 
-========================================*/
+=====*/
 
 @font-face {
   font-family: "Material Icons";
@@ -224,13 +224,13 @@ a:focus {
   outline: none;
 }
 .form-control {
-  border-color: #e3e3e3;
+  border-color: #0068c7;
   box-shadow: none;
   font-size: 15px;
   height: 44px;
 }
 .form-control:focus {
-  border-color: #ccc;
+  border-color: #00203d;
   box-shadow: none;
   outline: 0 none;
 }
@@ -261,6 +261,10 @@ input[type="password"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background: #fff;
+  height: 50px;
+  padding: 10px 0 10px 15px;
+  border: 1px solid #0068c7;
 }
 
 textarea.form-control {
@@ -575,17 +579,19 @@ table.dataTable thead > tr > td.sorting {
 .btn-primary {
   margin-top: -4px;
   padding: 5px 13px;
-  background-color: red;
-  border: 1px solid orangered;
+  background-color: #00203d;
+  border: 2px solid #00203d;
   border-radius: 10px;
+  transition: all 200ms linear;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.active,
 .btn-primary:active,
 .open > .dropdown-toggle.btn-primary {
-  background-color: orangered;
-  border: 1px solid orangered;
+  background: #ebf5ff;
+  color: #00203d;
+  transform: scale(1.1);
 }
 .btn-primary.active.focus,
 .btn-primary.active:focus,
@@ -596,14 +602,15 @@ table.dataTable thead > tr > td.sorting {
 .open > .dropdown-toggle.btn-primary.focus,
 .open > .dropdown-toggle.btn-primary:focus,
 .open > .dropdown-toggle.btn-primary:hover {
-  background-color: #ff851a;
-  border: 1px solid #ff851a;
+  background-color: #0068c7;
+  border: 2px solid #0068c7;
 }
 .btn-primary.active:not(:disabled):not(.disabled),
 .btn-primary:active:not(:disabled):not(.disabled),
 .show > .btn-primary.dropdown-toggle {
-  background-color: #ff851a;
-  border-color: #ff851a;
+  border: 2px solid #0068c7;
+  background-color: #0068c7;
+  border-color: #0068c7;
   color: #fff;
 }
 .btn-primary.active:focus:not(:disabled):not(.disabled),
@@ -715,8 +722,8 @@ table.dataTable thead > tr > td.sorting {
   color: #fff;
 }
 .btn-danger {
-  background: #f62d51;
-  border: 1px solid #f62d51;
+  background: #004280;
+  border: 1px solid #004280;
 }
 .btn-danger:hover,
 .btn-danger:focus,
@@ -1005,7 +1012,7 @@ table.dataTable thead > tr > td.sorting {
   position: absolute;
 }
 .checktoggle {
-  background-color: #e0001a;
+  background-color: #0068c7;
   border-radius: 12px;
   cursor: pointer;
   display: block;
@@ -1029,7 +1036,7 @@ table.dataTable thead > tr > td.sorting {
   transition: left 300ms ease, transform 300ms ease;
 }
 .check:checked + .checktoggle {
-  background-color: #55ce63;
+  background-color: #00203d;
 }
 .check:checked + .checktoggle:after {
   left: 100%;
@@ -1072,7 +1079,7 @@ table.dataTable thead > tr > td.sorting {
   width: 50%;
 }
 .onoffswitch-inner:before {
-  background-color: #55ce63;
+  background-color: #00203d;
   color: #fff;
   content: "ON";
   padding-left: 14px;
@@ -1080,7 +1087,7 @@ table.dataTable thead > tr > td.sorting {
 .onoffswitch-inner:after {
   content: "OFF";
   padding-right: 14px;
-  background-color: #ccc;
+  background-color: #0068c7;
   color: #fff;
   text-align: right;
 }
@@ -1709,13 +1716,15 @@ table.dataTable thead > tr > td.sorting {
   width: 100%;
 }
 .account-content {
+  position: relative;
   padding: 20px 0;
 }
 .account-title {
   font-size: 26px;
-  font-weight: 500;
-  margin-bottom: 5px;
+  font-weight: bold;
+  margin-bottom: 20px;
   text-align: center;
+  letter-spacing: 1.2px;
 }
 .account-subtitle {
   color: #4c4c4c;
@@ -1758,6 +1767,7 @@ table.dataTable thead > tr > td.sorting {
 	opacity: 0.8;
 } */
 .account-box .form-control {
+  font-weight: bold;
   background-color: #fbfbfb;
   border: 1px solid #e3e3e3;
   border-radius: 4px;
@@ -1766,8 +1776,9 @@ table.dataTable thead > tr > td.sorting {
 .account-box label {
   color: #1f1f1f;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: bold;
   margin-bottom: 5px;
+  letter-spacing: 1.1px;
 }
 
 /* .account-footer {
@@ -1808,7 +1819,6 @@ table.dataTable thead > tr > td.sorting {
 .custom-table tr {
   background-color: #fff;
   box-shadow: 0 0 3px #e5e5e5;
-  
 }
 .table.custom-table > tbody > tr > td,
 .table.custom-table > tbody > tr > th,
@@ -1991,7 +2001,7 @@ table.dataTable thead > tr > td.sorting {
 -----------------------*/
 
 .select2-container .select2-selection--single {
-  border: 1px solid #e3e3e3;
+  border: 1px solid #0068c7;
   border-radius: 0.25rem;
   height: 44px;
 }
@@ -2989,6 +2999,10 @@ table.dataTable thead > tr > td.sorting {
 .form-focus .form-control {
   height: 50px;
   padding: 21px 12px 6px;
+
+  background-color: #fff;
+  border: 2px solid #00203d;
+
   background-color: rgb(255, 255, 255);
   border: 1px solid #0068c7;
 }
@@ -3061,7 +3075,7 @@ table.dataTable thead > tr > td.sorting {
   font-size: 14px;
   font-weight: normal;
   line-height: 38px;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
 }
 .form-focus
   .select2-container--default
@@ -3805,17 +3819,17 @@ table.dataTable thead > tr > td.sorting {
   line-height: 34px;
   text-align: center;
 }
-.all-users:hover{
-	color: #fff;
-	background-color: #ffffff;
-	color: #004280;
-	font-size: 10px;
-	font-weight: 800;
-	line-height: 34px;
-	text-align: center;
-	border: 0.1 px solid #000000;
-	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-}	,
+.all-users:hover {
+  color: #fff;
+  background-color: #ffffff;
+  color: #004280;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 34px;
+  text-align: center;
+  border: 0.1 px solid #000000;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
 .all-users:active {
   /* color: #fff;
   background-color: #ffffff;
@@ -3830,7 +3844,7 @@ table.dataTable thead > tr > td.sorting {
 .all-users:hover {
   color: #009efb;
 }
-.all-users:active {	
+.all-users:active {
   color: #757575;
 }
 .team-members img {
@@ -3845,7 +3859,10 @@ table.dataTable thead > tr > td.sorting {
   margin-top: 0;
 }
 .project-title > a {
-  color: #333;
+  font-size: 1.1rem;
+  letter-spacing: 1.1px;
+  font-weight: bold;
+  color: #00203d;
 }
 .avatar-dropdown .dropdown-menu {
   min-width: unset;
