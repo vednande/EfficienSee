@@ -46,7 +46,6 @@ font-family: 'Tajawal', sans-serif; */
   justify-content: flex-start;
   gap: 2rem;
   background-color: #f7f7f7;
-  padding: 2rem 0;
 }
 .container .left {
   overflow: hidden;
@@ -117,19 +116,6 @@ font-family: 'Tajawal', sans-serif; */
 .container .right .signup .heading form .form-group input:focus {
   outline: none;
 }
-#select-role {
-  font-size: 1.2rem;
-}
-#hr,
-#employee {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-input[type="radio"] {
-  height: 1.15rem;
-  width: 1.15rem;
-}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -139,7 +125,7 @@ input[type="number"] {
   font-size: 1.2rem;
 }
 input[type="text"] {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 input[type="file"] {
   width: 350px;
