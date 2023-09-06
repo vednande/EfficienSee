@@ -3,7 +3,7 @@
 	<!-- Logo -->
 	<div class="header-left">
 		<a href="index.php" class="logo">
-			<img src="assets/img/logo-bgremoved.png" alt="">
+			<img src="assets/img/navbar-logo-trans.png" alt="">
 		</a> 
 	</div>
 	<!-- /Logo -->

@@ -35,6 +35,7 @@
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
 		<link rel="stylesheet" href="assets/css/header.css">
+		<link rel="stylesheet" href="assets/css/user-landing.css">
 		
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -77,7 +78,7 @@
 					<div class="row">
 						<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
 							<div class="card dash-widget">
-								<div class="card-body">
+								<div class="card-body kaus">
 									<span class="dash-widget-icon"><i class="fa fa-cubes"></i></span>
 									<div class="dash-widget-info">
 										<h3>112</h3>
@@ -95,7 +96,7 @@
 									?>
 						<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
 							<div class="card dash-widget">
-								<div class="card-body">
+								<div class="card-body kaus">
 									<span class="dash-widget-icon"><i class="fa fa-users"></i></span>
 									<div class="dash-widget-info">
 										<h3><?php echo $totalcount; ?></h3>
@@ -106,7 +107,7 @@
 						</div>
 						<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
 							<div class="card dash-widget">
-								<div class="card-body">
+								<div class="card-body kaus">
 									<span class="dash-widget-icon"><i class="fa fa-diamond"></i></span>
 									<div class="dash-widget-info">
 										<h3>37</h3>
@@ -117,7 +118,7 @@
 						</div>
 						<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
 							<div class="card dash-widget">
-								<div class="card-body">
+								<div class="card-body kaus">
 									<span class="dash-widget-icon"><i class="fa fa-user"></i></span>
 									<div class="dash-widget-info">
 										<h3>218</h3>
@@ -133,7 +134,7 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="card-group m-b-30">
-								<div class="card">
+								<div class="card kaus-card">
 									<div class="card-body">
 										<div class="d-flex justify-content-between mb-3">
 											<div>
@@ -151,7 +152,7 @@
 									</div>
 								</div>
 							
-								<div class="card">
+								<div class="card kaus-card">
 									<div class="card-body">
 										<div class="d-flex justify-content-between mb-3">
 											<div>
@@ -169,7 +170,7 @@
 									</div>
 								</div>
 							
-								<div class="card">
+								<div class="card kaus-card">
 									<div class="card-body">
 										<div class="d-flex justify-content-between mb-3">
 											<div>
@@ -187,7 +188,7 @@
 									</div>
 								</div>
 							
-								<div class="card">
+								<div class="card kaus-card">
 									<div class="card-body">
 										<div class="d-flex justify-content-between mb-3">
 											<div>
@@ -221,9 +222,9 @@
 										<table class="table custom-table mb-0">
 											<thead>
 												<tr>
-													<th>Project Name </th>
-													<th>Progress</th>
-													<th class="text-right">Action</th>
+													<th><strong> Name</strong> </th>
+													<th><strong>Progress</strong></th>
+													<th class="text-right"><strong>Action</strong></th>
 												</tr>
 											</thead>
 											<tbody>
