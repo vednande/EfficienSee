@@ -246,13 +246,13 @@
 								<table id="" class="table table-striped custom-table">
 									<thead>
 										<tr>
-											<th id="permission">Module Permission</th>
-											<th id="read" class="text-center">Read</th>
-											<th id="write" class="text-center">Write</th>
-											<th id="create" class="text-center">Create</th>
-											<th id="delete" class="text-center">Delete</th>
-											<th id="import" class="text-center">Import</th>
-											<th id="export" class="text-center">Export</th>
+											<th id="permission" style="font-weight: bold; font-size: 1rem;">Module Permission</th>
+											<th id="read" style="font-weight: bold; font-size: 1rem;" class="text-center">Read</th>
+											<th id="write" style="font-weight: bold; font-size: 1rem;" class="text-center">Write</th>
+											<th id="create" style="font-weight: bold; font-size: 1rem;" class="text-center">Create</th>
+											<th id="delete" style="font-weight: bold; font-size: 1rem;" class="text-center">Delete</th>
+											<th id="import" style="font-weight: bold; font-size: 1rem;" class="text-center">Import</th>
+											<th id="export" style="font-weight: bold; font-size: 1rem;" class="text-center">Export</th>
 										</tr>
 									</thead>
 									<tbody>

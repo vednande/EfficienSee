@@ -263,6 +263,9 @@ input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
 }
 input[type="date"],
 input[type="datetime-local"],
@@ -528,6 +531,7 @@ pre code {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-top: 1.5rem;
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -4227,7 +4231,7 @@ input[type="submit"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: transparent;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -4251,15 +4255,15 @@ input[type="submit"].btn-block {
   background-color: aliceblue;
 }
 
-.pro-card{
-  color: #1A1110;
+.pro-card {
+  color: #1a1110;
   padding-bottom: 2rem;
+  border: 2px solid transparent;
+  transition: all 200ms ease;
 }
 
-.pro-card:hover{
-  border-top: 2px solid #192586;
-  border-bottom: 2px solid #192586;
-  /* transition: .4s ease; */
+.pro-card:hover {
+  border: 2px solid #00203d;
 }
 
 .card-title {
