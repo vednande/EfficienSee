@@ -170,9 +170,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 								<!-- <div class="form-group">
 									<label>Upload Photo</label> 
 									<input type="file" accept="image/*" class="form-control input-file" name="photo" id="photo" style="height: auto; width: fit-content; background-color: transparent; border: 1px solid transparent;">
-<<<<<<< HEAD
 								</div> -->
-=======
 								</div>
 								<div class="form-group" id="select-role"> 
 									<p>Please select your role</p>
@@ -186,7 +184,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 									</div>
   									
 								</div>
->>>>>>> be627881acfc828b7a467a9a30f9f720df5e3d16
 								<!-- <?php if($wrongpassword){echo $wrongpassword;}?> --> 
 								
 								<div class="form-group text-center">
@@ -207,10 +204,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         </div>
     </div>
 </div>
-<<<<<<< HEAD
 	
 </body>
 </html>
-=======
 <script src="/project/efficiensee/includes/signup.js"></script>
->>>>>>> be627881acfc828b7a467a9a30f9f720df5e3d16
