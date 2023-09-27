@@ -7,13 +7,13 @@
           <!-- <img src="/efficiensee/assets/img/logo-bgremoved.png" alt="" /> -->
 
           <!-- LOGO GOES HERE -->
-          <div class="logo"><a href="/project/efficiensee/login.php">EfficienSee</a></div>
+          <div class="logo"><a href="/efficiensee/login.php">EfficienSee</a></div>
 
           <!-- OPTIONS GOES HERE -->
           <div class="options"> 
             <ul>
               <!-- <a href="/project/efficiensee/services.php"><li>services</li></a> -->
-              <a href="/project/efficiensee/services.php"><li>services</li></a>
+              <a href="/efficiensee/services.php"><li>services</li></a>
               <a href=""><li>security</li></a> 
               <a href=""><li>contact us</li></a>
             </ul>
@@ -22,10 +22,10 @@
           <!-- LOGIN SIGNUP BUTTONS --> 
           <div class="btns">
             <div class="login">
-              <a href="/project/efficiensee/login.php"><button>login</button></a>
+              <a href="/efficiensee/login.php"><button>login</button></a>
             </div>
             <div class="signup">
-              <a href="/project/efficiensee/signup.php"><button>signup</button></a>
+              <a href="/efficiensee/signup.php"><button>signup</button></a>
             </div>
           </div>
 
@@ -77,7 +77,7 @@
             </p>
           </div>
           <div class="get-started">
-            <a href="/project/efficiensee/login.php"></a>
+            <a href="/efficiensee/login.php"></a>
           </div>  
         </div>
         <div class="right">
