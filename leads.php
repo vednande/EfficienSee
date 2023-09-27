@@ -65,8 +65,8 @@
 							<div class="col-sm-12">
 								<h3 class="page-title">Leads</h3>
 								<ul class="breadcrumb">
-									<li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-									<li class="breadcrumb-item active">Leads</li>
+									<li class="breadcrumb-item"><a href="user-landing.php" style="color: #0068c7;">Dashboard</a></li>
+									<li class="breadcrumb-item active"><span style="color: #0068c7;">Leads</span></li>
 								</ul>
 							</div>
 						</div>
@@ -77,7 +77,7 @@
 						<div class="col-md-12">
 							<div class="table-responsive">
 								<table class="table table-striped table-nowrap custom-table mb-0 datatable">
-									<thead>
+									<thead style="font-size: 1.15rem;">
 										<tr>
 											<th>#</th>
 											<th>Lead Name</th>
@@ -96,12 +96,12 @@
 											<td>
 												<h2 class="table-avatar">
 													<a href="#" class="avatar"><img alt="" src="assets/img/profiles/avatar-11.jpg"></a>
-													<a href="#">Wilmer Deluna</a>
+													<a href="#" id="lead-name">Wilmer Deluna</a>
 												</h2>
 											</td>
 											<td>wilmerdeluna@example.com</td>
 											<td>9876543210</td>
-											<td><a href="project-view.php">Hospital Administration</a></td>
+											<td><a href="project-view.php" id="project-name">Hospital Administration</a></td>
 											<td>
 												<ul class="team-members">
 													<li>
@@ -168,7 +168,7 @@
 											<td>10 hours ago</td>
 											<td class="text-right">
 												<div class="dropdown dropdown-action">
-													<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+													<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons" id="three-dots">more_vert</i></a>
 													<div class="dropdown-menu dropdown-menu-right">
 														<a class="dropdown-item" href="#"><i class="fa fa-pencil m-r-5"></i> Edit</a>
 														<a class="dropdown-item" href="#"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
@@ -181,12 +181,12 @@
 											<td>
 												<h2 class="table-avatar">
 													<a href="#" class="avatar"><img alt="" src="assets/img/profiles/avatar-01.jpg"></a>
-													<a href="#">Lesley Grauer</a>
+													<a href="#" id="lead-name">Lesley Grauer</a>
 												</h2>
 											</td>
 											<td>lesleygrauer@example.com</td>
 											<td>9876543210</td>
-											<td><a href="project-view.php">Video Calling App</a></td>
+											<td><a href="project-view.php" id="project-name">Video Calling App</a></td>
 											<td>
 												<ul class="team-members">
 													<li>
@@ -217,12 +217,12 @@
 											<td>
 												<h2 class="table-avatar">
 													<a href="#" class="avatar"><img alt="" src="assets/img/profiles/avatar-16.jpg"></a>
-													<a href="#">Jeffery Lalor</a>
+													<a href="#" id="lead-name">Jeffery Lalor</a>
 												</h2>
 											</td>
 											<td>jefferylalor@example.com</td>
 											<td>9876543210</td>
-											<td><a href="project-view.php">Office Management</a></td>
+											<td><a href="project-view.php" id="project-name">Office Management</a></td>
 											<td>
 												<ul class="team-members">
 													<li>
@@ -240,7 +240,7 @@
 											<td>27 Feb 2019</td>
 											<td class="text-right">
 												<div class="dropdown dropdown-action">
-													<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+													<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons" id="three-dots">more_vert</i></a>
 													<div class="dropdown-menu dropdown-menu-right">
 														<a class="dropdown-item" href="#"><i class="fa fa-pencil m-r-5"></i> Edit</a>
 														<a class="dropdown-item" href="#"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
@@ -253,12 +253,12 @@
 											<td>
 												<h2 class="table-avatar">
 													<a href="#" class="avatar"><img alt="" src="assets/img/profiles/avatar-11.jpg"></a>
-													<a href="#">Wilmer Deluna</a>
+													<a href="#" id="lead-name">Wilmer Deluna</a>
 												</h2>
 											</td>
 											<td>wilmerdeluna@example.com</td>
 											<td>9876543210</td>
-											<td><a href="project-view.php">Hospital Administration</a></td>
+											<td><a href="project-view.php" id="project-name">Hospital Administration</a></td>
 											<td>
 												<ul class="team-members">
 													<li>
@@ -276,7 +276,7 @@
 											<td>10 hours ago</td>
 											<td class="text-right">
 												<div class="dropdown dropdown-action">
-													<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+													<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons" id="three-dots">more_vert</i></a>
 													<div class="dropdown-menu dropdown-menu-right">
 														<a class="dropdown-item" href="#"><i class="fa fa-pencil m-r-5"></i> Edit</a>
 														<a class="dropdown-item" href="#"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
@@ -312,7 +312,7 @@
 											<td>5 Mar 2019</td>
 											<td class="text-right">
 												<div class="dropdown dropdown-action">
-													<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+													<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons" id="three-dots">more_vert</i></a>
 													<div class="dropdown-menu dropdown-menu-right">
 														<a class="dropdown-item" href="#"><i class="fa fa-pencil m-r-5"></i> Edit</a>
 														<a class="dropdown-item" href="#"><i class="fa fa-trash-o m-r-5"></i> Delete</a>

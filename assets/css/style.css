@@ -318,17 +318,33 @@ select.form-control[size] {
 -----------------------*/
 
 .table {
-  color: #333;
+  color: #00203d;
 }
 .table.table-white {
-  background-color: #fff;
+  background-color: #ebf5ff;
 }
 .table thead th {
   font-weight: 500;
   letter-spacing: 0.05em;
 }
+.table-striped > tbody > tr {
+  transition: all 250ms ease;
+}
 .table-striped > tbody > tr:nth-of-type(2n + 1) {
-  background-color: #f6f6f6;
+  background-color: #ebf5ff;
+}
+.table-striped > tbody > tr:hover {
+  background-color: #0068c7;
+  color: #ebf5f5;
+}
+.table-striped > tbody > tr:hover > td > h2 > #lead-name {
+  color: #ebf5f5;
+}
+.table-striped > tbody > tr:hover > td > #project-name {
+  color: #ebf5f5;
+}
+.table-striped > tbody > tr:hover > td > .dropdown > a > #three-dots {
+  color: #ebf5f5;
 }
 table.table td h2 {
   display: inline-block;
@@ -1624,14 +1640,14 @@ table.dataTable thead > tr > td.sorting {
   background-color: #fff;
 }
 .page-title {
-  color: #1f1f1f;
-  font-size: 26px;
+  color: #00203d;
+  font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 5px;
 }
 .page-sub-title {
-  color: #565656;
-  font-size: 18px;
+  color: #0068c7;
+  font-size: 1.1rem;
   font-weight: normal;
   margin-bottom: 20px;
 }
