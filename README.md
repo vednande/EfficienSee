@@ -7,7 +7,7 @@
  run it on the browser and you are good to go.
 
  # Login Credentials
- `username`: `Vednande`
+ `username`: `vednande`
  'password': `vednande`
  Or
  `username`: `Barry`
