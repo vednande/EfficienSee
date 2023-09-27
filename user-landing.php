@@ -68,7 +68,7 @@
 							<div class="col-sm-12">
 								<h3 class="page-title">Welcome <?php echo htmlentities(ucfirst($_SESSION['userlogin']));?>!</h3>
 								<ul class="breadcrumb">
-									<li class="breadcrumb-item active">Dashboard</li>
+									<li class="breadcrumb-item active" style="color: #0068c7;">Dashboard</li>
 								</ul>
 							</div>
 						</div>

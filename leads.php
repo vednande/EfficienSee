@@ -76,7 +76,7 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="table-responsive">
-								<table class="table table-striped table-nowrap custom-table mb-0 datatable">
+								<table class="table table-striped table-nowrap custom-table mb-0 datatable" style="border: 2px solid #EBF5FF; box-shadow: 1px 1px 2px 0 #EBF5FF;">
 									<thead style="font-size: 1.15rem;">
 										<tr>
 											<th>#</th>
