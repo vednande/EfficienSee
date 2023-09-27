@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Tajawal:wght@700&display=swap");
+
 .header {
   /* background: -moz-linear-gradient(right, #0068C7 0%, #000 100%);
 	background: -webkit-linear-gradient(right, #0068C7 0%, #000 100%);
@@ -12,7 +14,7 @@
   right: 0;
   top: 0;
   z-index: 1002;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .gradient {
@@ -46,11 +48,23 @@
   transition: all 0.2s ease-in-out;
 }
 
-.header .header-left .logo img {
-  width: 100px;
-  transform: scale(2.5);
-  /* display: inline-block; */
-  /* line-height: 60px; */
+#header-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#logo {
+  font-size: 2rem;
+  color: #ebf5ff;
+  letter-spacing: 1.1px;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tajawal", sans-serif;
+}
+
+#logo:hover {
+  transform: scale(1.2);
 }
 
 .bar-icon {
@@ -80,6 +94,21 @@
   position: absolute;
   right: 7px;
   top: 4px;
+}
+
+#image-and-name {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+#user-name-input {
+  font-size: 1.1rem;
+  letter-spacing: 1.2px;
+}
+
+#dropdown-item {
+  font-size: 1rem;
 }
 
 .header .dropdown-menu > li > a {

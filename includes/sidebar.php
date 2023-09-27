@@ -9,7 +9,7 @@
 							<li class="submenu">
 								<a href="#"><i class="la la-dashboard"></i> <span> Dashboard</span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="index.php">Admin Dashboard</a></li>
+									<li><a href="user-landing.php">Admin Dashboard</a></li>
 									<li><a href="employee-dashboard.php">Employee Dashboard</a></li>
 								</ul>
 							</li>

@@ -1,9 +1,9 @@
 <link rel="stylesheet" href="assets/css/header.css">
 <div class="header">
 	<!-- Logo -->
-	<div class="header-left">
-		<a href="index.php" class="logo">
-			<img src="assets/img/navbar-logo-trans.png" alt="">
+	<div class="header-left" id="header-left">
+		<a href="index.php" class="logo" id="logo">
+			EFFICIENSEE
 		</a> 
 	</div>
 	<!-- /Logo -->
@@ -244,15 +244,15 @@
 		?>
 
 		<li class="nav-item dropdown has-arrow main-drop">
-			<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-				<span class="user-img"><img src="./profiles/<?php echo htmlentities($result->Picture);?>" alt="User Picture">
+			<a href="#" class="dropdown-toggle nav-link" id="image-and-name" data-toggle="dropdown">
+				<span class="user-img" id="user-img"><img src="./profiles/<?php echo htmlentities($result->Picture);?>" alt="User Picture">
 				<span class="status online"></span></span>
-				<span><?php echo htmlentities(ucfirst($_SESSION['userlogin']));?></span>
+				<span id="user-name-input"><?php echo htmlentities(ucfirst($_SESSION['userlogin']));?></span>
 			</a>
 			<div class="dropdown-menu">
-				<a class="dropdown-item" href="profile.php">My Profile</a>
-				<a class="dropdown-item" href="settings.php">Settings</a>
-				<a class="dropdown-item" href="logout.php">Logout</a>
+				<a class="dropdown-item" id="dropdown-item" href="profile.php">My Profile</a>
+				<a class="dropdown-item" id="dropdown-item" href="settings.php">Settings</a>
+				<a class="dropdown-item" id="dropdown-item" href="logout.php">Logout</a>
 			</div>
 		</li>
 	</ul>
