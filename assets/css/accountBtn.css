@@ -1,30 +1,31 @@
 .account-box .account-btn {
-    background: #0068C7;
-    background: -moz-linear-gradient(left, #0068C7 0%, #00203D 100%);
-    background: -webkit-linear-gradient(left, #0068C7 0%, #00203D 100%);
-    background: -ms-linear-gradient(left, #0068C7 0%, #00203D 100%);
-    background: linear-gradient(to right, #0068C7 0%, #00203D 100%);
-    border: 0;
-    border-radius: 4px;
-    display: block;
-    font-size: 22px;
-    padding: 10px 26px;
-    margin: 0 0 10px 0;
-    width: 100%;
-    outline-style: solid;
-    outline-color: #0068C7;
-    outline-width: 0px;
-    outline-offset: 0px;
-    transition: all 100ms linear;
+  background: #0068c7;
+  background: -moz-linear-gradient(left, #0068c7 0%, #00203d 100%);
+  background: -webkit-linear-gradient(left, #0068c7 0%, #00203d 100%);
+  background: -ms-linear-gradient(left, #0068c7 0%, #00203d 100%);
+  background: linear-gradient(to right, #0068c7 0%, #00203d 100%);
+  border: 0;
+  border-radius: 4px;
+  display: block;
+  font-size: 22px;
+  padding: 10px 26px;
+  margin: 0 0 10px 0;
+  width: 100%;
+  outline-style: solid;
+  outline-color: #0068c7;
+  outline-width: 0px;
+  outline-offset: 0px;
+  transition: all 100ms linear;
 }
 .account-box .account-btn:hover {
-    transform: scale(1.05);
-    opacity: 1;
+  transform: scale(1.05);
+  opacity: 1;
+  color: #ebf5ff;
 }
 .account-box .account-btn:focus {
-    outline-width: 4px;
-    outline-offset: 4px;
-    opacity: 1;
+  outline-width: 4px;
+  outline-offset: 4px;
+  opacity: 1;
 }
 /* .account-box .account-btn:hover,
 .account-box .account-btn:focus {
