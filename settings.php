@@ -20,6 +20,8 @@
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+		<link rel="stylesheet" href="assets/css/setting.css">
 		
 		<!-- Bootstrap CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -36,11 +38,6 @@
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
 		
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-			<script src="assets/js/html5shiv.min.js"></script>
-			<script src="assets/js/respond.min.js"></script>
-		<![endif]-->
     </head>
     <body>
 		<!-- Main Wrapper -->
@@ -66,12 +63,14 @@
 							<div class="page-header">
 								<div class="row">
 									<div class="col-sm-12">
-										<h3 class="page-title">Company Settings</h3>
+										<h3 class="page-title" id="page-title">Company Settings</h3>
 									</div>
 								</div>
 							</div>
 							<!-- /Page Header -->
-							
+
+
+							<!-- Form starts here -->
 							<form>
 								<div class="row">
 									<div class="col-sm-6">
@@ -130,7 +129,7 @@
 									<div class="col-sm-6">
 										<div class="form-group">
 											<label>Email</label>
-											<input class="form-control" value="danielporter@example.com" type="email">
+											<input class="form-control" id="email" value="danielporter@example.com" type="email">
 										</div>
 									</div>
 									<div class="col-sm-6">
