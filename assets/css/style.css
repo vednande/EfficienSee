@@ -599,8 +599,8 @@ table.dataTable thead > tr > td.sorting {
 .btn-primary {
   margin-top: -4px;
   padding: 5px 13px;
-  background-color: red;
-  border: 1px solid orangered;
+  background-color: #00203d;
+  border: 2px solid transparent;
   border-radius: 10px;
 }
 .btn-primary:hover,
@@ -608,8 +608,9 @@ table.dataTable thead > tr > td.sorting {
 .btn-primary.active,
 .btn-primary:active,
 .open > .dropdown-toggle.btn-primary {
-  background-color: orangered;
-  border: 1px solid orangered;
+  background-color: #ebf5ff;
+  border: 2px solid #00203d;
+  color: #00203d;
 }
 .btn-primary.active.focus,
 .btn-primary.active:focus,
@@ -739,16 +740,17 @@ table.dataTable thead > tr > td.sorting {
   color: #fff;
 }
 .btn-danger {
-  background: #f62d51;
-  border: 1px solid #f62d51;
+  background-color: #00203d;
+  border: 2px solid transparent;
 }
 .btn-danger:hover,
 .btn-danger:focus,
 .btn-danger.active,
 .btn-danger:active,
 .open > .dropdown-toggle.btn-danger {
-  background-color: #e6294b;
-  border: 1px solid #e6294b;
+  background-color: #ebf5ff;
+  border: 2px solid #00203d;
+  color: #00203d;
 }
 .btn-danger.active.focus,
 .btn-danger.active:focus,
@@ -1096,7 +1098,7 @@ table.dataTable thead > tr > td.sorting {
   width: 50%;
 }
 .onoffswitch-inner:before {
-  background-color: #55ce63;
+  background-color: #00203d;
   color: #fff;
   content: "ON";
   padding-left: 14px;
@@ -1104,8 +1106,8 @@ table.dataTable thead > tr > td.sorting {
 .onoffswitch-inner:after {
   content: "OFF";
   padding-right: 14px;
-  background-color: #ccc;
-  color: #fff;
+  background-color: #0068c7;
+  color: #ebf5ff;
   text-align: right;
 }
 .onoffswitch-switch {
