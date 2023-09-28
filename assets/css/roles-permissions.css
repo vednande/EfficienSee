@@ -1,0 +1,15 @@
+#add-roles {
+  background-color: #00203d;
+  border: 2px solid transparent;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+#add-roles:hover {
+  background-color: #ebf5ff;
+  color: #00203d;
+  border: 2px solid #00203d;
+}

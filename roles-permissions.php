@@ -28,6 +28,8 @@
 		
 		<!-- Lineawesome CSS -->
         <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+
+		<link rel="stylesheet" href="assets/css/roles-permissions.css">
 		
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
@@ -68,7 +70,7 @@
 					
 					<div class="row">
 						<div class="col-sm-4 col-md-4 col-lg-4 col-xl-3">
-							<a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#add_role"><i class="fa fa-plus"></i> Add Roles</a>
+							<a href="#" class="btn btn-primary btn-block" id="add-roles" data-toggle="modal" data-target="#add_role"><i class="fa fa-plus"></i> <span>Add Roles</span></a>
 							<div class="roles-menu">
 								<ul>
 									<li class="active">

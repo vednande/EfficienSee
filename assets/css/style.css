@@ -1029,7 +1029,7 @@ table.dataTable thead > tr > td.sorting {
   position: absolute;
 }
 .checktoggle {
-  background-color: #e0001a;
+  background-color: #0068c7;
   border-radius: 12px;
   cursor: pointer;
   display: block;
@@ -1053,7 +1053,7 @@ table.dataTable thead > tr > td.sorting {
   transition: left 300ms ease, transform 300ms ease;
 }
 .check:checked + .checktoggle {
-  background-color: #55ce63;
+  background-color: #00203d;
 }
 .check:checked + .checktoggle:after {
   left: 100%;
