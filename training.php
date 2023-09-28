@@ -37,6 +37,8 @@
 		
 		<!-- Datatable CSS -->
 		<link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+
+		<link rel="stylesheet" href="assets/css/training.css">
 		
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
@@ -106,7 +108,7 @@
 											<td>
 												<h2 class="table-avatar">
 													<a href="profile.php" class="avatar"><img alt="" src="assets/img/profiles/avatar-02.jpg"></a>
-													<a href="profile.php">John Doe </a>
+													<a href="profile.php" id="trainee-name">John Doe </a>
 												</h2>
 											</td>
 											<td>
@@ -187,7 +189,7 @@
 											</td>
 											<td class="text-right">
 												<div class="dropdown dropdown-action">
-													<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+													<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons" id="material-icons">more_vert</i></a>
 													<div class="dropdown-menu dropdown-menu-right">
 														<a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_training"><i class="fa fa-pencil m-r-5"></i> Edit</a>
 														<a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_training"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
@@ -201,7 +203,7 @@
 											<td>
 												<h2 class="table-avatar">
 													<a href="profile.php" class="avatar"><img alt="" src="assets/img/profiles/avatar-09.jpg"></a>
-													<a href="profile.php">Richard Miles</a>
+													<a href="profile.php" id="trainee-name">Richard Miles</a>
 												</h2>
 											</td>
 											<td>
@@ -282,7 +284,7 @@
 											</td>
 											<td class="text-right">
 												<div class="dropdown dropdown-action">
-													<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+													<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons" id="material-icons">more_vert</i></a>
 													<div class="dropdown-menu dropdown-menu-right">
 														<a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_training"><i class="fa fa-pencil m-r-5"></i> Edit</a>
 														<a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_training"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
@@ -296,7 +298,7 @@
 											<td>
 												<h2 class="table-avatar">
 													<a href="profile.php" class="avatar"><img alt="" src="assets/img/profiles/avatar-02.jpg"></a>
-													<a href="profile.php">John Doe </a>
+													<a href="profile.php" id="trainee-name">John Doe </a>
 												</h2>
 											</td>
 											<td>
@@ -377,7 +379,7 @@
 											</td>
 											<td class="text-right">
 												<div class="dropdown dropdown-action">
-													<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+													<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons" id="material-icons">more_vert</i></a>
 													<div class="dropdown-menu dropdown-menu-right">
 														<a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_training"><i class="fa fa-pencil m-r-5"></i> Edit</a>
 														<a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_training"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
@@ -472,7 +474,7 @@
 											</td>
 											<td class="text-right">
 												<div class="dropdown dropdown-action">
-													<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+													<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons" id="material-icons">more_vert</i></a>
 													<div class="dropdown-menu dropdown-menu-right">
 														<a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_training"><i class="fa fa-pencil m-r-5"></i> Edit</a>
 														<a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_training"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
@@ -567,7 +569,7 @@
 											</td>
 											<td class="text-right">
 												<div class="dropdown dropdown-action">
-													<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+													<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons" id="material-icons">more_vert</i></a>
 													<div class="dropdown-menu dropdown-menu-right">
 														<a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_training"><i class="fa fa-pencil m-r-5"></i> Edit</a>
 														<a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_training"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
