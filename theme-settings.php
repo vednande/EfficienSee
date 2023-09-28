@@ -19,6 +19,7 @@
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
 		
 		<!-- Bootstrap CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -29,12 +30,14 @@
 		<!-- Lineawesome CSS -->
         <link rel="stylesheet" href="assets/css/line-awesome.min.css">
 		
+		<link rel="stylesheet" href="assets/css/theme-setting.css">
+
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
 		
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
-			<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/html5shiv.min.js"></script>
 			<script src="assets/js/respond.min.js"></script>
 		<![endif]-->
     </head>
@@ -68,11 +71,13 @@
 							</div>
 							<!-- /Page Header -->
 						
+							<!-- Form starts here -->
 							<form>
 								<div class="form-group row">
 									<label class="col-lg-3 col-form-label">Website Name</label>
 									<div class="col-lg-9">
-										<input name="website_name" class="form-control" value="Dreamguy's Technologies" type="text">
+										<input name="website_name" class="form-control"
+										id="input-form-user" value="Dreamguy's Technologies" type="text">
 									</div>
 								</div>
 								<div class="form-group row">
