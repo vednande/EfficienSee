@@ -4251,15 +4251,15 @@ input[type="submit"].btn-block {
   background-color: aliceblue;
 }
 
-.pro-card{
-  color: #1A1110;
+.pro-card {
+  color: #1a1110;
   padding-bottom: 2rem;
+  border: 2px solid transparent;
+  transition: all 250ms ease;
 }
 
-.pro-card:hover{
-  border-top: 2px solid #192586;
-  border-bottom: 2px solid #192586;
-  /* transition: .4s ease; */
+.pro-card:hover {
+  border: 2px solid #192586;
 }
 
 .card-title {
