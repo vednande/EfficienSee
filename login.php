@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="assets/css/accountLogo.css">
+<!-- <link rel="stylesheet" href="assets/css/accountLogo.css">
 <?php 
 	session_start();
 	error_reporting(0);
@@ -43,6 +43,36 @@
 			</div>';
 		}
 	}
+?> -->
+<?php
+require_once("includes/config.php"); // Include the database connection file
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+    $option = $_POST["option"];
+
+    // Check if the username, password, and option match a record in the "users" table
+    $sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password' AND option = '$option'";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows == 1) {
+        // Login successful, set session variables
+        $_SESSION["username"] = $username;
+        $_SESSION["option"] = $option;
+        // Login successful, redirect to the appropriate page based on the selected option
+        if ($option == "hr") {
+            header("Location: user-landing.php");
+        } else {
+            header("Location: user-landing.php");
+        }
+        exit();
+    } else {
+        // Login failed, display an error message
+        echo "Login failed. Please check your username, password, and option.";
+    }
+}
+$conn->close();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -93,12 +123,18 @@
 						<div class="account-wrapper">
 							<h3 class="account-title">Admin Login</h3>
 							<!-- Account Form -->
-							<form method="POST" enctype="multipart/form-data">
+							<form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST">
+							<div class="form-group">
+							<label for="option">Select Option:</label>
+							<input type="radio" name="option" value="hr" required> HR 
+							<input type="radio" name="option" value="employee" required> Employee <br><br>
+							</div>
+
 								<div class="form-group">
 									<label>User Name</label>
 									<input class="form-control" name="username" required type="text">
 								</div>
-								<?php if($wrongusername){echo $wrongusername;}?>
+								<!-- <?php if($wrongusername){echo $wrongusername;}?> -->
 								<div class="form-group">
 									<div class="row">
 										<div class="col">
@@ -107,10 +143,10 @@
 									</div>
 									<input class="form-control" name="password" required type="password">
 								</div>
-								<?php if($wrongpassword){echo $wrongpassword;}?>
+								<!-- <?php if($wrongpassword){echo $wrongpassword;}?> -->
 								
 								<div class="form-group text-center">
-									<button class="btn btn-primary account-btn" name="login" type="submit">Login</button>
+									<button class="btn btn-primary account-btn" name="login" type="submit" value="Login">Login</button>
 										<div class="col-auto pt-2">
 											<a class="text-muted float-right" href="forgot-password.php">
 												Forgot password?

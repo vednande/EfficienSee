@@ -1,4 +1,69 @@
-<link rel="stylesheet" href="assets/css/signup.css">
+<?php
+require_once("includes/config.php"); // Include the database connection file
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $firstName = $_POST["firstname"];
+    $lastName = $_POST["lastname"];
+    $userName = $_POST["username"];
+    $email = $_POST["email"];
+    $phone = $_POST["phonenumber"];
+    $address = $_POST["address"];
+    $password = $_POST["password"];
+    $confirmPassword = $_POST["cpassword"];
+	$option = $_POST["option"]; // Radio option identity
+
+    if ($password !== $confirmPassword) {
+        echo "Passwords do not match. Please try again.";
+    } else {
+        // File upload handling
+        $targetDir = "uploads/";
+        $targetFile = $targetDir . basename($_FILES["image"]["name"]);
+        $uploadOk = 1;
+        $imageFileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
+
+        // Check if image file is a actual image or fake image
+        $check = getimagesize($_FILES["image"]["tmp_name"]);
+        if ($check !== false) {
+            // Allow certain image file formats
+            if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+                && $imageFileType != "gif") {
+                echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+                $uploadOk = 0;
+            } else {
+                if (move_uploaded_file($_FILES["image"]["tmp_name"], $targetFile)) {
+                    echo "The file " . basename($_FILES["image"]["name"]) . " has been uploaded.";
+                    // Insert user data into the database
+                    $sql = "INSERT INTO users (FirstName, LastName, UserName, Email, Phone, Address, Password, Picture) VALUES ('$firstName', '$lastName', '$userName', '$email', '$phone', '$address', '$password', '$targetFile')";
+
+                    if ($conn->query($sql) === TRUE) {
+                        echo "Registration successful!";
+						header("Location: login.php");
+                    } else {
+                        echo "Error: " . $sql . "<br>" . $conn->error;
+                    }
+                } else {
+                    echo "Sorry, there was an error uploading your file.";
+                }
+            }
+        } else {
+            echo "File is not an image.";
+            $uploadOk = 0;
+        }
+    }
+}
+
+$conn->close();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/signup.css">
+
+	<title>Signup</title>
+</head>
+<body>
 <div class="signup">
     <div class="container">
         <div class="left">
@@ -8,8 +73,14 @@
             <div class="signup">
                 <div class="heading">  
                     <h1>sign up</h1>
-                    <form method="POST" enctype="multipart/form-data">
-								<div class="form-group">
+					<form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST" enctype="multipart/form-data">
+					        <div class="form-group">
+							<label for="option">Select Option:</label>
+							<input type="radio" name="option" value="hr" required> HR 
+							<input type="radio" name="option" value="employee" required> Employee <br><br>
+							</div>
+	
+					           <div class="form-group">
 									<label>First Name</label> 
 									<input class="form-control" name="firstname" required type="text">
 								</div>
@@ -35,8 +106,16 @@
 									<input class="form-control" name="password" required type="password">
 								</div>
 								<div class="form-group">
+									<div class="row">
+										<div class="col">
+											<label style="margin-bottom: 5px; ">Confirm Password</label>
+										</div>
+									</div>
+									<input class="form-control" name="cpassword" required type="password">
+								</div>
+								<div class="form-group">
 									<label>Phone Number</label> 
-									<input class="form-control" type="number" name="phonenumber" id="phonenumber" pattern="[0-9]" required max="10" maxlength="10">
+									<input class="form-control" type="number" name="phonenumber" id="phonenumber" required>
 									<!-- <input class="form-control" name="phonenumber" required type="ph"> -->
 								</div>
 								<div class="form-group">
@@ -45,12 +124,12 @@
 								</div>
 								<div class="form-group">
 									<label>Upload Photo</label> 
-									<input type="file" accept="image/*" class="form-control input-file" name="photo" id="photo" style="height: auto; width: fit-content; background-color: transparent; border: 1px solid transparent;">
+									<input type="file" accept="image/*" class="form-control input-file" name="image" id="image" style="height: auto; width: fit-content; background-color: transparent; border: 1px solid transparent;">
 								</div>
 								<!-- <?php if($wrongpassword){echo $wrongpassword;}?> --> 
 								
 								<div class="form-group text-center">
-									<button class="btn btn-primary account-btn" name="login" type="submit">sign up</button>
+									<button class="btn btn-primary account-btn" name="login" type="submit" value="Register">sign up</button>
 										<div class="col-auto pt-2 forgot-password">
 											<a class="text-muted float-right"  href="forgot-password.php">
 												Forgot password?
@@ -67,3 +146,8 @@
         </div>
     </div>
 </div>
+	
+</body>
+</html>
+
+

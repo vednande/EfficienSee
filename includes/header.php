@@ -235,17 +235,35 @@
 		</li>
 		<!-- /Message Notifications -->
 
-		<?php 
+		<!-- <?php 
 		$sql = "SELECT * from users";
 		$query = $dbh -> prepare($sql);
 		$query->execute();
 		$result=$query->fetch(PDO::FETCH_OBJ);
 		$cnt=1;
-		?>
+		
+		?> -->
+		<?php 
+			$sql = "SELECT * from users";
+			$query = $dbh->prepare($sql);
+			$query->execute();
+			$users = $query->fetchAll(PDO::FETCH_OBJ);
+			$cnt=1;
+
+			foreach ($users as $user) {
+				$image_path = $user->Picture;
+				$userID = $user->id; 
+			}
+	?>
 
 		<li class="nav-item dropdown has-arrow main-drop">
 			<a href="#" class="dropdown-toggle nav-link" id="image-and-name" data-toggle="dropdown">
-				<span class="user-img" id="user-img"><img src="./profiles/<?php echo htmlentities($result->Picture);?>" alt="User Picture">
+				<!-- <span class="user-img" id="user-img"><img src="/uploads/<?php echo htmlentities($image_path);?>" alt="User Picture"> -->
+				<?php
+				echo '<span class="user-img" id="user-img">';
+        echo '<img src="' . htmlentities($image_path) . '" alt="User Picture">';
+        echo '</span>';
+		?>
 				<span class="status online"></span></span>
 				<span id="user-name-input"><?php echo htmlentities(ucfirst($_SESSION['userlogin']));?></span>
 			</a>
