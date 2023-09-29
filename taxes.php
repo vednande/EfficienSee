@@ -31,6 +31,8 @@
 		
 		<!-- Select2 CSS -->
 		<link rel="stylesheet" href="assets/css/select2.min.css">
+
+		<link rel="stylesheet" href="assets/css/taxes.css">
 		
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
