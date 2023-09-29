@@ -34,6 +34,8 @@
 		
 		<!-- Datetimepicker CSS -->
 		<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+
+		<link rel="stylesheet" href="assets/css/invoices.css">
 		
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
@@ -133,7 +135,7 @@
 									<tbody>
 										<tr>
 											<td>1</td>
-											<td><a href="invoice-view.php">#INV-0001</a></td>
+											<td><a href="invoice-view.php" id="invoice-view">#INV-0001</a></td>
 											<td>Global Technologies</td>
 											<td>11 Mar 2019</td>
 											<td>17 Mar 2019</td>

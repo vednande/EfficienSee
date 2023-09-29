@@ -29,6 +29,8 @@
 		<!-- Lineawesome CSS -->
         <link rel="stylesheet" href="assets/css/line-awesome.min.css">
 		
+		<link rel="stylesheet" href="assets/css/invoice-settings.css">
+
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
 		
@@ -80,7 +82,7 @@
 										<span class="form-text text-muted">Recommended image size is 200px x 40px</span>
 									</div>
 									<div class="col-lg-2">
-										<div class="img-thumbnail float-right"><img src="assets/img/logo3.png" class="img-fluid" alt="" width="140" height="40"></div>
+										<div class="img-thumbnail float-right"><img style="transform: scale(2);" src="assets/img/logo-bgremoved.png" class="img-fluid" alt="" width="140" height="40"></div>
 									</div>
 								</div>
 								<div class="submit-section">

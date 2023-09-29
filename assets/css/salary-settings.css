@@ -1,0 +1,12 @@
+.form-group > input {
+  border: 2px solid #b3bcc5;
+  transition: all 250ms ease;
+  color: #00203d;
+  font-size: 1rem;
+}
+
+.form-group > input:focus {
+  color: #00203d;
+  border: 2px solid #00203d;
+  background-color: #ebf5ff;
+}

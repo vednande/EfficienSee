@@ -1,0 +1,6 @@
+table > tbody > tr:hover > td > h2 > #trainee-name {
+  color: #ebf5ff;
+}
+table > tbody > tr:hover > td > div > a > #material-icons {
+  color: #ebf5ff;
+}

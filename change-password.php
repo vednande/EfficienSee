@@ -38,6 +38,8 @@
 		
 		<!-- Lineawesome CSS -->
 		<link rel="stylesheet" href="assets/css/line-awesome.min.css">
+
+		<link rel="stylesheet" href="assets/css/change-password.css">
 		
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">

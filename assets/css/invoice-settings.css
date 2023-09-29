@@ -1,0 +1,26 @@
+.form-group > div > input {
+  border: 2px solid #b3bcc5;
+  transition: all 250ms ease;
+  color: #00203d;
+  font-size: 1rem;
+}
+
+.form-group > div > input:focus {
+  color: #00203d;
+  border: 2px solid #00203d;
+  background-color: #ebf5ff;
+}
+
+.submit-section > button {
+  background-color: #00203d;
+  color: #ebf5ff;
+  border: 2px solid transparent;
+  padding: 10px 15px;
+  font-size: 1.3rem;
+}
+
+.submit-section > button:hover {
+  background-color: #ebf5ff;
+  color: #00203d;
+  border: 2px solid #00203d;
+}

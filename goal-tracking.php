@@ -75,6 +75,8 @@
 		
 		<!-- Datatable CSS -->
 		<link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+
+		<link rel="stylesheet" href="assets/css/goal-tracking.css">
 		
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
@@ -175,6 +177,7 @@
 											<div class="progress-bar bg-primary progress-sm" style="width: 73%;height:10px;"></div></div>
 											</td>
 											
+											<!-- 3 DOTS -->
 											<td class="text-right">
 												<div class="dropdown dropdown-action">
 													<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
