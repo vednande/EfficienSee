@@ -3,7 +3,7 @@
 	<!-- Logo -->
 	<div class="header-left" id="header-left">
 		<a href="index.php" class="logo" id="logo">
-			EFFICIENSEE
+			EfficienSee
 		</a> 
 	</div>
 	<!-- /Logo -->
