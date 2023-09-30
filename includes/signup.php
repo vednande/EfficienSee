@@ -67,7 +67,7 @@ $conn->close();
 <div class="signup">
     <div class="container">
         <div class="left">
-            <a href="/project/efficiensee/index.php"><img src="https://alliancex.org/shield/wp-content/uploads/2021/01/register-scaled.jpg" alt="image"></a>
+            <a href="/efficiensee/index.php"><img src="https://alliancex.org/shield/wp-content/uploads/2021/01/register-scaled.jpg" alt="image"></a> 
         </div> 
         <div class="right"> 
             <div class="signup">
