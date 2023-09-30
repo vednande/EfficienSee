@@ -106,7 +106,7 @@ $conn->close();
 	<body class="account-page">
 
 	<div class="img">
-		<a href="/project/efficiensee/"><img src="https://etimg.etb2bimg.com/photo/96234639.cms" alt="image"></a>
+		<a href="/efficiensee/"><img src="https://etimg.etb2bimg.com/photo/96234639.cms" alt="image"></a>
 	</div>
 	
 		<!-- Main Wrapper -->
