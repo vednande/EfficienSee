@@ -12,7 +12,7 @@ if (isset($_SESSION["user"])) {
 	$image = $loggedInUser["Picture"];
 } else {
     // Redirect to the login page or handle the case when the user is not logged in
-    header('Location: login.php');
+    // header('Location: login.php');
     exit;
 }
 ?>
