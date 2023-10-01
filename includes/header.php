@@ -1,3 +1,22 @@
+<?php
+session_start();
+
+// Check if the user is logged in (user data should be in the session)
+if (isset($_SESSION["user"])) {
+    $loggedInUser = $_SESSION["user"];
+
+    // Access user data
+    $userID = $loggedInUser["id"];
+    $username = $loggedInUser["UserName"];
+    $selectedOption = $loggedInUser["option"];
+	$image = $loggedInUser["Picture"];
+} else {
+    // Redirect to the login page or handle the case when the user is not logged in
+    header('Location: login.php');
+    exit;
+}
+?>
+
 <link rel="stylesheet" href="assets/css/header.css">
 <div class="header">
 	<!-- Logo -->
@@ -243,7 +262,7 @@
 		$cnt=1;
 		
 		?> -->
-		<?php 
+		<!-- <?php 
 			$sql = "SELECT * from users";
 			$query = $dbh->prepare($sql);
 			$query->execute();
@@ -254,18 +273,18 @@
 				$image_path = $user->Picture;
 				$userID = $user->id; 
 			}
-	?>
+	?> -->
 
 		<li class="nav-item dropdown has-arrow main-drop">
 			<a href="#" class="dropdown-toggle nav-link" id="image-and-name" data-toggle="dropdown">
 				<!-- <span class="user-img" id="user-img"><img src="/uploads/<?php echo htmlentities($image_path);?>" alt="User Picture"> -->
 				<?php
 				echo '<span class="user-img" id="user-img">';
-        echo '<img src="' . htmlentities($image_path) . '" alt="User Picture">';
+        echo '<img src="' . htmlentities($image) . '" alt="User Picture">';
         echo '</span>';
 		?>
 				<span class="status online"></span></span>
-				<span id="user-name-input"><?php echo htmlentities(ucfirst($_SESSION['userlogin']));?></span>
+				<span id="user-name-input"><?php echo htmlentities(ucfirst($_SESSION['user']));?></span>
 			</a>
 			<div class="dropdown-menu">
 				<a class="dropdown-item" id="dropdown-item" href="profile.php">My Profile</a>
