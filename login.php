@@ -44,7 +44,7 @@
 		}
 	}
 ?> -->
-<?php
+<!-- <?php
 require_once("includes/config.php"); // Include the database connection file
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -73,6 +73,54 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 $conn->close();
+?> -->
+<?php
+session_start();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+    $option = $_POST["option"]; // Assuming the radio button has the name "option"
+
+    // Replace with your database connection code
+    require_once("includes/config.php");
+
+    // Check if the username exists in the database
+    $sql = "SELECT * FROM users WHERE UserName = :username";
+    $query = $dbh->prepare($sql);
+    $query->bindParam(":username", $username, PDO::PARAM_STR);
+    $query->execute();
+    $user = $query->fetch(PDO::FETCH_ASSOC);
+
+    if ($user) {
+        // Verify the password
+        if (password_verify($password, $user["Password"])) {
+            // Password is correct, store user data in the session
+            $_SESSION["user"] = [
+                "id" => $user["id"],
+                "username" => $user["UserName"],
+                "option" => $option // Store the selected option in the session
+            ];
+
+            // Redirect based on the selected option
+            if ($option === "hr") {
+                header("Location: user-landing.php");
+                exit;
+            } elseif ($option === "employee") {
+                header("Location: user-landing.php");
+                exit;
+            }
+        } else {
+            $loginError = "Invalid password";
+			echo "Login failed. Please check your username, password, and option.";
+            session_unset(); // Clear the session data
+        }
+    } else {
+        $loginError = "Username not found";
+		echo "Login failed. Please check your username, password, and option.";
+        session_unset(); // Clear the session data
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -176,6 +224,12 @@ $conn->close();
 		
 		<!-- Custom JS -->
 		<script src="assets/js/app.js"></script>
+		<!-- <?php
+    // Display login error, if any
+    if (isset($loginError)) {
+        echo "<p>$loginError</p>";
+    }
+    ?> -->
 		
 	</body>
 </html>
