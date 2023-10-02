@@ -1,0 +1,9 @@
+table > tbody > tr:hover > td > h2 > a {
+  color: #ebf5ff;
+}
+table > tbody > tr:hover > td > h2 > a > span {
+  color: #ebf5ff;
+}
+table > tbody > tr > td > div > a > i {
+  color: #ebf5ff;
+}

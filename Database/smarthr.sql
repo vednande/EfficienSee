@@ -291,7 +291,13 @@ CREATE TABLE `users` (
   `Phone` varchar(20) NOT NULL,
   `Address` varchar(200) NOT NULL,
   `Picture` varchar(255) NOT NULL,
+<<<<<<< HEAD
    `Option` varchar(255) NOT NULL,
+=======
+    `option` varchar(255) NOT NULL,
+
+
+>>>>>>> 709239da318b4617ce85e07f3943e02e48c0d237
   `dateTime` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
