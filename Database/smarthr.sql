@@ -291,6 +291,7 @@ CREATE TABLE `users` (
   `Phone` varchar(20) NOT NULL,
   `Address` varchar(200) NOT NULL,
   `Picture` varchar(255) NOT NULL,
+   `Option` varchar(255) NOT NULL,
   `dateTime` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 

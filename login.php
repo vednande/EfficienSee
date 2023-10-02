@@ -1,49 +1,100 @@
-<link rel="stylesheet" href="assets/css/accountLogo.css">
-<?php 
-	session_start();
-	error_reporting(0);
-	include_once("includes/config.php");
-	if($_SESSION['userlogin']>0){
-		header('location:user-landing.php'); 
-	}elseif(isset($_POST['login'])){
-		$_SESSION['userlogin'] = $_POST['username'];
-		$username = htmlspecialchars($_POST['username']);
-		$password = htmlspecialchars($_POST['password']);
-		$sql = "SELECT UserName,Password from users where UserName=:username";
-		$query = $dbh->prepare($sql);
-		$query->bindParam(':username',$username,PDO::PARAM_STR);
-		$query-> execute();
-		$results=$query->fetchAll(PDO::FETCH_OBJ);
-		if($query->rowCount() > 0){
-			foreach ($results as $row) {
-				$hashpass=$row->Password;
-			}//verifying Password
-			if (password_verify($password, $hashpass)) {
-				$_SESSION['userlogin']=$_POST['username'];
-				echo "<script>window.location.href= 'index.php'; </script>";
-			}
-			else {
-				$wrongpassword='
-				<div class="alert alert-danger alert-dismissible fade show" role="alert">
-				<strong>Oh Snapp!😕</strong> Alert <b class="alert-link">Password: </b>You entered wrong password.
-				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-				</div>';
-			}
-		}
-		//if username or email not found in database
-		else{
-			$wrongusername='
-			<div class="alert alert-danger alert-dismissible fade show" role="alert">
-				<strong>Oh Snapp!🙃</strong> Alert <b class="alert-link">UserName: </b> You entered a wrong UserName.
-				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>';
-		}
-	}
-?>
+ <?php 
+session_start();
+error_reporting(0);
+include_once("includes/config.php");
+
+if ($_SESSION['userlogin'] > 0) {
+    header('location:user-landing.php'); 
+} elseif (isset($_POST['login'])) {
+    $username = htmlspecialchars($_POST['username']);
+    $password = htmlspecialchars($_POST['password']);
+    $option = $_POST['option']; // Get the selected option
+
+    $sql = "SELECT UserName, Password, `Option` FROM users WHERE UserName = :username and Password = :password";
+    $query = $dbh->prepare($sql);
+    $query->bindParam(':username', $username, PDO::PARAM_STR);
+    $query->execute();
+    $user = $query->fetch(PDO::FETCH_ASSOC);
+
+    if ($user) {
+        if (password_verify($password, $user["Password"])) {
+            $_SESSION['userlogin'] = $username;
+            $_SESSION['useroption'] = $user["Option"]; // Store the user's option in the session
+
+            // Redirect based on the selected option
+            if ($option === "hr" && $user["Option"] === "hr") {
+                header("Location: user-landing.php");
+                exit;
+            } elseif ($option === "employee" && $user["Option"] === "employee") {
+                header("Location: user-landing.php");
+                exit;
+            } else {
+                session_unset(); // Clear the session data
+                $wrongpassword = '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <strong>Oh Snap! 😕</strong> Invalid option or password.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>';
+            }
+        } else {
+            session_unset(); // Clear the session data
+            $wrongpassword = '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong>Oh Snap! 😕</strong> Invalid password.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>';
+        }
+    } else {
+        session_unset(); // Clear the session data
+        $wrongusername = '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Oh Snap! 🙃</strong> Invalid username.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>';
+    }
+}
+?> 
+<!-- <?php
+session_start();
+require_once("includes/config.php");
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+    $option = $_POST["option"];
+
+    // Use prepared statements to prevent SQL injection
+    $sql = "SELECT * FROM users WHERE UserName = ? AND Password = ? AND Option = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("sss", $username, $password, $option);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows == 1) {
+        // Login successful, set session variables
+        $_SESSION["UserName"] = $username;
+        $_SESSION["ption"] = $option;
+        // Login successful, redirect to the appropriate page based on the selected option
+        if ($option == "hr") {
+            header("Location: user-landing.php");
+            exit();
+        } else {
+            header("Location: user-landing.php");
+            exit();
+        }
+    } else {
+		// Login failed, display an error message
+        echo "Login failed. Please check your username, password, and option.";
+    }
+    $stmt->close();
+}
+$conn->close(); 
+?>  -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 		<head>
@@ -94,6 +145,13 @@
 							<h3 class="account-title">Admin Login</h3>
 							<!-- Account Form -->
 							<form method="POST" enctype="multipart/form-data">
+
+							<div class="form-group">
+							<label for="option">Select Option:</label>
+							<input type="radio" name="option" value="hr" required> HR 
+							<input type="radio" name="option" value="employee" required> Employee <br><br>
+							</div>
+
 								<div class="form-group">
 									<label>User Name</label>
 									<input class="form-control" name="username" required type="text">
