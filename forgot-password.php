@@ -50,13 +50,13 @@
 							<p class="account-subtitle">Enter your email to get a password reset link</p>
 							
 							<!-- Account Form -->
-							<form>
+							<form action="sendReset.php" method="POST">
 								<div class="form-group">
 									<label>Email Address</label>
-									<input class="form-control" type="text">
+									<input class="form-control" type="text" name="Email">
 								</div>
 								<div class="form-group text-center">
-									<button class="btn btn-primary account-btn" type="submit">Reset Password</button>
+									<button class="btn btn-primary account-btn" type="submit" value="Send Reset Link">Reset Password</button>
 								</div>
 								<div class="account-footer">
 									<p>Remember your password? <a href="login.php">Login</a></p>

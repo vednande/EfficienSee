@@ -2,14 +2,20 @@
 <div class="signup">
     <div class="container">
         <div class="left">
-            <a href="/project/efficiensee/index.php"><img src="https://alliancex.org/shield/wp-content/uploads/2021/01/register-scaled.jpg" alt="image"></a>
+            <a href="/efficiensee/index.php"><img src="https://alliancex.org/shield/wp-content/uploads/2021/01/register-scaled.jpg" alt="image"></a> 
         </div> 
         <div class="right"> 
             <div class="signup">
                 <div class="heading">  
                     <h1>sign up</h1>
-                    <form method="POST" enctype="multipart/form-data">
-								<div class="form-group">
+					<form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST" enctype="multipart/form-data">
+					        <div class="form-group">
+							<label for="option">Select Option:</label>
+							<input type="radio" name="option" value="hr" required> HR 
+							<input type="radio" name="option" value="employee" required> Employee <br><br>
+							</div>
+	
+					           <div class="form-group">
 									<label>First Name</label> 
 									<input class="form-control" name="firstname" required type="text">
 								</div>
@@ -35,8 +41,16 @@
 									<input class="form-control" name="password" required type="password">
 								</div>
 								<div class="form-group">
+									<div class="row">
+										<div class="col">
+											<label style="margin-bottom: 5px; ">Confirm Password</label>
+										</div>
+									</div>
+									<input class="form-control" name="cpassword" required type="password">
+								</div>
+								<div class="form-group">
 									<label>Phone Number</label> 
-									<input class="form-control" type="number" name="phonenumber" id="phonenumber" pattern="[0-9]" required max="10" maxlength="10">
+									<input class="form-control" type="number" name="phonenumber" id="phonenumber" required>
 									<!-- <input class="form-control" name="phonenumber" required type="ph"> -->
 								</div>
 								<div class="form-group">
@@ -45,12 +59,12 @@
 								</div>
 								<div class="form-group">
 									<label>Upload Photo</label> 
-									<input type="file" accept="image/*" class="form-control input-file" name="photo" id="photo" style="height: auto; width: fit-content; background-color: transparent; border: 1px solid transparent;">
+									<input type="file" accept="image/*" class="form-control input-file" name="image" id="image" style="height: auto; width: fit-content; background-color: transparent; border: 1px solid transparent;">
 								</div>
 								<!-- <?php if($wrongpassword){echo $wrongpassword;}?> --> 
 								
 								<div class="form-group text-center">
-									<button class="btn btn-primary account-btn" name="login" type="submit">sign up</button>
+									<button class="btn btn-primary account-btn" name="login" type="submit" value="Register">sign up</button>
 										<div class="col-auto pt-2 forgot-password">
 											<a class="text-muted float-right"  href="forgot-password.php">
 												Forgot password?

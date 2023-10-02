@@ -35,6 +35,8 @@
 		
 		<!-- Select2 CSS -->
 		<link rel="stylesheet" href="assets/css/select2.min.css">
+
+		<link rel="stylesheet" href="assets/css/provident-fund.css">
 		
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
@@ -113,7 +115,7 @@
 													<div class="dropdown-menu dropdown-menu-right">
 														<a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o text-danger"></i> Pending</a>
 														<a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o text-success"></i> Approved</a>
-													</div>
+													</div> 
 												</div>
 											</td>
 											<td class="text-right">

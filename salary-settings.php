@@ -29,6 +29,8 @@
 		<!-- Lineawesome CSS -->
         <link rel="stylesheet" href="assets/css/line-awesome.min.css">
 		
+		<link rel="stylesheet" href="assets/css/salary-settings.css">
+
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
 		

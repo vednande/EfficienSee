@@ -1,0 +1,9 @@
+table > thead > tr {
+  font-size: 18px;
+}
+table > tbody {
+  font-size: 16px;
+}
+tbody > tr:hover > td > div > a > i {
+  color: #ebf5ff;
+}
