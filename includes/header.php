@@ -2,7 +2,7 @@
 <div class="header">
 	<!-- Logo -->
 	<div class="header-left" id="header-left">
-		<a href="index.php" class="logo" id="logo">
+		<a href="user-landing.php" class="logo" id="logo">
 			EFFICIENSEE
 		</a> 
 	</div>
