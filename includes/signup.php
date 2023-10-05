@@ -1,4 +1,69 @@
-<link rel="stylesheet" href="assets/css/signup.css">
+<?php
+require_once("includes/config.php"); // Include the database connection file
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $firstName = $_POST["firstname"];
+    $lastName = $_POST["lastname"];
+    $userName = $_POST["username"];
+    $email = $_POST["email"];
+    $phone = $_POST["phonenumber"];
+    $address = $_POST["address"];
+    $password = $_POST["password"];
+    $confirmPassword = $_POST["cpassword"];
+	$option = $_POST["option"]; // Radio option identity
+
+    if ($password !== $confirmPassword) {
+        echo "Passwords do not match. Please try again.";
+    } else {
+        // File upload handling
+        $targetDir = "uploads/";
+        $targetFile = $targetDir . basename($_FILES["image"]["name"]);
+        $uploadOk = 1;
+        $imageFileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
+
+        // Check if image file is a actual image or fake image
+        $check = getimagesize($_FILES["image"]["tmp_name"]);
+        if ($check !== false) {
+            // Allow certain image file formats
+            if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+                && $imageFileType != "gif") {
+                echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+                $uploadOk = 0;
+            } else {
+                if (move_uploaded_file($_FILES["image"]["tmp_name"], $targetFile)) {
+                    echo "The file " . basename($_FILES["image"]["name"]) . " has been uploaded.";
+                    // Insert user data into the database
+                    $sql = "INSERT INTO users (FirstName, LastName, UserName, Email, Phone, Address, Password, Picture,Option) VALUES ('$firstName', '$lastName', '$userName', '$email', '$phone', '$address', '$password', '$targetFile','$option')";
+
+                    if ($conn->query($sql) === TRUE) {
+                        echo "Registration successful!";
+						header("Location: login.php");
+                    } else {
+                        echo "Error: " . $sql . "<br>" . $conn->error;
+                    }
+                } else {
+                    echo "Sorry, there was an error uploading your file.";
+                }
+            }
+        } else {
+            echo "File is not an image.";
+            $uploadOk = 0;
+        }
+    }
+}
+
+$conn->close();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/signup.css">
+
+	<title>Signup</title>
+</head>
+<body>
 <div class="signup">
     <div class="container">
         <div class="left">
@@ -81,3 +146,6 @@
         </div>
     </div>
 </div>
+	
+</body>
+</html>
