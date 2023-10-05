@@ -5,70 +5,56 @@
 	include_once("includes/config.php");
 	if($_SESSION['userlogin']>0){
 		header('location:user-landing.php'); 
+	}elseif(isset($_POST['login'])){
+		$_SESSION['userlogin'] = $_POST['username'];
+		$username = htmlspecialchars($_POST['username']);
+		$password = htmlspecialchars($_POST['password']);
+		$sql = "SELECT UserName,Password from users where UserName=:username";
+		$query = $dbh->prepare($sql);
+		$query->bindParam(':username',$username,PDO::PARAM_STR);
+		$query-> execute();
+		$results=$query->fetchAll(PDO::FETCH_OBJ);
+		if($query->rowCount() > 0){
+			foreach ($results as $row) {
+				$hashpass=$row->Password;
+			}//verifying Password
+			if (password_verify($password, $hashpass)) {
+				$_SESSION['userlogin']=$_POST['username'];
+				echo "<script>window.location.href= 'index.php'; </script>";
+			}
+			else {
+				$wrongpassword='
+				<div class="alert alert-danger alert-dismissible fade show" role="alert">
+				<strong>Oh Snapp!😕</strong> Alert <b class="alert-link">Password: </b>You entered wrong password.
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>';
+			}
+		}
+		//if username or email not found in database
+		else{
+			$wrongusername='
+			<div class="alert alert-danger alert-dismissible fade show" role="alert">
+				<strong>Oh Snapp!🙃</strong> Alert <b class="alert-link">UserName: </b> You entered a wrong UserName.
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>';
+		}
 	}
-   elseif (isset($_POST['login'])) {
-    $username = htmlspecialchars($_POST['username']);
-    $password = htmlspecialchars($_POST['password']);
-    $option = $_POST['option']; // Get the selected option
-
-    $sql = "SELECT UserName, Password, option FROM users WHERE UserName = :username";
-    $query = $dbh->prepare($sql);
-    $query->bindParam(':username', $username, PDO::PARAM_STR);
-    $query->execute();
-    $user = $query->fetch(PDO::FETCH_ASSOC);
-
-    if ($user) {
-        if (password_verify($password, $user["Password"])) {
-            $_SESSION['userlogin'] = $_POST['username'];
-            $_SESSION['useroption'] = $user["option"]; // Store the user's option in the session
-
-            // Redirect based on the selected option
-            if ($option === "hr") {
-                header("Location: user-landing.php");
-                exit;
-            } elseif ($option === "employee") {
-                header("Location: user-landing.php");
-                exit;
-            }
-        } else {
-            session_unset(); // Clear the session data
-            $wrongpassword = '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-                <strong>Oh Snapp!😕</strong> Alert <b class="alert-link">Password: </b>You entered the wrong password.
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>';
-        }
-    } else {
-        session_unset(); // Clear the session data
-        $wrongusername = '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-            <strong>Oh Snapp!🙃</strong> Alert <b class="alert-link">UserName: </b> You entered the wrong UserName.
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>';
-    }
-   }
-
-
-
-	
-?>  -->
-<!--  <?php
-session_start();
-require_once("includes/config.php");
+?> -->
+<?php
+require_once("includes/config.php"); // Include the database connection file
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
     $option = $_POST["option"];
 
-    // Use prepared statements to prevent SQL injection
-    $sql = "SELECT * FROM users WHERE username = ? AND password = ? AND option = ?";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("sss", $username, $password, $option);
-    $stmt->execute();
-    $result = $stmt->get_result();
+    // Check if the username, password, and option match a record in the "users" table
+    $sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password' AND option = '$option'";
+    $result = $conn->query($sql);
 
     if ($result->num_rows == 1) {
         // Login successful, set session variables
@@ -77,67 +63,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Login successful, redirect to the appropriate page based on the selected option
         if ($option == "hr") {
             header("Location: user-landing.php");
-            exit();
         } else {
             header("Location: user-landing.php");
-            exit();
         }
+        exit();
     } else {
         // Login failed, display an error message
         echo "Login failed. Please check your username, password, and option.";
     }
-    $stmt->close();
 }
-$conn->close(); 
-?> -->
- 
- <?php
-session_start();
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST["username"];
-    $password = $_POST["password"];
-    $option = $_POST["option"]; // Assuming the radio button has the name "option"
-
-    // Replace with your database connection code
-    require_once("includes/config.php");
-
-    // Check if the username exists in the database
-    $sql = "SELECT * FROM users WHERE UserName = :username";
-    $query = $dbh->prepare($sql);
-    $query->bindParam(":username", $username, PDO::PARAM_STR);
-    $query->execute();
-    $userlogin = $query->fetch(PDO::FETCH_ASSOC);
-
-    if ($user) {
-        // Verify the password
-        if (password_verify($password, $user["Password"])) {
-            // Password is correct, store user data in the session
-            $_SESSION["userlogin"] = [
-                "id" => $user["id"],
-                "username" => $userlogin["UserName"],
-                "option" => $option // Store the selected option in the session
-            ];
-
-            // Redirect based on the selected option
-            if ($option === "hr") {
-                header("Location: user-landing.php");
-                exit;
-            } elseif ($option === "employee") {
-                header("Location: user-landing.php");
-                exit;
-            }
-        } else {
-            $loginError = "Invalid password";
-			echo "Login failed. Please check your username, password, and option.";
-            session_unset(); // Clear the session data
-        }
-    } else {
-        $loginError = "Username not found";
-		echo "Login failed. Please check your username, password, and option.";
-        session_unset(); // Clear the session data
-    }
-}
+$conn->close();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -241,12 +176,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		
 		<!-- Custom JS -->
 		<script src="assets/js/app.js"></script>
-		<!-- <?php
-    // Display login error, if any
-    if (isset($loginError)) {
-        echo "<p>$loginError</p>";
-    }
-    ?> -->
 		
 	</body>
 </html>
