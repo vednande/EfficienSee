@@ -160,7 +160,7 @@
 												<span class="d-block">Earnings</span>
 											</div>
 											<div>
-												<span class="text-success">₹</span>
+												<span class="text-success">%</span>
 												<span class="text-success" id="percentage-earnings"></span>
 											</div>
 										</div>
@@ -179,7 +179,7 @@
 												<span class="d-block">Expenses</span>
 											</div>
 											<div>
-												<span class="text-success">₹</span>
+												<span class="text-success">%</span>
 												<span class="text-success" id="percentage-expenses"></span>
 											</div>
 										</div>
@@ -198,15 +198,15 @@
 												<span class="d-block">Profit</span>
 											</div>
 											<div>
-												<!-- <span class="text-success">₹</span> -->
 												<span class="text-success"></span>
+												<span class="text-success" id="percentage-profit"></span>
 											</div>
 										</div>
 										<h3 class="mb-3">₹ <span id="profit-dynamic"></span></h3>
 										<div class="progress mb-2" style="height: 5px;">
 											<div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
 										</div>
-										<p class="mb-0">Previous Month <span class="text-muted">$1,42,000</span></p>
+										<p class="mb-0">Previous Month <span class="text-muted">₹ <span id="prev-month-profit"></span></span></p>
 									</div>
 								</div>
 							</div>
