@@ -3,7 +3,7 @@
 					<div class="sidebar-menu">
 						<ul>
 							<li> 
-								<a href="index.php"><i class="la la-home"></i> <span>Back to Home</span></a>
+								<a href="user-landing.php"><i class="la la-home"></i> <span>Back to Home</span></a>
 							</li>
 							<li class="menu-title">Settings</li>
 							<li> 
@@ -12,9 +12,6 @@
 				
 							<li> 
 								<a href="theme-settings.php"><i class="la la-photo"></i> <span>Theme Settings</span></a>
-							</li>
-							<li> 
-								<a href="roles-permissions.php"><i class="la la-key"></i> <span>Roles & Permissions</span></a>
 							</li>
 							<li> 
 								<a href="roles-permissions.php"><i class="la la-key"></i> <span>Roles & Permissions</span></a>
