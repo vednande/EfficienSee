@@ -153,17 +153,18 @@
 									</div>
 								</div>
 							
-								<div class="card kaus-card">
+								<div class="card kaus-card" style="transition: all 250ms ease;">
 									<div class="card-body">
 										<div class="d-flex justify-content-between mb-3">
 											<div>
 												<span class="d-block">Earnings</span>
 											</div>
 											<div>
-												<span class="text-success">+12.5%</span>
+												<span class="text-success">₹</span>
+												<span class="text-success" id="percentage-earnings"></span>
 											</div>
 										</div>
-										<h3 class="mb-3">$1,42,300</h3>
+										<h3 class="mb-3">₹ <span id="earnings-dynamic"></span></h3>
 										<div class="progress mb-2" style="height: 5px;">
 											<div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
 										</div>
@@ -178,10 +179,11 @@
 												<span class="d-block">Expenses</span>
 											</div>
 											<div>
-												<span class="text-danger">-2.8%</span>
+												<span class="text-success">₹</span>
+												<span class="text-success" id="percentage-expenses"></span>
 											</div>
 										</div>
-										<h3 class="mb-3">$8,500</h3>
+										<h3 class="mb-3">₹ <span id="expenses-dynamic"></span></h3>
 										<div class="progress mb-2" style="height: 5px;">
 											<div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
 										</div>
@@ -196,10 +198,11 @@
 												<span class="d-block">Profit</span>
 											</div>
 											<div>
-												<span class="text-danger">-75%</span>
+												<!-- <span class="text-success">₹</span> -->
+												<span class="text-success"></span>
 											</div>
 										</div>
-										<h3 class="mb-3">$1,12,000</h3>
+										<h3 class="mb-3">₹ <span id="profit-dynamic"></span></h3>
 										<div class="progress mb-2" style="height: 5px;">
 											<div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
 										</div>
@@ -366,6 +369,8 @@
 		
 		<!-- javascript links starts here -->
 		<!-- jQuery -->
+
+		<script src="dynChange/userLanding.js"></script>
         <script src="assets/js/jquery-3.2.1.min.js"></script>
 		
 		<!-- Bootstrap Core JS -->

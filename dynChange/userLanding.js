@@ -1,6 +1,6 @@
 console.log("User landing page!");
 
-const changeNumberDynamically = () => {
+/* const changeNumberDynamically = () => {
   // FOR PRINTING FIGURES OF EARNINGS, EXPENSES AND PROFITS
   const earningsDyn = document.getElementById("earnings-dynamic");
   const expensesDyn = document.getElementById("expenses-dynamic");
@@ -15,7 +15,7 @@ const changeNumberDynamically = () => {
   );
   const percentageChangeProfit = document.getElementById("percentage-profit");
 
-  /* ******** DISPLAYING FIGURES CALCULATION ********  */
+  // ******** DISPLAYING FIGURES CALCULATION ******** 
 
   // MIN and MAX DECLARATION FOR PERCENTAGE CHANGE
   const min = -2;
@@ -63,21 +63,46 @@ const changeNumberDynamically = () => {
   percentageChangeEarnings.innerText = percentageChangeInEarnings.toFixed(2);
   percentageChangeExpenses.innerText = percentageChangeInExpenses.toFixed(2);
   // percentageChangeProfit.innerText = percentageChangeInEarnings.toFixed(2);
-};
+}; */
 
-setInterval(changeNumberDynamically, 2000);
+// Initialize earnings, expenses, and profit values
+let earnings = 100000; // Initial earnings
+let expenses = 80000; // Initial expenses
+let profit = earnings - expenses;
 
-// setTimeout(() => {
-//   percentChange = Math.random() * (max - min) + min;
-//   earnings += percentChange;
-//   profit += earnings - expenses;
-//   earningsDyn.innerText = earnings;
-// }, 2000);
+// Define the percentage change range (-2% to 2%)
+const minChangePercent = -2;
+const maxChangePercent = 2;
 
-// function changeNumberDynamic() {
-//   const earningsDyn = document.getElementById("earnings-dynamic");
-//   const newContent = "New Content " + new Date().toLocaleTimeString();
-//   earningsDyn.textContent = newContent;
-// }
+// Function to generate a random percentage change within the specified range
+function getRandomPercentageChange(min, max) {
+  return (Math.random() * (max - min) + min) / 100;
+}
 
-// setInterval(changeNumberDynamic, 3000);
+// Function to update values with a random change within the range
+function updateValues() {
+  const earningsChange =
+    earnings * getRandomPercentageChange(minChangePercent, maxChangePercent);
+  const expensesChange =
+    expenses * getRandomPercentageChange(minChangePercent, maxChangePercent);
+
+  earnings += earningsChange;
+  expenses += expensesChange;
+  profit = earnings - expenses;
+
+  // Update the HTML or display the values
+  document.getElementById("earnings-dynamic").textContent = earnings.toFixed(2);
+  document.getElementById("expenses-dynamic").textContent = expenses.toFixed(2);
+  document.getElementById("profit-dynamic").textContent = profit.toFixed(2);
+  document.getElementById("percentage-earnings").textContent =
+    earningsChange.toFixed(2);
+  document.getElementById("percentage-expenses").textContent =
+    expensesChange.toFixed(2);
+}
+
+// Call the updateValues function to initiate the updates
+updateValues();
+
+// You can call the updateValues function periodically (e.g., using setInterval) to simulate dynamic updates
+// For example, to update every 2 seconds:
+setInterval(updateValues, 2000);
