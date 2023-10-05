@@ -2,9 +2,10 @@
 	session_start();
 	error_reporting(0);
 	include('includes/config.php');
-	if(strlen($_SESSION['userlogin'])==0){
-		header('location:login.php');
-	}
+	// if(strlen($_SESSION['userlogin'])==0){
+	// 	header('location:login.php');
+	// }
+	
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -47,8 +48,6 @@
     <body>
 		<!-- Main Wrapper -->
         <div class="main-wrapper">
-
-			<!-- Loading Page -->
 		
 			<!-- Header -->
             <?php include_once("includes/header.php"); ?>
@@ -132,18 +131,6 @@
 					</div>
 					
 					
-					<!-- <div class="earnings">
-						<h1>Earnings</h1>
-						<p id="earnings-dynamic"></p>
-					</div>
-					<div class="expenses">
-						<h1>Expenses</h1>
-						<p id="expenses-dynamic"></p>
-					</div>
-					<div class="profit">
-						<h1>Profit</h1>
-						<p id="profit-dynamic"></p>
-					</div> -->
 					
 					<div class="row">
 						<div class="col-md-12">
@@ -173,15 +160,14 @@
 												<span class="d-block">Earnings</span>
 											</div>
 											<div>
-												<!-- <span class="text-success" id="percentage-earnings">+12.5%</span> -->
-												<span class="text-success" id="percentage-earnings"></span>
+												<span class="text-success">+12.5%</span>
 											</div>
 										</div>
-										<h3 class="mb-3">₹ <span id="earnings-dynamic"></span></h3>
+										<h3 class="mb-3">$1,42,300</h3>
 										<div class="progress mb-2" style="height: 5px;">
 											<div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
 										</div>
-										<p class="mb-0">Previous Month <span class="text-muted">₹ 1,15,852</span></p>
+										<p class="mb-0">Previous Month <span class="text-muted">$1,15,852</span></p>
 									</div>
 								</div>
 							
@@ -192,15 +178,14 @@
 												<span class="d-block">Expenses</span>
 											</div>
 											<div>
-												<!-- <span class="text-danger" id="percentage-expenses">-2.8%</span> -->
-												<span class="text-danger" id="percentage-expenses"></span>
+												<span class="text-danger">-2.8%</span>
 											</div>
 										</div>
-										<h3 class="mb-3">₹ <span id="expenses-dynamic"></span></h3>
+										<h3 class="mb-3">$8,500</h3>
 										<div class="progress mb-2" style="height: 5px;">
 											<div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
 										</div>
-										<p class="mb-0">Previous Month <span class="text-muted">₹ 7,500</span></p>
+										<p class="mb-0">Previous Month <span class="text-muted">$7,500</span></p>
 									</div>
 								</div>
 							
@@ -211,14 +196,14 @@
 												<span class="d-block">Profit</span>
 											</div>
 											<div>
-												<!-- <span class="text-danger" id="percentage-profit">-75%</span> -->
+												<span class="text-danger">-75%</span>
 											</div>
 										</div>
-										<h3 class="mb-3">₹ <span id="profit-dynamic"></span></h3>
+										<h3 class="mb-3">$1,12,000</h3>
 										<div class="progress mb-2" style="height: 5px;">
 											<div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
 										</div>
-										<p class="mb-0">Previous Month <span class="text-muted">₹ 1,42,000</span></p>
+										<p class="mb-0">Previous Month <span class="text-muted">$1,42,000</span></p>
 									</div>
 								</div>
 							</div>
@@ -397,7 +382,6 @@
 		
 		<!-- Custom JS -->
 		<script src="assets/js/app.js"></script>
-		<script src="dynChange/userLanding.js"></script>
 		<!-- javascript links ends here  -->
     </body>
 </html>
