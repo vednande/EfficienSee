@@ -3,7 +3,7 @@
 	<!-- Logo -->
 	<div class="header-left" id="header-left">
 		<a href="user-landing.php" class="logo" id="logo">
-			EFFICIENSEE
+			<span style="color:#00203D;">EFFICIEN</span>SEE
 		</a> 
 	</div>
 	<!-- /Logo -->

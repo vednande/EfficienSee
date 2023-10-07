@@ -24,6 +24,9 @@
         <meta name="author" content="Dreamguys - Bootstrap Admin Template">
         <meta name="robots" content="noindex, nofollow">
         <title>Departments - HRMS admin template</title>
+
+		<!-- Tables Design -->
+		<link rel="stylesheet" href="assets/css/tables.css">
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
