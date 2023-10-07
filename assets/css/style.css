@@ -496,7 +496,7 @@ table.dataTable thead > tr > td.sorting {
   font-size: 18px;
 }
 .btn.btn-rounded {
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 /*-----------------
@@ -2149,7 +2149,7 @@ table.dataTable thead > tr > td.sorting {
 }
 .action-label > a {
   display: inline-block;
-  min-width: 103px;
+  min-width: 140px;
 }
 .action-label .btn-sm {
   padding: 4px;
