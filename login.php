@@ -94,13 +94,15 @@ $conn->close();
 		
 		<!-- Fontawesome CSS -->
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="assets/css/login.css">
 		
 		<!-- Main CSS -->
 		<link rel="stylesheet" href="assets/css/style.css">
 		<link rel="stylesheet" href="assets/css/accountLogo.css">
 		<link rel="stylesheet" href="assets/css/accountBtn.css">
 		<link rel="stylesheet" href="assets/css/accountFooter.css">
-		<link rel="stylesheet" href="assets/css/accountImg.css">
+		<link rel="stylesheet" href="assets/css/accountImg.css"> 
 
 	</head>
 	<body class="account-page">
@@ -125,9 +127,23 @@ $conn->close();
 							<!-- Account Form -->
 							<form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST">
 							<div class="form-group">
-							<label for="option">Select Option:</label>
-							<input type="radio" name="option" value="hr" required> HR 
-							<input type="radio" name="option" value="employee" required> Employee <br><br>
+								<div class="label">
+									<label for="option">Select Option:</label>
+								</div>
+								<div class="inputs">
+									<div class="hr">
+										<input type="radio" name="option" value="hr"
+										id="specifyColor"
+										required>
+										<span>hr</span> 
+									</div>
+									<div class="employee">
+										<input type="radio" name="option" value="employee" 
+										id="specifyColor"
+										required> 
+										<span>employee</span> 
+									</div>
+								</div>
 							</div>
 
 								<div class="form-group">
@@ -148,14 +164,14 @@ $conn->close();
 								<div class="form-group text-center">
 									<button class="btn btn-primary account-btn" name="login" type="submit" value="Login">Login</button>
 										<div class="col-auto pt-2">
-											<a class="text-muted float-right" href="forgot-password.php">
+											<a class="text-muted float-right" href="forgot-password.php" id="forgot-password">
 												Forgot password?
 											</a>
 										</div>
 								</div>
 									
-								<div class="account-footer">
-									<p>Having Trouble? report an issue on github <a target="https://github.com/MusheAbdulHakim/Smarthr---hr-payroll-project-employee-management-System/issues" href="https://github.com/MusheAbdulHakim/Smarthr---hr-payroll-project-employee-management-System/issues">Github issues</a></p>
+								<div class="account-footer" style="width: 100%; margin-top: 40px;">
+									<p style="display: flex; width: 100%; gap: 0.50rem;"><span>Having Trouble? report an issue on github</span> <a target="https://github.com/MusheAbdulHakim/Smarthr---hr-payroll-project-employee-management-System/issues" href="https://github.com/MusheAbdulHakim/Smarthr---hr-payroll-project-employee-management-System/issues" id="git-link">Github issues</a></p>
 								</div>
 							</form>
 							<!-- /Account Form -->

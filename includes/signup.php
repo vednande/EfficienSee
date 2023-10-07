@@ -67,7 +67,7 @@ $conn->close();
 <div class="signup">
     <div class="container">
         <div class="left">
-            <a href="/efficiensee/index.php"><img src="https://alliancex.org/shield/wp-content/uploads/2021/01/register-scaled.jpg" alt="image"></a> 
+            <a href="/efficiensee/index.php"><img src="assets/img/signup_final.png" alt="image"></a> 
         </div> 
         <div class="right"> 
             <div class="signup">
@@ -75,9 +75,17 @@ $conn->close();
                     <h1>sign up</h1>
 					<form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST" enctype="multipart/form-data">
 					        <div class="form-group">
-							<label for="option">Select Option:</label>
-							<input type="radio" name="option" value="hr" required> HR 
-							<input type="radio" name="option" value="employee" required> Employee <br><br>
+							<div class="label">
+								<label for="option">Select Option:</label>
+							</div>
+							<div class="inputs">
+								<div class="hr">
+									<input type="radio" name="option" value="hr" id="specifyColor" required> <span>hr</span> 
+								</div>
+								<div class="employee">
+									<input type="radio" name="option" value="employee" id="specifyColor" required> <span>employee</span>
+								</div>
+							</div>
 							</div>
 	
 					           <div class="form-group">
