@@ -512,8 +512,10 @@ table.dataTable thead > tr > td.sorting {
 }
 .btn-white {
   font-size: 1rem;
-  letter-spacing: 1.1px;
-  background-color: #00203d;
+  width: 180px;
+  /* letter-spacing: 1.1px; */
+  background-color: #3C84C7;
+  /* color: black; */
   border: 2px solid transparent;
   color: #ebf5ff;
   transition: all 250ms ease;
