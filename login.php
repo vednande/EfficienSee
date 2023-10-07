@@ -164,14 +164,14 @@ $conn->close();
 								<div class="form-group text-center">
 									<button class="btn btn-primary account-btn" name="login" type="submit" value="Login">Login</button>
 										<div class="col-auto pt-2">
-											<a class="text-muted float-right" href="forgot-password.php">
+											<a class="text-muted float-right" href="forgot-password.php" id="forgot-password">
 												Forgot password?
 											</a>
 										</div>
 								</div>
 									
-								<div class="account-footer">
-									<p>Having Trouble? report an issue on github <a target="https://github.com/MusheAbdulHakim/Smarthr---hr-payroll-project-employee-management-System/issues" href="https://github.com/MusheAbdulHakim/Smarthr---hr-payroll-project-employee-management-System/issues">Github issues</a></p>
+								<div class="account-footer" style="width: 100%; margin-top: 40px;">
+									<p style="display: flex; width: 100%; gap: 0.50rem;"><span>Having Trouble? report an issue on github</span> <a target="https://github.com/MusheAbdulHakim/Smarthr---hr-payroll-project-employee-management-System/issues" href="https://github.com/MusheAbdulHakim/Smarthr---hr-payroll-project-employee-management-System/issues" id="git-link">Github issues</a></p>
 								</div>
 							</form>
 							<!-- /Account Form -->

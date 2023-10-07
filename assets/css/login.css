@@ -32,3 +32,9 @@ input[type="radio"] {
 #specifyColor {
   accent-color: #00203d;
 }
+#forgot-password:hover {
+  transform: scale(1.2);
+}
+#git-link:hover {
+  transform: scale(1.1);
+}
