@@ -28,5 +28,7 @@
 }
 input[type="radio"] {
   cursor: pointer;
-  background-color: #000;
+}
+#specifyColor {
+  accent-color: #00203d;
 }

@@ -132,11 +132,15 @@ $conn->close();
 								</div>
 								<div class="inputs">
 									<div class="hr">
-										<input type="radio" name="option" value="hr" required>
+										<input type="radio" name="option" value="hr"
+										id="specifyColor"
+										required>
 										<span>hr</span> 
 									</div>
 									<div class="employee">
-										<input type="radio" name="option" value="employee" required> 
+										<input type="radio" name="option" value="employee" 
+										id="specifyColor"
+										required> 
 										<span>employee</span> 
 									</div>
 								</div>
