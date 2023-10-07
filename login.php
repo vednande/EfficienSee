@@ -94,13 +94,15 @@ $conn->close();
 		
 		<!-- Fontawesome CSS -->
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="assets/css/login.css">
 		
 		<!-- Main CSS -->
 		<link rel="stylesheet" href="assets/css/style.css">
 		<link rel="stylesheet" href="assets/css/accountLogo.css">
 		<link rel="stylesheet" href="assets/css/accountBtn.css">
 		<link rel="stylesheet" href="assets/css/accountFooter.css">
-		<link rel="stylesheet" href="assets/css/accountImg.css">
+		<link rel="stylesheet" href="assets/css/accountImg.css"> 
 
 	</head>
 	<body class="account-page">
@@ -125,9 +127,19 @@ $conn->close();
 							<!-- Account Form -->
 							<form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST">
 							<div class="form-group">
-							<label for="option">Select Option:</label>
-							<input type="radio" name="option" value="hr" required> HR 
-							<input type="radio" name="option" value="employee" required> Employee <br><br>
+								<div class="label">
+									<label for="option">Select Option:</label>
+								</div>
+								<div class="inputs">
+									<div class="hr">
+										<input type="radio" name="option" value="hr" required>
+										<span>hr</span> 
+									</div>
+									<div class="employee">
+										<input type="radio" name="option" value="employee" required> 
+										<span>employee</span> 
+									</div>
+								</div>
 							</div>
 
 								<div class="form-group">
