@@ -1,39 +1,10 @@
 
-/* 
-table thead{
-    border: 5px solid pink;
-    border-radius: 5rem;
-}
-
-table  tr{
-    border: 3px solid blue;
-}
-
-table tr th{
-    border: 3 px solid green;
-    background-color: #00203D;
-    color: whitesmoke;
-    font-size: 18px;
-} */
-
-/* .table,
-.table th,
-.table th {
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border: 1px solid black;
-}
-.table td {
-  border: 1px solid black;
-} */
 
 table th:first-child{
-  /* border-radius:10px 0 0 10px; */
   border-top-left-radius: 18px;
   }
   
 table th:last-child{
-  /* border-radius:0 10px 10px 0; */
   border-top-right-radius: 18px;
 } 
 

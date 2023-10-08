@@ -496,7 +496,7 @@ table.dataTable thead > tr > td.sorting {
   font-size: 18px;
 }
 .btn.btn-rounded {
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 /*-----------------
@@ -512,8 +512,10 @@ table.dataTable thead > tr > td.sorting {
 }
 .btn-white {
   font-size: 1rem;
-  letter-spacing: 1.1px;
-  background-color: #00203d;
+  width: 165px;
+  /* letter-spacing: 1.1px; */
+  background-color: #00203D;
+  /* color: black; */
   border: 2px solid transparent;
   color: #ebf5ff;
   transition: all 250ms ease;
@@ -2149,7 +2151,7 @@ table.dataTable thead > tr > td.sorting {
 }
 .action-label > a {
   display: inline-block;
-  min-width: 103px;
+  min-width: 140px;
 }
 .action-label .btn-sm {
   padding: 4px;
