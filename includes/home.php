@@ -62,9 +62,12 @@
       <div class="hero">
         <div class="left">
           <div class="headings">
-            <h1>empower. engage. excel</h1>
-            <h1>your workforce, our</h1>
-            <h1>expertise</h1>
+              <div class="headings-internal">
+                <h1 class="text">empower. engage. excel</h1>
+              </div>
+              <h1 class="text" id="headings-mobile">empower. engage. excel</h1>
+              <h1>your workforce, our</h1>
+              <h1>expertise</h1>
           </div>
           <div class="para">
             <p>

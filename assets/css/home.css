@@ -205,8 +205,35 @@ nav .mob-menu .btns button:hover {
   font-size: 3rem;
   color: #00203d;
   line-height: 4rem;
-  letter-spacing: 1.1px;
+  /* letter-spacing: 1.1px; */
 }
+
+/* BEAR CHANGES */
+#headings-mobile {
+  display: none;
+}
+.headings-internal {
+  display: inline-block;
+}
+.headings-internal > .text {
+  border-right: 5px solid #00203d;
+  width: 105%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2000ms steps(26) infinite alternate,
+    cursor 0.4s step-end infinite alternate;
+}
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
 .hero .left .para {
   width: 100%;
   margin-top: 2rem;
@@ -309,7 +336,10 @@ nav .mob-menu .btns button:hover {
   .hero .left {
     padding: 3rem 1rem;
   }
-  .headings h1 {
-    font-size: 2.5rem;
+  .headings-internal {
+    display: none;
+  }
+  #headings-mobile {
+    display: flex;
   }
 }
