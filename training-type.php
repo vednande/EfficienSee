@@ -37,6 +37,8 @@
 		
 		<!-- Datatable CSS -->
 		<link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+
+		<link rel="stylesheet" href="assets/css/trainers.css">
 		
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">

@@ -1,0 +1,7 @@
+table > tbody > tr:hover > td > h2 > #terminated-employee {
+  color: #ebf5ff;
+}
+
+table > tbody > tr:hover > .text-right > div > a {
+  color: #ebf5ff;
+}

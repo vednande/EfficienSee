@@ -1,0 +1,8 @@
+table > tbody > tr:hover > .text-right > div > a {
+  color: #ebf5ff;
+}
+
+table > tbody > tr:hover > .sorting_1 > h2 > a,
+table > tbody > tr:hover > .sorting_1 > h2 > a > span {
+  color: #ebf5ff;
+}

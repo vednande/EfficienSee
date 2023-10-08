@@ -39,6 +39,8 @@
 		
 		<!-- Datatable CSS -->
 		<link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+
+		<link rel="stylesheet" href="assets/css/termination.css">
 		
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
@@ -106,7 +108,7 @@
 											<td>
 												<h2 class="table-avatar blue-link">
 													<a href="profile.php" class="avatar"><img alt="" src="assets/img/profiles/avatar-02.jpg"></a>
-													<a href="profile.php">John Doe</a>
+													<a href="profile.php" id="terminated-employee">John Doe</a>
 												</h2>
 											</td>
 											<td>Web Development</td>

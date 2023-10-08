@@ -40,6 +40,8 @@
 		
 		<!-- Datetimepicker CSS -->
 		<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+
+		<link rel="stylesheet" href="assets/css/salary.css">
 		
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">

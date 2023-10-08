@@ -1,0 +1,6 @@
+table > tbody > tr:hover > td > h2 > #promoted-employee {
+  color: #ebf5ff;
+}
+table > tbody > tr:hover > .text-right > div > a {
+  color: #ebf5ff;
+}
