@@ -42,6 +42,8 @@
 		
 		<!-- Datatable CSS -->
 		<link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+
+		<link rel="stylesheet" href="assets/css/departments.css">
 		
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">

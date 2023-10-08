@@ -340,6 +340,9 @@ select.form-control[size] {
 .table-striped > tbody > tr:hover > td > h2 > #lead-name {
   color: #ebf5f5;
 }
+.table-striped > tbody > tr:hover > td > h2 > a {
+  color: #ebf5f5;
+}
 .table-striped > tbody > tr:hover > td > #project-name {
   color: #ebf5f5;
 }
@@ -514,7 +517,7 @@ table.dataTable thead > tr > td.sorting {
   font-size: 1rem;
   width: 165px;
   /* letter-spacing: 1.1px; */
-  background-color: #00203D;
+  background-color: #00203d;
   /* color: black; */
   border: 2px solid transparent;
   color: #ebf5ff;

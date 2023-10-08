@@ -50,14 +50,11 @@
 		<!-- Datetimepicker CSS -->
 		<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
 		
+		<link rel="stylesheet" href="assets/css/leaves-employee.css">
+
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
-		
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-			<script src="assets/js/html5shiv.min.js"></script>
-			<script src="assets/js/respond.min.js"></script>
-		<![endif]-->
+	
     </head>
     <body>
 		<!-- Main Wrapper -->
