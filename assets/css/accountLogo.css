@@ -1,11 +1,17 @@
 .account-logo {
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
   margin-bottom: 30px;
   text-align: center;
-  top: -15%;
-  left: 40%;
+  /* top: -15%;
+  left: 40%; */
+  z-index: -9;
 }
 .account-logo img {
   width: 100px;
   transform: scale(4);
+}
+.container {
+  position: relative;
+  z-index: 18;
 }

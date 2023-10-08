@@ -43,7 +43,7 @@
 			</div>';
 		}
 	}
-?> -->
+?>
 <?php
 require_once("includes/config.php"); // Include the database connection file
 
@@ -76,19 +76,22 @@ $conn->close();
 ?>
 <!DOCTYPE html>
 <html lang="en">
-		<head>
+	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 		<meta name="description" content="Smarthr - Bootstrap Admin Template">
 		<meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects">
 		<meta name="author" content="Dreamguys - Bootstrap Admin Template">
 		<meta name="robots" content="noindex, nofollow">
+
 		<link rel = "icon" href = "assets/img/logo.png" type = "image/x-icon">
-		<title>Login - HRMS admin</title>
+
+		<title>Login Now!</title>
 		
 		<!-- Favicon -->
 		<!-- <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png"> -->
 		
+
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		
@@ -112,15 +115,21 @@ $conn->close();
 	</div>
 	
 		<!-- Main Wrapper -->
-		<div class="main-wrapper">
+		<div class="main-wrapper" style="margin-top: 2rem;">
 			<div class="account-content">
-				<div class="container">
-					<!-- Account Logo -->
-					<div class="account-logo">
+
+				<div class="account-logo">
 						<a href="index.php"><img src="assets/img/logo-bgremoved.png" alt="Company Logo"></a>
-					</div>
-					<!-- /Account Logo -->
+				</div>
+				
+				<div class="container">
 					
+					<!-- Account Logo -->
+					<!-- <div class="account-logo">
+						<a href="index.php"><img src="assets/img/logo-bgremoved.png" alt="Company Logo"></a>
+					</div> -->
+					
+					<!-- /Account Logo -->
 					<div class="account-box">
 						<div class="account-wrapper">
 							<h3 class="account-title">Admin Login</h3>
