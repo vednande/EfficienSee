@@ -41,4 +41,4 @@ function updateValuesDynamically() {
 
 updateValuesDynamically();
 
-setInterval(updateValuesDynamically, 2000);
+setInterval(updateValuesDynamically, 5000);
