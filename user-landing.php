@@ -390,6 +390,44 @@
 		
 		<!-- Custom JS -->
 		<script src="assets/js/app.js"></script>
+
+		<script>
+			document.oncontextmenu=()=>{
+				alert("Behen ke lund right click karke inspect mat kar");
+				return false;
+			}
+
+			document.onkeydown=(e)=>{
+				if(e.key == "F12"){
+					alert("Behen ke lund F12 mat dabaa");
+					return false;
+				}
+				
+				if(e.ctrlKey && e.shiftKey && e.key == "I"){
+					alert("Behen ke lund ctrl+shift+i mat dabaa");
+					return false;	
+				}
+
+				if(e.ctrlKey && e.shiftKey && e.key == "C"){
+					alert("Behen ke lund ctrl+shift+c mat dabaa");
+					return false;	
+				}
+
+				if(e.ctrlKey && e.shiftKey && e.key == "J"){
+					alert("Behen ke lund ctrl+shift+j mat dabaa");
+					return false;	
+				}
+				
+				if(e.ctrlKey && e.key == "u"){
+					alert("Behen ke lund ctrl+u dabaake source code mat dekh")
+					return false;
+				}
+			
+			}
+
+
+		</script>
+
 		<!-- javascript links ends here  -->
     </body>
 </html>
