@@ -65,6 +65,11 @@ $conn->close();
 </head>
 <body>
 <div class="signup">
+
+	<div class="mob-image">
+		<img src="assets/img/logo-bgremoved.png" alt="">
+	</div>
+
     <div class="container">
         <div class="left">
             <a href="/efficiensee/index.php"><img src="assets/img/signup_final.png" alt="image"></a> 
@@ -76,7 +81,7 @@ $conn->close();
 					<form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST" enctype="multipart/form-data">
 					        <div class="form-group">
 							<div class="label">
-								<label for="option">Select Option:</label>
+								<label for="option" style="font-size: 1.3rem;">Signup as:</label>
 							</div>
 							<div class="inputs">
 								<div class="hr">

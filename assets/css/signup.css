@@ -37,13 +37,16 @@ font-family: 'Tajawal', sans-serif; */
 
 .signup {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   overflow: hidden;
+}
+.mob-image {
+  display: none;
 }
 .container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   gap: 2rem;
   background-color: #f7f7f7;
 }
@@ -53,7 +56,7 @@ font-family: 'Tajawal', sans-serif; */
 }
 .container .left a img {
   width: 100%;
-  height: 170vh;
+  height: 180vh;
   object-fit: cover;
   filter: contrast(1);
 }
@@ -239,6 +242,13 @@ input[type="radio"] {
   }
 }
 @media screen and (max-width: 786px) {
+  .mob-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+  }
   .container {
     flex-direction: column;
     align-items: center;
@@ -262,11 +272,18 @@ input[type="radio"] {
   }
 }
 @media screen and (max-width: 512px) {
-  .signup {
+  .mob-image {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100px;
   }
+  /* .signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
   .container .left {
     display: none;
   }
