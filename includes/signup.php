@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if (move_uploaded_file($_FILES["image"]["tmp_name"], $targetFile)) {
                     echo "The file " . basename($_FILES["image"]["name"]) . " has been uploaded.";
                     // Insert user data into the database
-                    $sql = "INSERT INTO users (FirstName, LastName, UserName, Email, Phone, Address, Password, Picture,Option) VALUES ('$firstName', '$lastName', '$userName', '$email', '$phone', '$address', '$password', '$targetFile','$option')";
+                    $sql = "INSERT INTO users (FirstName, LastName, UserName, Email, Phone, Address, Password, Picture, Option) VALUES ('$firstName', '$lastName', '$userName', '$email', '$phone', '$address', '$password', '$targetFile','$option')";
 
                     if ($conn->query($sql) === TRUE) {
                         echo "Registration successful!";
