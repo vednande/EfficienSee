@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($option == "hr") {
             header("Location: user-landing.php");
         } else {
-            header("Location: user-landing.php");
+            header("Location: employee-landing.php");
         }
         exit();
     } else {
