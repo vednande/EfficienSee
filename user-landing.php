@@ -16,7 +16,7 @@
 		<meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects">
         <meta name="author" content="Dreamguys - Bootstrap Admin Template">
         <meta name="robots" content="noindex, nofollow">
-        <title>Dashboard - HRMS admin template</title>
+        <title>Efficiensee admin panel</title>
 
 		<!-- Tables Design -->
 		<link rel="stylesheet" href="assets/css/tables.css">
@@ -392,10 +392,10 @@
 		<script src="assets/js/app.js"></script>
 
 		<script>
-			document.oncontextmenu=()=>{
-				alert("Behen ke lund right click karke inspect mat kar");
-				return false;
-			}
+			// document.oncontextmenu=()=>{
+			// 	alert("Behen ke lund right click karke inspect mat kar");
+			// 	return false;
+			// }
 
 			document.onkeydown=(e)=>{
 				if(e.key == "F12"){
