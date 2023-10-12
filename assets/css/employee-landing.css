@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Tajawal:wght@700&display=swap");
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+::selection {
+  background-color: #00203d;
+  color: #ebf5ff;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #3c84c7;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0068c7;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #004280;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+.header {
+  background-image: linear-gradient(to right, #0068c7, #000);
+  border-bottom: 1px solid transparent;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  height: 60px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1002;
+  padding: 0 5rem;
+}
+
+.header-left {
+  padding: 0 4rem 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.header-logo {
+  padding: 0 2rem 0 0;
+  border-right: 4px solid #ebf5ff;
+}
+.header-logo > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tajawal", sans-serif;
+  transition: all 250ms ease;
+}
+
+.header-logo > a > #one {
+  color: #00203d;
+}
+
+.header-logo > a > #two {
+  color: #ebf5ff;
+}
+
+.company-name {
+  font-family: "Roboto Slab", serif;
+  font-family: "Tajawal", sans-serif;
+  color: #ebf5ff;
+  font-size: 1.3rem;
+}
+
+.profile {
+  height: 100%;
+  /* overflow: hidden; */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+.profile > .img-usname {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tajawal", sans-serif;
+}
+
+.profile > .img-usname > .img {
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile > .img-usname > .img > img {
+  width: 45px;
+  object-fit: contain;
+}
+.profile > .img-usname > .username {
+  color: #ebf5ff;
+}
+.profile > .img-usname > .arrow {
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  content: "";
+  height: 8px;
+  display: inline-block;
+  pointer-events: none;
+  -webkit-transform-origin: 66% 66%;
+  -ms-transform-origin: 66% 66%;
+  transform-origin: 66% 66%;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  width: 8px;
+  vertical-align: 2px;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 4rem 1rem 4rem;
+  gap: 1rem;
+  /* box-shadow: 0 2px 30px 5px #efefef; */
+  width: 50%;
+  margin: 3.5rem auto 1rem auto;
+  /* animation: bxshadow 2s linear 0s infinite alternate; */
+}
+/* @keyframes bxshadow {
+  from {
+    box-shadow: 0 2px 10px 5px #e5e5e5;
+  }
+  to {
+    box-shadow: 0 2px 30px 5px #efefef;
+  }
+} */
+.welcome > .card {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 2px 30px 5px #efefef;
+  padding: 3rem 4rem;
+  transition: all 250ms ease;
+}
+.welcome > .card:hover {
+  background-color: #00203d;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px 0 #00203d;
+}
+.welcome > .card > .img {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.welcome > .card > .img > img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+.welcome > .card > .name-join-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tajawal", sans-serif;
+  color: #00203d;
+}
+.welcome > .card > .name-join-date > .wel-name {
+  font-size: 1.5rem;
+  transition: all 250ms ease;
+}
+.welcome > .card > .name-join-date > .join-date {
+  font-size: 1.4rem;
+  transition: all 250ms ease;
+}
+.welcome > .card:hover > .name-join-date {
+  color: #ebf5ff;
+}
+
+#project-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0068c7;
+  color: #ebf5ff;
+  padding: 1.5rem 4rem;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tajawal", sans-serif;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+.projects {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ebf5ff;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tajawal", sans-serif;
+  transition: all 250ms ease;
+  cursor: pointer;
+}
+.projects:hover {
+  background-color: #00203d;
+  color: #ebf5ff;
+}
+.projects > .total-tasks,
+.pending-tasks,
+.total-projects {
+  width: 25%;
+  text-align: center;
+  border-right: 4px solid #00203d;
+  transition: all 250ms ease;
+}
+.total-projects {
+  border-right: none;
+}
+.projects > .total-tasks > h3,
+.pending-tasks > h3,
+.total-projects > h3 {
+  border: 2px solid transparent;
+  font-size: 1.8rem;
+}
+
+/*  */
+#leaves-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0068c7;
+  color: #ebf5ff;
+  padding: 1.5rem 4rem;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tajawal", sans-serif;
+  text-transform: capitalize;
+  font-size: 2rem;
+  margin: 3rem 0 0 0;
+}
+.leaves {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #ebf5ff;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tajawal", sans-serif;
+  transition: all 250ms ease;
+  cursor: pointer;
+}
+.leaves:hover {
+  background-color: #00203d;
+  color: #ebf5ff;
+}
+.leaves > .leaves-taken,
+.leaves > .pending-leaves {
+  width: 25%;
+  text-align: center;
+  border-right: 4px solid #00203d;
+  transition: all 250ms ease;
+}
+.leaves > .leaves-taken > h3,
+.leaves > .pending-leaves > h3 {
+  border: 2px solid transparent;
+  font-size: 1.8rem;
+}
+.leaves > .pending-leaves {
+  border-right: none;
+}
+.btn-apply-leave {
+  width: 20%;
+  margin: 0 auto;
+}
+.take-leave {
+  border: 2px solid transparent;
+  background-color: #00203d;
+  color: #ebf5ff;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tajawal", sans-serif;
+  cursor: pointer;
+  width: 100%;
+  transition: all 250ms ease;
+}
+.take-leave:hover {
+  background-color: #ebf5ff;
+  color: #00203d;
+  border: 2px solid #00203d;
+  border-radius: 1rem;
+}
+.popup {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 6px;
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 1rem 2rem;
+  visibility: hidden;
+  transition: transform 250ms, top 150ms;
+}
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+.popup h2,
+p {
+  margin-bottom: 0.5rem;
+}
+.popup button {
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #00203d;
+  color: #ebf5ff;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/*  */
+.container > .updates {
+  width: 100%;
+  margin: 3rem 0;
+}
+.container > .updates > .heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0068c7;
+  color: #ebf5ff;
+  padding: 1.5rem 4rem;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tajawal", sans-serif;
+  font-size: 1.8rem;
+}
+
+.container > .updates > .updates-list {
+  width: 95%;
+  margin: 1.5rem auto;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.container > .updates > .updates-list > .one > img {
+  width: 50px;
+}
+
+.container > .updates > .updates-list > .one {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  color: #0068c7;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tajawal", sans-serif;
+  font-size: 1.6rem;
+  background-color: #fff;
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+  transition: all 250ms ease;
+}
+
+.container > .updates > .updates-list > .two > img {
+  width: 50px;
+}
+
+.container > .updates > .updates-list > .two {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  color: #00203d;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tajawal", sans-serif;
+  font-size: 1.6rem;
+  background-color: #ebf5ff;
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+  transition: all 250ms ease;
+}
+.container > .updates > .updates-list > .one:hover {
+  background-color: #00203d;
+  color: #ebf5ff;
+}
+.container > .updates > .updates-list > .two:hover {
+  background-color: #00203d;
+  color: #ebf5ff;
+}
