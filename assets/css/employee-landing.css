@@ -318,7 +318,8 @@ body {
   border-radius: 1rem;
 }
 .popup {
-  width: 400px;
+  width: 50%;
+  position: relative;
   background-color: #fff;
   border-radius: 6px;
   position: fixed;
@@ -328,15 +329,25 @@ body {
   text-align: center;
   padding: 1rem 2rem;
   visibility: hidden;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tajawal", sans-serif;
   transition: transform 250ms, top 150ms;
+  overflow-x: hidden;
+}
+.close-btn {
+  cursor: pointer;
+  position: absolute;
+  content: "";
+  right: 20px;
+  top: 0rem;
+  font-size: 2rem;
 }
 .open-popup {
   visibility: visible;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
 }
-.popup h2,
-p {
+.popup h2 {
   margin-bottom: 0.5rem;
 }
 .popup button {
@@ -350,6 +361,34 @@ p {
   cursor: pointer;
   font-size: 1.1rem;
   font-weight: bold;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tajawal", sans-serif;
+}
+form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+input {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+  width: 45vw;
+}
+input:focus {
+  background-color: #ebf5ff;
+  outline: none;
+  border: 2px solid #ebf5ff;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form-grp {
+  margin: 1rem 0;
 }
 
 /*  */

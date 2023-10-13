@@ -90,7 +90,27 @@
         </div>
         <div class="popup" id="popup">
             <h2>Apply for Leave</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro saepe voluptatibus repellendus iusto vel laboriosam fugit nisi, ullam non eligendi!</p>
+            <div class="close-btn" onclick="closePopup()">&times;</div>
+            <div class="inputs" style="margin: 1rem 0;">
+                <form action="" method="POST">
+                    <div class="form-grp" style="display: flex; align-items: flex-start; justify-content: center; flex-direction: column; gap: 0.5rem">
+                        <label>First Name <span style="color: red;">*</span></label>
+                        <input type="text" name="first-name" id="first-name" style="border: 2px solid #e3e3e3; font-size: 15px; height: 44px; padding: 4px 8px;">
+                    </div>
+                    <div class="form-grp" style="display: flex; align-items: flex-start; justify-content: center; flex-direction: column; gap: 0.5rem">
+                        <label>Last Name <span style="color: red;">*</span></label>
+                        <input type="text" name="first-name" id="first-name" style="border: 2px solid #e3e3e3; font-size: 15px; height: 44px; padding: 4px 8px;">
+                    </div>
+                    <div class="form-grp" style="display: flex; align-items: flex-start; justify-content: center; flex-direction: column; gap: 0.5rem">
+                        <label>No. of days off <span style="color: red;">*</span></label>
+                        <input type="number" name="first-name" id="first-name" style="border: 2px solid #e3e3e3; font-size: 15px; height: 44px; padding: 4px 8px;">
+                    </div>
+                    <div class="form-grp" style="display: flex; align-items: flex-start; justify-content: center; flex-direction: column; gap: 0.5rem">
+                        <label>Reason <span style="color: red;">*</span></label>
+                        <input type="text" name="first-name" id="first-name" style="border: 2px solid #e3e3e3; font-size: 15px; height: 44px; padding: 4px 8px;">
+                    </div>
+                </form>
+            </div>
             <button onclick="closePopup()">Submit</button>
         </div>
         <!-- LEAVE ENDS HERE -->
