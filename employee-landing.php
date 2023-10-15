@@ -20,7 +20,7 @@
                     <h3>Volkswagen India</h3>
                 </div>
             </div>
-            <div class="profile">
+            <div class="profile" id="profile">
                 <div class="img-usname">
                     <div class="img">
                         <img src="https://media.licdn.com/dms/image/C4D03AQG6G0wCYkCy4w/profile-displayphoto-shrink_800_800/0/1614504231729?e=2147483647&v=beta&t=AKd9PDE90YJjAPn4XZYc77_aGJAvf6fL_knFN7SaHhQ" alt="">
@@ -28,9 +28,10 @@
                     <div class="username">
                         Ved Nande
                     </div>
-                    <div class="arrow">
-                        
-                    </div>
+                    <div class="arrow"></div>
+                </div>
+                <div class="logout-btn" id="logout-btn">
+                    <a href="logout.php">logout</a>
                 </div>
             </div>
         </div>
@@ -49,6 +50,7 @@
                 <div class="join-date">
                     <h6>Monday, 20 May 2023</h6>
                 </div>
+                <div class="comp-mob"><h2>Volkswagen India</h2></div>
             </div>
             </div>
         </div>
@@ -143,6 +145,7 @@
 
     </div>
     <script src="assets/js/modal.js"></script>
+    <script src="assets/js/logout.js"></script>
 </body>
 </html>
 
