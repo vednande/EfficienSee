@@ -63,9 +63,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Login successful, redirect to the appropriate page based on the selected option
         if ($option == "hr") {
             header("Location: user-landing.php");
-        } else {
+        } else if($option == "employee") {
             header("Location: employee-landing.php");
         }
+		else{
+			echo "Failed to login!";
+		}
         exit();
     } else {
         // Login failed, display an error message
@@ -180,7 +183,7 @@ $conn->close();
 								</div>
 									
 								<div class="account-footer" style="width: 100%; margin-top: 40px;">
-									<p style="display: flex; width: 100%; gap: 0.50rem;"><span>Having Trouble? report an issue on github</span> <a target="https://github.com/MusheAbdulHakim/Smarthr---hr-payroll-project-employee-management-System/issues" href="https://github.com/MusheAbdulHakim/Smarthr---hr-payroll-project-employee-management-System/issues" id="git-link">Github issues</a></p>
+									<p style="display: flex; justify-content: center; width: 100%; gap: 0.50rem;"><span>Having Trouble? report an issue on github</span> <a target="https://github.com/MusheAbdulHakim/Smarthr---hr-payroll-project-employee-management-System/issues" href="https://github.com/MusheAbdulHakim/Smarthr---hr-payroll-project-employee-management-System/issues" id="git-link">Github issues</a></p>
 								</div>
 							</form>
 							<!-- /Account Form -->
