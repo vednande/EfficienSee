@@ -171,7 +171,7 @@
 										<div class="progress mb-2" style="height: 5px;">
 											<div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
 										</div>
-										<p class="mb-0">Previous Month <span class="text-muted">$1,15,852</span></p>
+										<p class="mb-0">Previous Month <span class="text-muted">₹ 79424114</span></p>
 									</div>
 								</div>
 							
@@ -190,7 +190,7 @@
 										<div class="progress mb-2" style="height: 5px;">
 											<div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
 										</div>
-										<p class="mb-0">Previous Month <span class="text-muted">$7,500</span></p>
+										<p class="mb-0">Previous Month <span class="text-muted">₹ 55883985</span></p>
 									</div>
 								</div>
 							
