@@ -48,7 +48,7 @@
 							<li class="submenu">
 								<a href="#"><i class="la la-files-o"></i> <span> Accounts </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="invoices.php">Invoices</a></li>
+									<!-- <li><a href="invoices.php">Invoices</a></li> -->
 									<li><a href="payments.php">Payments</a></li>
 									<li><a href="expenses.php">Expenses</a></li>
 									<li><a href="provident-fund.php">Provident Fund</a></li>
@@ -93,15 +93,15 @@
 							
 							
 						
-							<li> 
+							<!-- <li> 
 								<a href="users.php"><i class="la la-user-plus"></i> <span>Users</span></a>
-							</li>
+							</li> -->
 							
 							<li class="menu-title"> 
 								<span>Pages</span>
 							</li>
 							<li class="submenu">
-								<a href="#"><i class="la la-user"></i> <span> Profile </span> <span class="menu-arrow"></span></a>
+								<!-- <a href="#"><i class="la la-user"></i> <span> Profile </span> <span class="menu-arrow"></span></a> -->
 								<ul style="display: none;">
 									<li><a href="profile.php"> Employee Profile </a></li>
 									<li><a href="client-profile.php"> Client Profile </a></li>
