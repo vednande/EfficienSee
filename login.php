@@ -5,10 +5,7 @@
 	include_once("includes/config.php");
 	// if($_SESSION['userlogin']>0){
 	// 	header('location:user-landing.php'); 
-<<<<<<< HEAD
-=======
 	// }
->>>>>>> 7a5503784909200405094789e8ab25369dc41013
 	if(isset($_POST['login'])){
 		$_SESSION['userlogin'] = $_POST['username'];
 		$username = htmlspecialchars($_POST['username']);
