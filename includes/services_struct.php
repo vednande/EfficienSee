@@ -11,7 +11,7 @@
           <div class="options">
             <ul>
               <a href="/efficiensee/services.php" class="active-link"><li>services</li></a>
-              <a href=""><li>security</li></a> 
+              <a href="/efficiensee/points-to-rem.php"><li>Connotations</li></a> 
               <a href="/efficiensee/contact.php"><li>contact us</li></a>
             </ul>
           </div>
@@ -38,9 +38,9 @@
           <div class="mob-options">
             <ul>
               <a href="" id="mob-home"><li>Home</li></a>
-              <a href="/efficiensee/includes/service.html" id="mob-services" class="active-link"><li>services</li></a>
-              <a href="" id="mob-security"><li>security</li></a>
-              <a href="" id="mob-contact"><li>contact us</li></a>
+              <a href="/efficiensee/services.php" id="mob-services" class="active-link"><li>services</li></a>
+              <a href="/efficiensee/points-to-rem.php" id="mob-security"><li>security</li></a>
+              <a href="/efficiensee/contact.php" id="mob-contact"><li>contact us</li></a>
             </ul>
           </div>
           <div class="btns">
