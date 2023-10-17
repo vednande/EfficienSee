@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "assets/img/logo.png" type = "image/x-icon">
     <link rel="stylesheet" href="assets/css/contact.css">
     <title>Contact Us</title>
 </head>
@@ -16,14 +17,14 @@
           <!-- <img src="/efficiensee/assets/img/logo-bgremoved.png" alt="" /> -->
 
           <!-- LOGO GOES HERE -->
-          <div class="logo"><a href="/project/efficiensee/">EfficienSee</a></div>
+          <div class="logo"><a href="/efficiensee/">EfficienSee</a></div>
 
           <!-- OPTIONS GOES HERE -->
           <div class="options">
             <ul>
-              <a href="/project/efficiensee/services.php"><li>services</li></a>
+              <a href="/efficiensee/services.php"><li>services</li></a>
               <a href=""><li>security</li></a> 
-              <a href="" class="active-link"><li>contact us</li></a>
+              <a href="/efficiensee/contact.php" class="active-link"><li>contact us</li></a>
             </ul>
           </div>
 
@@ -49,9 +50,9 @@
           <div class="mob-options">
             <ul>
               <a href="" id="mob-home"><li>Home</li></a>
-              <a href="/project/efficiensee/includes/service.html" id="mob-services"><li>services</li></a>
+              <a href="/efficiensee/services.php" id="mob-services"><li>services</li></a>
               <a href="" id="mob-security"><li>security</li></a>
-              <a href="" id="mob-contact" class="active-link"><li>contact us</li></a>
+              <a href="/efficiensee/contact.php" id="mob-contact" class="active-link"><li>contact us</li></a>
             </ul>
           </div>
           <div class="btns">

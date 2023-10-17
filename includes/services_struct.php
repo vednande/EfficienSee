@@ -5,14 +5,14 @@
           <!-- <img src="/efficiensee/assets/img/logo-bgremoved.png" alt="" /> -->
 
           <!-- LOGO GOES HERE -->
-          <div class="logo"><a href="/project/efficiensee/">EfficienSee</a></div>
+          <div class="logo"><a href="/efficiensee/">EfficienSee</a></div>
 
           <!-- OPTIONS GOES HERE -->
           <div class="options">
             <ul>
-              <a href="/project/efficiensee/services.php" class="active-link"><li>services</li></a>
+              <a href="/efficiensee/services.php" class="active-link"><li>services</li></a>
               <a href=""><li>security</li></a> 
-              <a href=""><li>contact us</li></a>
+              <a href="/efficiensee/contact.php"><li>contact us</li></a>
             </ul>
           </div>
 
@@ -38,7 +38,7 @@
           <div class="mob-options">
             <ul>
               <a href="" id="mob-home"><li>Home</li></a>
-              <a href="/project/efficiensee/includes/service.html" id="mob-services" class="active-link"><li>services</li></a>
+              <a href="/efficiensee/includes/service.html" id="mob-services" class="active-link"><li>services</li></a>
               <a href="" id="mob-security"><li>security</li></a>
               <a href="" id="mob-contact"><li>contact us</li></a>
             </ul>
@@ -128,4 +128,4 @@ Provide tools for 360-degree feedback and self-assessment.</p>
         </div>
     </div>
 </div>
-<script src="/project/efficiensee/includes/services.js"></script>
+<script src="/efficiensee/includes/services.js"></script>
