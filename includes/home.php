@@ -7,14 +7,14 @@
           <!-- <img src="/efficiensee/assets/img/logo-bgremoved.png" alt="" /> -->
 
           <!-- LOGO GOES HERE -->
-          <div class="logo"><a href="/efficiensee/login.php">EfficienSee</a></div>
+          <div class="logo"><a href="/efficiensee">EfficienSee</a></div>
 
           <!-- OPTIONS GOES HERE -->
           <div class="options"> 
             <ul>
               <!-- <a href="/project/efficiensee/services.php"><li>services</li></a> -->
               <a href="/efficiensee/services.php"><li>services</li></a>
-              <a href=""><li>security</li></a> 
+              <a href="/efficiensee/points-to-rem.php"><li>connotations</li></a> 
               <a href="/efficiensee/contact.php"><li>contact us</li></a>
             </ul>
           </div>
@@ -40,10 +40,9 @@
         <div class="mob-menu" id="mob-menu">
           <div class="mob-options">
             <ul>
-              <a href="" id="mob-home"><li>Home</li></a>
-              <a href="/efficiensee/includes/service.html" id="mob-services"><li>services</li></a>
-              <a href="" id="mob-security"><li>security</li></a>
-              <a href="" id="mob-contact"><li>contact us</li></a>
+              <a href="/efficiensee/services.php" id="mob-home"><li>Home</li></a>
+              <a href="/efficiensee/points-to-rem.php" id="mob-security"><li>connotations</li></a>
+              <a href="/efficiensee/contact.php" id="mob-contact"><li>contact us</li></a>
             </ul>
           </div>
           <div class="btns">

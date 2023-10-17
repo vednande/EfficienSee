@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Points to remember!</title>
     <link rel = "icon" href = "assets/img/logo.png" type = "image/x-icon">
-    <link rel="stylesheet" href="assets/css/contact.css">
-    <title>Contact Us</title>
+    <link rel="stylesheet" href="assets/css/ptr.css">
 </head>
 <body>
-
     <!-- NAVBAR STARTS HERE -->
     <nav> 
         <div class="navbar">
@@ -23,8 +22,8 @@
           <div class="options">
             <ul>
               <a href="/efficiensee/services.php"><li>services</li></a>
-              <a href="/efficiensee/points-to-rem.php"><li>Connotations</li></a> 
-              <a href="/efficiensee/contact.php" class="active-link"><li>contact us</li></a>
+              <a href="/efficiensee/points-to-rem.php" class="active-link"><li>Connotations</li></a> 
+              <a href="/efficiensee/contact.php" ><li>contact us</li></a>
             </ul>
           </div>
 
@@ -51,8 +50,8 @@
             <ul>
               <a href="" id="mob-home"><li>Home</li></a>
               <a href="/efficiensee/services.php" id="mob-services"><li>services</li></a>
-              <a href="" id="mob-security"><li>security</li></a>
-              <a href="/efficiensee/contact.php" id="mob-contact" class="active-link"><li>contact us</li></a>
+              <a href="" id="mob-security" class="active-link"><li>Connotations</li></a>
+              <a href="/efficiensee/contact.php" id="mob-contact"><li>contact us</li></a>
             </ul>
           </div>
           <div class="btns">
@@ -68,24 +67,15 @@
       <!-- NAVBAR ENDS HERE -->
 
       <div class="container">
-        <div class="headings">
-            <div class="sm-heading"><h3>feel free to</h3> </div>
-            <div class="xl-heading"><h1>contact us</h1> </div>
-        </div>
-        <div class="form">
-            <div class="name">
-                <label for="name">name</label>
-                <input type="text" name="name" id="name">
-            </div>
-            <div class="email">
-                <label for="email">email</label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div class="msg">
-                <label for="msg">message</label>
-                <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
-            </div>
-            <button>submit</button>
+        <div class="points">
+            <div class="pt even"><span>&#9733;</span>Safeguard your login credentials (username and password). Use strong, unique passwords.</div>
+            <div class="pt odd"><span>&#9733;</span>Ensure that the personal and professional information in your profile is accurate and up to date.</div>
+            <div class="pt even"><span>&#9733;</span>Respect the access permissions set by administrators.</div>
+            <div class="pt odd"><span>&#9733;</span>When entering data or making changes, double-check for accuracy.</div>
+            <div class="pt even"><span>&#9733;</span>Ensure that documents are in the correct format and meet any size restrictions.</div>
+            <div class="pt odd"><span>&#9733;</span> Log out of the HR management website when not in use, especially on shared or public computers.</div>
+            <div class="pt even"><span>&#9733;</span>Regularly back up important data and documents stored in the HR system.</div>
+            <div class="pt odd"><span>&#9733;</span>Treat sensitive employee data with care and confidentiality.</div>
         </div>
       </div>
 </body>

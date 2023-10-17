@@ -287,7 +287,7 @@
 												</div>
 											</td>
 										</tr>
-										<tr>
+										<!-- <tr>
 											<td>5</td>
 											<td>
 												<h2 class="table-avatar">
@@ -466,7 +466,7 @@
 													</div>
 												</div>
 											</td>
-										</tr>
+										</tr> -->
 									</tbody>
 								</table>
 							</div>

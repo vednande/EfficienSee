@@ -75,9 +75,9 @@
 									<li class="breadcrumb-item active">Timesheet</li>
 								</ul>
 							</div>
-							<div class="col-auto float-right ml-auto">
+							<!-- <div class="col-auto float-right ml-auto">
 								<a href="#" class="btn add-btn" data-toggle="modal" data-target="#add_todaywork"><i class="fa fa-plus"></i> Add Today Work</a>
-							</div>
+							</div> -->
 						</div>
 					</div>
 					<!-- /Page Header -->
@@ -170,7 +170,7 @@
 												</div>
 											</td>
 										</tr>
-										<tr>
+										<!-- <tr>
 											<td>
 												<h2 class="table-avatar">
 													<a href="profile.php" class="avatar"><img alt="" src="assets/img/profiles/avatar-05.jpg"></a>
@@ -193,8 +193,8 @@
 													</div>
 												</div>
 											</td>
-										</tr>
-										<tr>
+										</tr> -->
+										<!-- <tr>
 											<td>
 												<h2 class="table-avatar">
 													<a href="profile.php" class="avatar"><img alt="" src="assets/img/profiles/avatar-11.jpg"></a>
@@ -385,7 +385,7 @@
 													</div>
 												</div>
 											</td>
-										</tr>
+										</tr> -->
 									</tbody>
 								</table>
 							</div>

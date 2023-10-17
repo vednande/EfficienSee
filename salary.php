@@ -320,7 +320,7 @@
 												</div>
 											</td>
 										</tr>
-										<tr>
+										<!-- <tr>
 											<td>
 												<h2 class="table-avatar">
 													<a href="profile.php" class="avatar"><img src="assets/img/profiles/avatar-12.jpg" alt=""></a>
@@ -385,8 +385,8 @@
 													</div>
 												</div>
 											</td>
-										</tr>
-										<tr>
+										</tr> -->
+										<!-- <tr>
 											<td>
 												<h2 class="table-avatar">
 													<a href="profile.php" class="avatar"><img src="assets/img/profiles/avatar-01.jpg" alt=""></a>
@@ -517,7 +517,7 @@
 													</div>
 												</div>
 											</td>
-										</tr>
+										</tr> -->
 									</tbody>
 								</table>
 							</div>
