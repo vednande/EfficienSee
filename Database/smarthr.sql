@@ -189,7 +189,7 @@ INSERT INTO `goals` (`id`, `Type`, `Subject`, `Target`, `StartDate`, `EndDate`, 
 --
 -- Table structure for table `goal_type`
 --
-CREATE TABLE `leave` (
+CREATE TABLE `yuvi` (
   `id` int(255) NOT NULL,
   `FName` varchar(255) NOT NULL,
   `LName` varchar(255) NOT NULL,
