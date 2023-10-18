@@ -134,16 +134,14 @@
 										<span class="text-xs">1</span> <span class="text-muted">open tasks, </span>
 										<span class="text-xs">9</span> <span class="text-muted">tasks completed</span>
 									</small>
-									<p class="text-muted">Lorem Ipsum is simply dummy text of the printing and
-										typesetting industry. When an unknown printer took a galley of type and
-										scrambled it...
+									<p class="text-muted">The Office Management department plays crucial role in ensuring efficient functioning of an organization's administrative & operational processes.
 									</p>
 									<div class="pro-deadline m-b-15">
 										<div class="sub-title">
 											Deadline:
 										</div>
 										<div class="text-muted">
-											17 Apr 2019
+											24 Jun 2024
 										</div>
 									</div>
 									<div class="project-members m-b-15">
@@ -246,16 +244,14 @@
 										<span class="text-xs">2</span> <span class="text-muted">open tasks, </span>
 										<span class="text-xs">5</span> <span class="text-muted">tasks completed</span>
 									</small>
-									<p class="text-muted">Lorem Ipsum is simply dummy text of the printing and
-										typesetting industry. When an unknown printer took a galley of type and
-										scrambled it...
+									<p class="text-muted">A project management department or team is responsible for planning, executing, and overseeing projects within an organization.
 									</p>
 									<div class="pro-deadline m-b-15">
 										<div class="sub-title">
 											Deadline:
 										</div>
 										<div class="text-muted">
-											17 Apr 2019
+											31 Jan 2025
 										</div>
 									</div>
 									<div class="project-members m-b-15">
@@ -358,16 +354,14 @@
 										<span class="text-xs">3</span> <span class="text-muted">open tasks, </span>
 										<span class="text-xs">3</span> <span class="text-muted">tasks completed</span>
 									</small>
-									<p class="text-muted">Lorem Ipsum is simply dummy text of the printing and
-										typesetting industry. When an unknown printer took a galley of type and
-										scrambled it...
+									<p class="text-muted">Video calling apps work by enabling real-time video and audio communication between individuals or groups over the internet.
 									</p>
 									<div class="pro-deadline m-b-15">
 										<div class="sub-title">
 											Deadline:
 										</div>
 										<div class="text-muted">
-											17 Apr 2019
+											14 Apr 2024
 										</div>
 									</div>
 									<div class="project-members m-b-15">
@@ -470,16 +464,14 @@
 										<span class="text-xs">12</span> <span class="text-muted">open tasks, </span>
 										<span class="text-xs">4</span> <span class="text-muted">tasks completed</span>
 									</small>
-									<p class="text-muted">Lorem Ipsum is simply dummy text of the printing and
-										typesetting industry. When an unknown printer took a galley of type and
-										scrambled it...
+									<p class="text-muted">This aims to implement strategic plans to achieve the hospital's goals by setting financial targets, expanding services, and improving patient outcomes.
 									</p>
 									<div class="pro-deadline m-b-15">
 										<div class="sub-title">
 											Deadline:
 										</div>
 										<div class="text-muted">
-											17 Apr 2019
+											09 Dec 2023
 										</div>
 									</div>
 									<div class="project-members m-b-15">
