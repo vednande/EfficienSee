@@ -99,11 +99,11 @@
 											<td>
 												<h2 class="table-avatar">
 													<a href="#" class="avatar"><img alt="" src="assets/img/profiles/avatar-11.jpg"></a>
-													<a href="#" id="lead-name">Wilmer Deluna</a>
+													<a href="#" id="lead-name">Ved Nande</a>
 												</h2>
 											</td>
-											<td>wilmerdeluna@example.com</td>
-											<td>9876543210</td>
+											<td>vednande10@gmail.com</td>
+											<td>9823048210</td>
 											<td><a href="project-view.php" id="project-name">Hospital Administration</a></td>
 											<td>
 												<ul class="team-members">
@@ -184,10 +184,10 @@
 											<td>
 												<h2 class="table-avatar">
 													<a href="#" class="avatar"><img alt="" src="assets/img/profiles/avatar-01.jpg"></a>
-													<a href="#" id="lead-name">Lesley Grauer</a>
+													<a href="#" id="lead-name">Yuvraj Totade</a>
 												</h2>
 											</td>
-											<td>lesleygrauer@example.com</td>
+											<td>totade07yuvraj@yahoo.com</td>
 											<td>9876543210</td>
 											<td><a href="project-view.php" id="project-name">Video Calling App</a></td>
 											<td>
@@ -204,7 +204,7 @@
 												</ul>
 											</td>
 											<td><span class="badge bg-inverse-success">Working</span></td>
-											<td>5 Mar 2019</td>
+											<td>5 Jan 2023</td>
 											<td class="text-right">
 												<div class="dropdown dropdown-action">
 													<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
@@ -220,11 +220,11 @@
 											<td>
 												<h2 class="table-avatar">
 													<a href="#" class="avatar"><img alt="" src="assets/img/profiles/avatar-16.jpg"></a>
-													<a href="#" id="lead-name">Jeffery Lalor</a>
+													<a href="#" id="lead-name">Kaustubh Lanjewar</a>
 												</h2>
 											</td>
-											<td>jefferylalor@example.com</td>
-											<td>9876543210</td>
+											<td>kaustubh45lanjewar@gmail.com</td>
+											<td>9805544519</td>
 											<td><a href="project-view.php" id="project-name">Office Management</a></td>
 											<td>
 												<ul class="team-members">
@@ -240,7 +240,7 @@
 												</ul>
 											</td>
 											<td><span class="badge bg-inverse-success">Working</span></td>
-											<td>27 Feb 2019</td>
+											<td>27 Feb 2022</td>
 											<td class="text-right">
 												<div class="dropdown dropdown-action">
 													<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons" id="three-dots">more_vert</i></a>
@@ -256,11 +256,11 @@
 											<td>
 												<h2 class="table-avatar">
 													<a href="#" class="avatar"><img alt="" src="assets/img/profiles/avatar-11.jpg"></a>
-													<a href="#" id="lead-name">Wilmer Deluna</a>
+													<a href="#" id="lead-name">Prajwal Bhandarkar</a>
 												</h2>
 											</td>
-											<td>wilmerdeluna@example.com</td>
-											<td>9876543210</td>
+											<td>bhandarkar07prajwal.com</td>
+											<td>8876543540</td>
 											<td><a href="project-view.php" id="project-name">Hospital Administration</a></td>
 											<td>
 												<ul class="team-members">
@@ -276,7 +276,7 @@
 												</ul>
 											</td>
 											<td><span class="badge bg-inverse-success">Working</span></td>
-											<td>10 hours ago</td>
+											<td>10 days ago</td>
 											<td class="text-right">
 												<div class="dropdown dropdown-action">
 													<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons" id="three-dots">more_vert</i></a>
