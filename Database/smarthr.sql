@@ -189,6 +189,13 @@ INSERT INTO `goals` (`id`, `Type`, `Subject`, `Target`, `StartDate`, `EndDate`, 
 --
 -- Table structure for table `goal_type`
 --
+CREATE TABLE `leave` (
+  `id` int(255) NOT NULL,
+  `FName` varchar(255) NOT NULL,
+  `LName` varchar(255) NOT NULL,
+  `Days` varchar(100) NOT NULL,
+  `Reason` varchar(255) NOT NULL
+)
 
 CREATE TABLE `goal_type` (
   `id` int(11) NOT NULL,

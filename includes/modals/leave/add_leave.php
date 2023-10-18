@@ -10,33 +10,17 @@
 							<div class="modal-body">
 								<form method="POST">
 									<div class="form-group">
-										<label>Employee Leaving <span class="text-danger">*</span></label>
-										<select name="employee" class="select">
-										<option>Select Employee</option>
-										  <?php 
-											$sql2 = "SELECT * from employees";
-											$query2 = $dbh -> prepare($sql2);
-											$query2->execute();
-											$result2=$query2->fetchAll(PDO::FETCH_OBJ);
-											foreach($result2 as $row)
-											{          
-												?>  
-											<option value="<?php echo htmlentities($row->FirstName)." ".htmlentities($row->LastName); ?>">
-											<?php echo htmlentities($row->FirstName)." ".htmlentities($row->LastName); ?></option>
-											<?php } ?> 
-										</select>
+										<label>First Name<span class="text-danger">*</span></label>
+										<input name="fname" class="form-control" type="text">
 									</div>
 									<div class="form-group">
-										<label>From <span class="text-danger">*</span></label>
-										<input name="starting_at" class="form-control" type="text">
+										<label>Last Name<span class="text-danger">*</span></label>
+										<input name="lname" class="form-control" type="text">
 									</div>
-									<div class="form-group">
-										<label>To <span class="text-danger">*</span></label>
-											<input name="ends_on" class="form-control " type="date">
-									</div>
+									
 									<div class="form-group">
 										<label>Number of days <span class="text-danger">*</span></label>
-										<input name="days_count" class="form-control" type="number">
+										<input name="days" class="form-control" type="number">
 									</div>
 									
 									<div class="form-group">

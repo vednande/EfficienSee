@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,34 +89,38 @@
                 <p>pending leaves</p>
             </div>
         </div>
-        <div class="btn-apply-leave">
-            <button data-model-target="#modal" class="take-leave" id="take-leave" onclick="openPopup()">apply for leave</button>
-        </div>
-        <div class="popup" id="popup">
-            <h2>Apply for Leave</h2>
-            <div class="close-btn" onclick="closePopup()">&times;</div>
-            <div class="inputs" style="margin: 1rem 0;">
-                <form action="" method="POST">
-                    <div class="form-grp" style="display: flex; align-items: flex-start; justify-content: center; flex-direction: column; gap: 0.5rem">
+        <!-- Your HTML code -->
+<div class="btn-apply-leave">
+    <button data-model-target="#popup" class="take-leave" id="take-leave" onclick="openPopup()">Apply for Leave</button>
+</div>
+
+<div class="popup" id="popup">
+    <h2>Apply for Leave</h2>
+    <div class="close-btn" onclick="closePopup()">&times;</div>
+    <div class="inputs" style="margin: 1rem 0;">
+    <form action="submit_Leave.php" method="POST">
+        <div class="form-grp" style="display: flex; align-items: flex-start; justify-content: center; flex-direction: column; gap: 0.5rem">
                         <label>First Name <span style="color: red;">*</span></label>
                         <input type="text" name="first-name" id="first-name" style="border: 2px solid #e3e3e3; font-size: 15px; height: 44px; padding: 4px 8px;">
                     </div>
                     <div class="form-grp" style="display: flex; align-items: flex-start; justify-content: center; flex-direction: column; gap: 0.5rem">
                         <label>Last Name <span style="color: red;">*</span></label>
-                        <input type="text" name="first-name" id="first-name" style="border: 2px solid #e3e3e3; font-size: 15px; height: 44px; padding: 4px 8px;">
+                        <input type="text" name="last-name" id="last-name" style="border: 2px solid #e3e3e3; font-size: 15px; height: 44px; padding: 4px 8px;">
                     </div>
                     <div class="form-grp" style="display: flex; align-items: flex-start; justify-content: center; flex-direction: column; gap: 0.5rem">
                         <label>No. of days off <span style="color: red;">*</span></label>
-                        <input type="number" name="first-name" id="first-name" style="border: 2px solid #e3e3e3; font-size: 15px; height: 44px; padding: 4px 8px;">
+                        <input type="number" name="days-off" id="days-off" style="border: 2px solid #e3e3e3; font-size: 15px; height: 44px; padding: 4px 8px;">
                     </div>
                     <div class="form-grp" style="display: flex; align-items: flex-start; justify-content: center; flex-direction: column; gap: 0.5rem">
                         <label>Reason <span style="color: red;">*</span></label>
-                        <input type="text" name="first-name" id="first-name" style="border: 2px solid #e3e3e3; font-size: 15px; height: 44px; padding: 4px 8px;">
+                        <input type="text" name="reason" id="reason" style="border: 2px solid #e3e3e3; font-size: 15px; height: 44px; padding: 4px 8px;">
                     </div>
-                </form>
-            </div>
-            <button onclick="closePopup()">Submit</button>
-        </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+        
         <!-- LEAVE ENDS HERE -->
 
         <!-- UPDATES STARTS HERE -->
@@ -154,3 +160,5 @@
 				<a class="dropdown-item" id="dropdown-item" href="settings.php">Settings</a>
 				<a class="dropdown-item" id="dropdown-item" href="logout.php">Logout</a>
 			</div> -->
+
+            

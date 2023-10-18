@@ -251,7 +251,7 @@
 		}
 
 	}//adding holidays ends here
-	
+     
 	//adding employees code starts from here
 	elseif(isset($_POST['add_employee'])){
 		$firstname = htmlspecialchars($_POST['firstname']);
@@ -325,13 +325,12 @@
 	}
 	//adding employees leave code starts here
 	elseif(isset($_POST['add_leave'])){
-		$employee = htmlspecialchars($_POST['employee']);
-		$start_date =htmlspecialchars( $_POST['starting_at']);
-		$end_date = htmlspecialchars($_POST['ends_on']);
-		$days_count = htmlspecialchars($_POST['days_count']);
+		$employee = htmlspecialchars($_POST['fname']);
+		$start_date =htmlspecialchars( $_POST['lname']);
+		$end_date = htmlspecialchars($_POST['days']);
 		$reason = htmlspecialchars($_POST['reason']);
-		$sql = "INSERT INTO `leaves` (`Employee`, `Starting_At`, `Ending_On`, `Days`, `Reason`, `Time_Added`)
-		 VALUES ( :employee, :start, :end, :days, :reason, current_timestamp())";
+		$sql = "INSERT INTO `leave` (`FName`, `LName`, `Days`,`Reason`)
+		 VALUES ( :employee, :start, :end, :reason, current_timestamp())";
 		$query = $dbh->prepare($sql);
 		$query->bindParam(':employee',$employee,PDO::PARAM_STR);
 		$query->bindParam(':start',$start_date,PDO::PARAM_STR);
