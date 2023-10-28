@@ -189,8 +189,40 @@ INSERT INTO `goals` (`id`, `Type`, `Subject`, `Target`, `StartDate`, `EndDate`, 
 --
 -- Table structure for table `goal_type`
 --
+-- CREATE TABLE `yuvi` (
+--   `id` int(255) NOT NULL,
+--   `FName` varchar(255) NOT NULL,
+--   `LName` varchar(255) NOT NULL,
+--   `Days` varchar(100) NOT NULL,
+--   `Reason` varchar(255) NOT NULL
+-- )
+
+-- CREATE TABLE `goal_type` (
+--   `id` int(11) NOT NULL,
+--   `Type` varchar(200) NOT NULL,
+--   `Description` text NOT NULL,
+--   `Status` int(100) NOT NULL,
+--   `Date` date NOT NULL DEFAULT current_timestamp()
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- Table structure for table yuvi
+-- CREATE TABLE yuvi (
+--     id int(11) NOT NULL,
+--     FName varchar(255) NOT NULL,
+--     LName varchar(255) NOT NULL,
+--     Days varchar(100) NOT NULL,
+--     Reason varchar(255) NOT NULL
+-- );
+
+-- -- Table structure for table goal_type
+-- CREATE TABLE goal_type (
+--     id int(11) NOT NULL,
+--     Type varchar(200) NOT NULL,
+--     Description text NOT NULL,
+--     Status int(100) NOT NULL,
+--     Date date NOT NULL DEFAULT current_timestamp()
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 CREATE TABLE yuvi (
     id int(11) NOT NULL,
     FName varchar(255) NOT NULL,
@@ -291,24 +323,38 @@ INSERT INTO `overtime` (`id`, `Employee`, `OverTime_Date`, `Hours`, `Type`, `Des
 -- Table structure for table `users`
 --
 
+-- CREATE TABLE `users` (
+--   `id` int(11) NOT NULL,
+--   `FirstName` varchar(200) NOT NULL,
+--   `LastName` varchar(200) NOT NULL,
+--   `UserName` varchar(200) NOT NULL,
+--   `Email` varchar(100) NOT NULL,
+--   `Password` varchar(200) NOT NULL,
+--   `Phone` varchar(20) NOT NULL,
+--   `Address` varchar(200) NOT NULL,
+--   `Picture` varchar(255) NOT NULL,
+-- <<<<<<< HEAD
+--    `Option` varchar(255) NOT NULL,
+-- =======
+--     `option` varchar(255) NOT NULL,
+
+
+-- >>>>>>> 709239da318b4617ce85e07f3943e02e48c0d237
+--   `dateTime` datetime NOT NULL DEFAULT current_timestamp()
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
-  `FirstName` varchar(200) NOT NULL,
-  `LastName` varchar(200) NOT NULL,
-  `UserName` varchar(200) NOT NULL,
-  `Email` varchar(100) NOT NULL,
-  `Password` varchar(200) NOT NULL,
-  `Phone` varchar(20) NOT NULL,
-  `Address` varchar(200) NOT NULL,
-  `Picture` varchar(255) NOT NULL,
-<<<<<<< HEAD
-   `Option` varchar(255) NOT NULL,
-=======
-    `option` varchar(255) NOT NULL,
-
-
->>>>>>> 709239da318b4617ce85e07f3943e02e48c0d237
-  `dateTime` datetime NOT NULL DEFAULT current_timestamp()
+    `id` int(11) NOT NULL,
+    `FirstName` varchar(200) NOT NULL,
+    `LastName` varchar(200) NOT NULL,
+    `UserName` varchar(200) NOT NULL,
+    `Email` varchar(100) NOT NULL,
+    `Password` varchar(200) NOT NULL,
+    `Phone` varchar(20) NOT NULL,
+    `Address` varchar(200) NOT NULL,
+    `Picture` varchar(255) NOT NULL,
+    `Option` varchar(255) NOT NULL, 
+    `dateTime` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
