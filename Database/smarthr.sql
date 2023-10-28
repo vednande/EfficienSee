@@ -189,20 +189,23 @@ INSERT INTO `goals` (`id`, `Type`, `Subject`, `Target`, `StartDate`, `EndDate`, 
 --
 -- Table structure for table `goal_type`
 --
-CREATE TABLE `yuvi` (
-  `id` int(255) NOT NULL,
-  `FName` varchar(255) NOT NULL,
-  `LName` varchar(255) NOT NULL,
-  `Days` varchar(100) NOT NULL,
-  `Reason` varchar(255) NOT NULL
-)
 
-CREATE TABLE `goal_type` (
-  `id` int(11) NOT NULL,
-  `Type` varchar(200) NOT NULL,
-  `Description` text NOT NULL,
-  `Status` int(100) NOT NULL,
-  `Date` date NOT NULL DEFAULT current_timestamp()
+-- Table structure for table yuvi
+CREATE TABLE yuvi (
+    id int(11) NOT NULL,
+    FName varchar(255) NOT NULL,
+    LName varchar(255) NOT NULL,
+    Days varchar(100) NOT NULL,
+    Reason varchar(255) NOT NULL
+);
+
+-- Table structure for table goal_type
+CREATE TABLE goal_type (
+    id int(11) NOT NULL,
+    Type varchar(200) NOT NULL,
+    Description text NOT NULL,
+    Status int(100) NOT NULL,
+    Date date NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
