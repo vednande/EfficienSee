@@ -81,7 +81,7 @@
 				
 					<div class="row">
 						<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-							<div class="card dash-widget">
+							<div class="dash-widget">
 								<div class="card-body kaus">
 									<span class="dash-widget-icon"><i class="fa fa-cubes"></i></span>
 									<div class="dash-widget-info">
@@ -99,7 +99,7 @@
 										$totalcount = $query->rowCount();
 									?>
 						<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-							<div class="card dash-widget">
+							<div class="dash-widget">
 								<div class="card-body kaus">
 									<span class="dash-widget-icon"><i class="fa fa-users"></i></span>
 									<div class="dash-widget-info">
@@ -110,7 +110,7 @@
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-							<div class="card dash-widget">
+							<div class="dash-widget">
 								<div class="card-body kaus">
 									<span class="dash-widget-icon"><i class="fa fa-diamond"></i></span>
 									<div class="dash-widget-info">
@@ -121,7 +121,7 @@
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-							<div class="card dash-widget">
+							<div class="dash-widget">
 								<div class="card-body kaus">
 									<span class="dash-widget-icon"><i class="fa fa-user"></i></span>
 									<div class="dash-widget-info">
@@ -136,10 +136,10 @@
 					
 					
 					<div class="row">
-						<div class="col-md-12">
+						<div class="col-md-12 mt-4">
 							<div class="card-group m-b-30">
-								<div class="card kaus-card">
-									<div class="card-body">
+								<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+									<div class="card-body kaus">
 										<div class="d-flex justify-content-between mb-3">
 											<div>
 												<span class="d-block">New Employees</span>
@@ -156,8 +156,8 @@
 									</div>
 								</div>
 							
-								<div class="card kaus-card" style="transition: all 250ms ease;">
-									<div class="card-body">
+								<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3" style="transition: all 250ms ease;">
+									<div class="card-body kaus">
 										<div class="d-flex justify-content-between mb-3">
 											<div>
 												<span class="d-block">Earnings</span>
@@ -175,8 +175,8 @@
 									</div>
 								</div>
 							
-								<div class="card kaus-card">
-									<div class="card-body">
+								<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+									<div class="card-body kaus">
 										<div class="d-flex justify-content-between mb-3">
 											<div>
 												<span class="d-block">Expenses</span>
@@ -194,8 +194,8 @@
 									</div>
 								</div>
 							
-								<div class="card kaus-card">
-									<div class="card-body">
+								<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+									<div class="card-body kaus">
 										<div class="d-flex justify-content-between mb-3">
 											<div>
 												<span class="d-block">Profit</span>

@@ -24,15 +24,10 @@
   width: 60px;
 }
 
-.dash-widget {
-}
 
-/* .card:hover {
-    transform: translateY(-5px) scale(1.005) translateZ(0);
-    box-shadow: 0 24px 36px rgba(0,0,0,0.11),
-      0 24px 46px var(--box-shadow-color);
-  }
-  
+
+
+/* 
   .card:hover .overlay {
     transform: scale(4) translateZ(0);
   }
@@ -69,18 +64,18 @@
 
 .kaus-card,
 .kaus {
-  display: block;
-  position: relative;
-  max-width: 300px;
+  /* display: block; */
+  /* position: relative; */
+  /* max-width: 300px; */
   background-color: #e8e9e9;
   border-radius: 4px;
-  padding: 32px 24px;
+  padding: 20px 10px;
   margin: 12px;
   text-decoration: none;
   z-index: 0;
   overflow: hidden;
-
-  &:before {
+}
+  /* &:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -98,17 +93,20 @@
   &:hover:before {
     transform: scale(50);
   }
-}
+} */
 
 .kaus-card,
 .kaus:hover {
   p {
     transition: all 0.3s ease-out;
-    color: rgba(255, 255, 255, 0.8);
+    /* color: rgba(255, 255, 255, 0.8); */
+    color: black;
+    font-weight: bolder;
   }
   h3 {
     transition: all 0.3s ease-out;
-    color: #ffffff;
+    color: black;
+    font-weight: bolder;
   }
 }
 
