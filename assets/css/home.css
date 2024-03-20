@@ -253,7 +253,7 @@ nav .mob-menu .btns button:hover {
   cursor: pointer;
   text-decoration: none;
   display: flex;
-  width: 200px;
+  max-width: 200px;
   height: 70px;
   color: #ebf5ff;
   background: #0068c7;

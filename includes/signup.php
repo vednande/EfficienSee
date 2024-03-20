@@ -65,7 +65,6 @@ $conn->close();
 </head>
 <body>
 <div class="signup">
-
 	<div class="mob-image">
 		<img src="assets/img/logo-bgremoved.png" alt="">
 	</div>

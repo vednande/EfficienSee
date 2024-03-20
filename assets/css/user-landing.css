@@ -96,18 +96,10 @@
 } */
 
 .kaus-card,
-.kaus:hover {
-  p {
-    transition: all 0.3s ease-out;
-    /* color: rgba(255, 255, 255, 0.8); */
-    color: black;
-    font-weight: bolder;
-  }
-  h3 {
+.kaus:hover h3, p{
     transition: all 0.3s ease-out;
     color: black;
     font-weight: bolder;
-  }
 }
 
 tbody tr:hover {

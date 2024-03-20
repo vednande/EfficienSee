@@ -177,6 +177,9 @@ $conn->close();
 								<div class="form-group text-center">
 									<button class="btn btn-primary account-btn" name="login" type="submit" value="Login">Login</button>
 										<div class="col-auto pt-2">
+											<a class="text-muted float-left" href="signup.php" id="forgot-password">
+													New Here? Signup 
+												</a>
 											<a class="text-muted float-right" href="forgot-password.php" id="forgot-password">
 												Forgot password?
 											</a>
